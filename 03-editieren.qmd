@@ -1,0 +1,33 @@
+# Inhalte Editieren und veröffentlichen
+
+## Qmd erstellen
+
+Die meisten Inhalte exisitieren bereits und ihr müsst sie nur noch anpassen. Falls ihr aber ein neues .Qmd File erstellen möchtet, müsst ihr einen Unterordner in einem der Ordner erstellen. 
+
+## Qmd editieren
+
+Um Inhalte zu editieren, öffnet ihr das entsprechende .Qmd file in einem der Ordner `prepro`, `infovis`, `rauman` usw.. Ihr könnt dieses File wie ein reguläres, eigenständiges .Qmd File handhaben. **Wichtig**: Alle Pfade im Dokument sind relativ zum Project zu verstehen: **Das Working directory ist der Project folder!!**.
+
+## Qmd Kompilieren / Vorschau
+
+Statt auf den Preview button in RStudio zu clicken empfehlen wir, quarto von der Konsole (Terminal) aus zu bedienen. `quarto render` kompiliert das jeweilige File / Projekt in html (oder pdf). Sehr praktisch ist aber `quarto preview`, welches zusätzlich zum rendern erstellt einen "Webserver" zur Verfügung stellt, wo Änderungen an den qmd Files detektiert und live ge-updated werden.
+
+Hinweis: Auf gewissen Windows Versionen muss man den Befehl `quarto` mit `quarto.cmd` oder `quarto.exe` ersetzen. Versuche es zuerst mit quarto, wenn das nicht klappt versuche die erwähnten Varianten (siehe [hier](https://community.rstudio.com/t/bash-quarto-command-not-found/144187/2)).
+
+## Änderungen veröffentlichen
+
+Hier müssen wir unterscheiden zwischen den Änderungen den Source Files (Qmd) und Änderungen an den Output Files (pdf)
+
+Um die Änderungen an den Source Files zu veröffentlichen müsst ihr diese via git auf das Repository "pushen". Vorher aber müsst ihr die Änderungen `stage`-en und `commit`-en. Ich empfehle, dass ihr zumindest zu beginn mit dem RStudio "Git" Fenster arbeitet.
+
+-   `stage`: Setzen eines Häckchens bei "Staged" (im Terminal mit `git add .`)
+-   `commit`: Klick auf den Button "commit" (im Terminal mit `git commit -m "deine message"`)
+-   `pull`: Klick auf den Button "Pull" (im Terminal mit `git pull`)
+-   `push`: Click auf den button "Push" (im Terminal mit `git push`)
+-   
+
+Um Änderungen an den Output Files zu Veröffentlichen muss (TBD)
+
+```sh
+quarto publish gh-pages --no-prompt 
+```

@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "Fit mit Markdown"
+  author: 
+   - "Nils Ratnaweera"
+   - "Dominic Lüönd"
+  date: "11/22/2023"
+  language: de
+  chapters:
+    - index.qmd
+    - 01-software.qmd
+    - 02-projekt.qmd
+    - 03-editieren.qmd
+    - 04-advanced.qmd
+    - 05-faq.qmd
+    - 06-references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+
+
+

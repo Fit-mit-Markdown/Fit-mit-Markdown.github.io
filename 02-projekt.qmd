@@ -1,0 +1,51 @@
+# Projekt aufsetzen
+
+## Repo Klonen
+
+Um die ganzen \*.Qmd Files lokal bearbeiten zu können, muss das Repository geklont werden. Mit RStudio ist dies sehr einfach, siehe dazu folgende Anleitung von @bryan2017:  [happygitwithr: New RStudio Project via RStudio IDE](https://happygitwithr.com/new-github-first#rstudio-ide). Als Repo-URL wählt ihr den URL des jeweiligen Repos aus (siehe @tbl-github-repos):
+
++-------------------------------------------+-------------------------------------------------------------------+
+| Research Methods (Übungen)                | `https//github.com/ResearchMethods-ZHAW/HS23.git`                 |
++-------------------------------------------+-------------------------------------------------------------------+
+| Research Methods (Stastik)                | `https//github.com/ResearchMethods-ZHAW/Statistik`                |
++-------------------------------------------+-------------------------------------------------------------------+
+| Angewandte Geoinformatik                  | `https//github.com/modul-AGI/HS23`                                |
++-------------------------------------------+-------------------------------------------------------------------+
+| Circular Economy Management               | `https//github.com/zhaw-data-analysis-and-monitoring/FS24`        |
++-------------------------------------------+-------------------------------------------------------------------+
+| Patterns and Trends in Environmental Data | `https//github.com/ComputationalMovementAnalysis/FS22`            |
++-------------------------------------------+-------------------------------------------------------------------+
+| CAS Vegetationanalyse und Feldbotanik     | `https//github.com/CAS-Vegetationsanalyse-Feldbotanik/HS23`       |
++-------------------------------------------+-------------------------------------------------------------------+
+| Remote Sensing                            | `https//github.com/remote-sensing-zhaw/google-earth-enginge-code` |
++-------------------------------------------+-------------------------------------------------------------------+
+
+: Eine Sammlung aus Lehrunterlagen, die wir mit Quarto zur Verfügung stellen. Ggf. muss das Semester angepasst werden {#tbl-github-repos}
+
+
+:::{.callout-note}
+
+Je nach gewählter "Clone"-Methode, muss das Git*Hub* Repo als *upstream* gesetzt werden. Dafür gibt es mehrere Möglichkeiten. Beispielsweise mit dem folgenden Befehl im Terminal
+
+
+```{.bash}
+git branch -u origin/main
+```
+:::
+
+Nun solltet ihr fast das ganze Repo lokal auf eurem Computer haben und die einzelnen Files bearbeiten können. 
+
+
+## Daten und Code
+
+Typischerweise braucht der R-Code Daten, um diese zu Analysieren und Visualisieren. Bei wenigen, kleinen Datensätzen und seltenen Änderungen können diese Daten direkt ins GitHub Repo eingebaut werden. Sind es jedoch grössere Datensätze oder Datensätze die sich häufig ändern, dann ist es besser, diese separat zu verwalten. Im Modul *Research Methods* haben die Datensätze aber dazu geführt, dass das entsprechende Repo von Jahr zu Jahr übermässig an Grösse zugelegt hat und das Repo mehrere 100 MB gross wurde. Aus diesem Grund verwalten wir in diesem Modul die Datensätze in einem separatem Repo. Dieses Repo wird als sogeanntes *submodule* in das jeweilige Modul-Repo eingebunden.
+
+Ein weiterer Grund, Datensätze in einem separaten Repo zu führen ist, wenn der Quellcode der Unterlagen öffentlich sein darf (und soll), die Datensätze aber nicht.
+
+Falls das Repo mit einem Submodule aufgesetzt wurde, dann muss dieses noch initialisiert werden. Dazu braucht es noch folgenden Befehl im Terminal:
+
+
+```{.bash}
+git submodule update --init --recursive
+```
+
