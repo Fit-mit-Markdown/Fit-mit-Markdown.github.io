@@ -1,0 +1,25 @@
+# GitHub Authentifizieren
+
+Als nächstes müssen wir das lokale Git mit GitHub verbinden und euren Computer dazu berechtigen, Code in euer GitHub repository zu pushen. Für diesen Schritt gibt es zwei mögliche Technologien: HTTPS und SSH. @bryan2017 [empfiehlt für Anfänger, HTTPS zu nutzen](https://happygitwithr.com/https-pat#https-vs-ssh), und an diese Empfehlung halten wir uns auch. 
+
+Erstellen Sie zunächst ein persönliches Zugangs-Token (PAT) auf Github
+
+- Melden Sie sich bei [github.com](https://github.com/) an, klicken Sie auf Ihr Benutzerprofil (oben rechts) und dann auf "Einstellungen". 
+- Wählen Sie *Entwicklereinstellungen > Persönliche Zugangstoken > Neues Token generieren* (*Developer settings > Personal access tokens > Generate new token*).
+- Fügen Sie einen beschreibenden Vermerk hinzu (z.B. `https access from my personal laptop`)
+- Wählen Sie den Bereich "Repo".
+- Klicken Sie auf "Token generieren" (Generate token).
+- Kopieren Sie Ihr neues persönliches Zugriffstoken (in das grüne Feld)
+  - Sie werden dieses Token später nicht mehr sehen können.
+  - Wenn Sie es verlieren, können Sie einfach ein neues Token erstellen.
+  - Wenn Sie es speichern möchten, müssen Sie dieses persönliche Zugangs-Token (PAT) wie ein Passwort behandeln. Speichern Sie es nur an einem sicheren Ort (z. B. in einer Passwortverwaltungs-App) und *veröffentlichen Sie dieses PAT niemals öffentlich*.
+
+Dann speichern Sie Ihr PAT in Ihrem lokalen Git
+
+- Installieren Sie in R das Paket `gitcreds` (`install.packages("gitcreds")`)
+- Laden Sie diese Bibliothek (`library("gitcreds")`)
+- Rufen Sie die Funktion `gitcreds_set()` auf.
+- Beantworten Sie die Eingabeaufforderung mit Ihrem PAT aus dem letzten Schritt
+- Prüfen Sie, ob Sie mit `gitcreds_get()` einen Berechtigungsnachweis gespeichert haben.
+
+Weitere Informationen findet ihr in @bryan2017: [Cache credentials for HTTPS](https://happygitwithr.com/https-pat).

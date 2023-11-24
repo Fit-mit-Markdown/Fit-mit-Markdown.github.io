@@ -7,16 +7,25 @@ book:
    - "Nils Ratnaweera"
    - "Dominic Lüönd"
   date: "11/22/2023"
-  language: de
   chapters:
     - index.qmd
-    - 01-software.qmd
+    - 01-r-rstudio-installieren.qmd
+    - 01-cloud-umgebungen.qmd
+    - 01-rstudio-konfigurieren.qmd
+    - 01-git-installation.qmd
+    - 01-github-account.qmd
+    - 01-git-configure.qmd
+    - 01-github-authenticate.qmd
     - 02-projekt.qmd
-    - 03-editieren.qmd
+    - 03-qmd-editieren.qmd
+    - 03-vorschau-erstellen.qmd
+    - 03-publish.qmd
+    - 03-inhalte-erstellen.qmd
     - 04-advanced.qmd
     - 05-faq.qmd
     - 06-references.qmd
 
+lang: de
 bibliography: references.bib
 
 format:

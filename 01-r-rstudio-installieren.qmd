@@ -1,0 +1,58 @@
+
+# R / RStudio
+
+Diese beiden Programme sind zentral, um mit Quarto arbeiten zu können. Allerdings kann man RStudio auch gut durch eine andere IDE oder einerm einfachen Texteditor ersetzen (VSCode, Sublime). Allerdings empfehlen wir dies eher für Fortgeschrittene benutzer. 
+
+Die Programme muss man nicht zwingend lokal installieren, es gibt auch Cloud Lösungen, siehe dazu @sec-cloud-rstudio. Wer hingegen Lokal auf seinem eingenen PC arbeiten will, muss eine aktuell version von R, RStudio und Git installieren. Siehe dazu folgende Anleitungen von @bryan2017:
+
+## R installieren / updaten
+
+```{r}
+#| echo: false
+#| include: false
+
+library("rversions")
+library("lubridate")
+
+rv <- rversions::r_release()
+rv
+
+rve <- strsplit(as.character(base::getRversion()), "\\.")[[1]]
+
+rversion_minimal <- function(version_string){
+  version_int <- as.integer(strsplit(version_string, "\\.")[[1]])
+  paste(version_int[1], ifelse(version_int[2] == 0, version_int[2], version_int[2]-1), 0,sep = ".")
+}
+
+heute <- paste(month(Sys.Date(), TRUE, FALSE, "C"), year(Sys.Date()), sep = ", ")
+```
+
+Wenn Sie R noch nicht installiert haben, können Sie dies jetzt tun, indem Sie die neueste Version von [CRAN](https://cran.r-project.org/) herunterladen. Wenn Sie R bereits installiert haben, überprüfen Sie Ihre Version von `R`, indem Sie RStudio öffnen und den folgenden Befehl in die Konsole eingeben.
+
+```{r}
+R.version.string
+```
+
+Dies gibt die Versionsnummer Ihrer R-Installation zurück, wobei die erste Ziffer (``r rve[1]``) die Nummer der *Hauptversion*, die zweite Ziffer (``r rve[2]``) die *Unterversion* und die letzte Ziffer (``r rve[3]``) die *Patch-Version* angibt. Als generelle Faustregel gilt, dass Sie R aktualisieren sollten, wenn Sie
+
+- nicht die aktuelle *Hauptversion* haben oder
+- zwei (oder mehr) Versionen hinter der aktuellen *Minor-Version* zurückbleiben
+
+Zum Zeitpunkt des Schreibens (`r heute`) ist die aktuelle `R` Version `r rv$version` (freigegeben am `r strftime(rv$date, "%d.%m.%Y")`, siehe [cran.r-project.org](https://cran.r-project.org/)). Ihre Installation sollte daher nicht älter sein als `r rversion_minimal(rv$version)`. Falls doch, sollten R aktualisiert werden (siehe [diese Anleitung zur Aktualisierung von R](https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol/))
+
+
+## RStudio installieren / updaten
+
+RStudio ist die IDE (integrierte Entwicklungsumgebung), die wir in unserem Kurs verwenden, um mit R zu arbeiten. Es gibt gute Alternativen, die Sie verwenden können, RStudio scheint einfach [die beliebteste Wahl] zu sein (https://twitter.com/mdancho84/status/1502237075550392323). Wenn Sie Ihre eigene IDE verwenden möchten, können Sie das gerne tun. Wir empfehlen dies jedoch nicht, wenn Sie ein Anfänger sind.
+
+Wir empfehlen, RStudio vor dem Kurs auf die neueste Version zu aktualisieren: Überprüfen Sie, ob dies der Fall ist, indem Sie auf *help > check for updates* klicken.
+
+
+Weitere Infos dazu findet ihr in @bryan2017: [Install or upgrade R and RStudio](https://happygitwithr.com/install-r-rstudio.html)
+
+
+:::{.callout-important}
+
+Falls keine neue Version von RStudio installiert ist, fehlt die Software `quarto`, welche manuell installiert werden muss, siehe dazu [diese Anleitung](https://quarto.org/docs/get-started/).
+
+:::

@@ -1,0 +1,30 @@
+## RStudio konfigurieren
+
+Wir empfehlen folgende Konfiguration in RStudio (Tools → Global Options):
+
+
++-----------+-----------------------------------------------+--------------------------+
+| General   | (Advanced) User Interface Language            | English                  |
++-----------+-----------------------------------------------+--------------------------+
+| RMarkdown | Show document outline by default              | checked[^outline]        |
++           +-----------------------------------------------+--------------------------+
+|           | Soft-wrap R Markdown files                    | checked[^wrap]           |
++           +-----------------------------------------------+--------------------------+
+|           | Show in document outline                      | Sections Only[^outline2] |
++           +-----------------------------------------------+--------------------------+
+|           | Show output preview in                        | Window[^preview]         |
++           +-----------------------------------------------+--------------------------+
+|           | Show equation and image previews              | In a popup               |
++           +-----------------------------------------------+--------------------------+
+|           | Evaluate chunks in directory                  | Document                 |
++           +-----------------------------------------------+--------------------------+
+|           | Show output inline for all markdown documents | unchecked                |
++-----------+-----------------------------------------------+--------------------------+
+| Code      | (Saving) Default Text Encoding                | UTF-8                    |
++-----------+-----------------------------------------------+--------------------------+
+
+
+[^outline]: Stellt ein Inhaltsverzeichnis rechts von .Qmd files dar
+[^wrap]: macht autmatische Zeilenumbrüche bei .Qmd files
+[^outline2]: zeigt nur "Sections" im Inhaltsverzeichnis
+[^preview]: beim kopilieren von Qmd Files wird im Anschluss ein Popup mit dem Resultat dargestellt

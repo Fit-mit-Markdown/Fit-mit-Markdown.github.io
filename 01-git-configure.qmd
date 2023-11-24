@@ -1,0 +1,29 @@
+# Git konfigurieren
+
+## Benutzername und Mailadresse
+
+Um `git` benutzen zu können, muss man Benutzernamen und Mailadresse festlegen. Allenfalls habt ihr das schon gemacht. Wenn folgende Befehle (im *Terminal*!) euren Nutzernamen / Mailadresse anzeigen, könnt ihr diesen Schritt überspringen:
+
+```{.bash}
+git config --global user.email
+git config --global user.name
+```
+
+Falls die obigen Befehle nichts ausgeben, müsst ihr euren Namen und eure Mailadresse noch festlegen. **Dabei ist es wichtig, dass ihr die gleiche Mailadresse verwendet, wie ihr sie auch für GitHub angegeben habt**. Um euren Namen und eure Mailadresse festzulegen, führt folgende Befehle (wieder im Terminal) aus:
+
+```{.bash}
+git config --global user.name "Jane Doe"           # <1> 
+git config --global user.email "jane@example.com"  # <2>
+git config --global --list                         # <3> 
+```
+1. Ersetzt Jane Doe durch euren Namen
+2. Verwendet eure ZHAW Mailadresse
+3. Zeigt die Konfiguration an
+
+
+
+Weitere Informationen in @bryan2017: [Introduce yourself to Git](https://happygitwithr.com/hello-git.html).
+
+
+
+

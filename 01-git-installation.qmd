@@ -1,0 +1,22 @@
+# Git installieren
+
+Git ist eine Software zur Verfolgung von Änderungen in Textdateien (z. B. R-Skripten). Sie wird sowohl in der Softwareindustrie als auch im Bereich der Datenwissenschaft häufig eingesetzt. In diesem Kurs werden wir die grundlegenden Funktionen von Git kennenlernen und es mit dem Online-Portal Github kombinieren.
+
+Der nächste Schritt ist daher die Installation von Git. Es gibt verschiedene Git-Installer zur Auswahl, wir empfehlen die folgenden:
+
+- **Windows**: 
+  - Wir empfehlen die Installation von [Git für Windows](https://gitforwindows.org/), auch bekannt als `msysgit` oder "Git Bash". 
+  - Wählen Sie bei der Frage "Anpassen der PATH-Umgebung" (*Adjusting your PATH environment*) die Option "Git von der Kommandozeile und auch von Drittanbieter-Software" (*Git from the command line and also from 3rd-party software*).
+  - RStudio bevorzugt die Installation von Git unter `C:/Programme/Git`, wir empfehlen, dieser Konvention zu folgen.
+  - Ansonsten halten wir es für sinnvoll, die Standardeinstellungen zu übernehmen
+- **macOS**:  
+  - Wir empfehlen die Installation der Xcode-Kommandozeilen-Tools (nicht alle Xcode-Tools), die Git enthalten
+  - Gehen Sie zur Shell und geben Sie `xcode-select --install` ein, um die Kommandozeilenwerkzeuge für Entwickler zu installieren
+- **Linux**: 
+  - Unter Ubuntu oder Debian Linux: `sudo apt-get install git`
+  - Unter Fedora oder RedHat Linux: `sudo yum install git`
+
+
+Ein großer Teil dieses Kapitels wurde von @bryan2017 übernommen ([Kapitel Install Git](https://happygitwithr.com/install-git.html)). Wenn Sie tiefer in die Verwendung von Git eintauchen wollen, empfehlen wir Ihnen dieses Buch sehr. Für einen *noch* tieferen Einstieg in Git lesen Sie @chacon2014. Beide Bücher sind kostenlos und quelloffen auf [happygitwithr.com](https://happygitwithr.com/) bzw. [git-scm.com/book](https://git-scm.com/book/) erhältlich.
+
+

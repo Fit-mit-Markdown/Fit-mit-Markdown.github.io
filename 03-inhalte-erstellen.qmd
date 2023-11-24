@@ -1,0 +1,4 @@
+# Neue Inhalte hinzufügen
+
+Die meisten Inhalte exisitieren bereits und ihr müsst sie nur noch anpassen. Falls ihr aber ein neues .Qmd File erstellen möchtet, müsst ihr einen Unterordner in einem der Ordner erstellen. 
+

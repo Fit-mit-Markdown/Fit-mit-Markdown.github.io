@@ -2,10 +2,12 @@
 
 ## Repo Klonen
 
-Um die ganzen \*.Qmd Files lokal bearbeiten zu können, muss das Repository geklont werden. Mit RStudio ist dies sehr einfach, siehe dazu folgende Anleitung von @bryan2017:  [happygitwithr: New RStudio Project via RStudio IDE](https://happygitwithr.com/new-github-first#rstudio-ide). Als Repo-URL wählt ihr den URL des jeweiligen Repos aus (siehe @tbl-github-repos):
+Um \*.Qmd Files bearbeiten zu können, muss das Repository geklont werden. Mit RStudio ist dies sehr einfach, siehe dazu folgende Anleitung von @bryan2017:  [happygitwithr: New RStudio Project via RStudio IDE](https://happygitwithr.com/new-github-first#rstudio-ide). Als Repo-URL wählt ihr den URL des jeweiligen Repos aus (siehe @tbl-github-repos):
+
+<!-- todo: explain fully here, rather than linking to bryan2017 -->
 
 +-------------------------------------------+-------------------------------------------------------------------+
-| Research Methods (Übungen)                | `https//github.com/ResearchMethods-ZHAW/HS23.git`                 |
+| Research Methods (Übungen)                | `https//github.com/ResearchMethods-ZHAW/HS23`                     |
 +-------------------------------------------+-------------------------------------------------------------------+
 | Research Methods (Stastik)                | `https//github.com/ResearchMethods-ZHAW/Statistik`                |
 +-------------------------------------------+-------------------------------------------------------------------+

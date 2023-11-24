@@ -13,10 +13,20 @@ Wie Eingangs erwähnt, funktionieren die verschiedenen *Computational Notebook* 
 
 In einem Textfile mit der Erweiterung `.qmd` werden Fliesstext und Code gemischt. Der Fliesstext wird in Markdown geschrieben, der Code in einer beliebigen Programmiersprache. Das `R` Package `knitr` führt den Code aus und erstellt ein neues Markdown File wo der Fliesstext und die Resultate des Codes zusammengeführt werden. Dieses File wiederum  wird mittels der Software `pandoc` (welche mit Quarto mitgeliefert wird) in das gewünschte Format konvertiert. 
 
-![](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
+![](./images/rstudio-qmd-how-it-works.png)
 
 
 :::{.callout-note}
-In diesem letzten Schritt werden, je nach Output Format, ebenfalls temporäre Files erstellt. Beispielweise wird für die Erstellung eines PDF Files ein LaTeX File erstellt (`.tex`), welches dann mittel `xelatex` in ein PDF File konvertiert wird. Allerdings ist Latex zwar mächtig, aber auch sehr komplex. Wir hoffen, dass Latex mittelfristig durch `typst` ersetzt wird. <!-- TODO: Link auf typst und mehr infos -->
-HTML ist ja bereits textbasiert, so dass hier kein weiterer Schritt notwendig ist.
+Im letzten Schritt werden, je nach Output Format, ebenfalls temporäre Files erstellt. Beispielweise wird für die Erstellung eines PDF Files ein LaTeX File erstellt (`.tex`), welches dann mittel `xelatex` in ein PDF File konvertiert wird. Latex ist zwar mächtig, aber auch sehr komplex. Wir hoffen, dass Latex mittelfristig durch `typst` ersetzt wird, siehe [quarto.org](https://quarto.org/docs/prerelease/1.4/typst.html).
 :::
+
+## Setup
+
+Es gibt eine unendliche Anzahl von verschiedenen möglichen Setups denkbar. Hier ein paar Beispiele, die wir an der ZHAW nutzen und empfehlen:
+
+- Editor: RStudio, VSCode oder JupyterLab
+- Installation: 
+  - Lokal: Via Software Center oder *interim Admin*
+  - Cloud: Lösungen gibt es für RStudio (siehe @sec-cloud-rstudio), VSCode (siehe @sec-cloud-vscode) und für JupyterLab (siehe @sec-cloud-jupyterlab)
+- Programmiersprache: R oder Python
+
