@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fit mit Markdown - References</title>
+<title>Fit mit Markdown - 9&nbsp; Qmd editieren</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +64,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./05-faq.html" rel="prev">
+<link href="./03-vorschau-erstellen.html" rel="next">
+<link href="./02-projekt.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -98,7 +114,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-qmd-editieren.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Qmd editieren</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -179,7 +195,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-qmd-editieren.html" class="sidebar-item-text sidebar-link">
+  <a href="./03-qmd-editieren.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span></a>
   </div>
 </li>
@@ -215,7 +231,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./06-references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -225,14 +241,24 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#text" id="toc-text" class="nav-link active" data-scroll-target="#text"><span class="header-section-number">9.1</span> Text</a></li>
+  <li><a href="#sec-querverweise" id="toc-sec-querverweise" class="nav-link" data-scroll-target="#sec-querverweise"><span class="header-section-number">9.2</span> Querverweise</a></li>
+  <li><a href="#sec-md-tables" id="toc-sec-md-tables" class="nav-link" data-scroll-target="#sec-md-tables"><span class="header-section-number">9.3</span> Tabellen</a></li>
+  <li><a href="#sec-md-images" id="toc-sec-md-images" class="nav-link" data-scroll-target="#sec-md-images"><span class="header-section-number">9.4</span> Bilder</a></li>
+  <li><a href="#hervorhebungen-kästchen" id="toc-hervorhebungen-kästchen" class="nav-link" data-scroll-target="#hervorhebungen-kästchen"><span class="header-section-number">9.5</span> Hervorhebungen (Kästchen)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Qmd editieren</span></h1>
 </div>
 
 
@@ -249,18 +275,221 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-chacon2014" class="csl-entry" role="listitem">
-Chacon, Scott, and Ben Straub. 2014. <em>Pro Git</em>. 2nd Edition.
-Apress. <a href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a>.
+<p>Um Inhalte zu editieren, öffnet ihr das entsprechende .Qmd file.</p>
+<p>(Im Modul Research Methods befindet sich diese in einen der Unterordner (<code>prepro</code>, <code>infovis</code>, <code>rauman</code>, <code>fallstudio_n</code>, <code>fallstudie_s</code>).)</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div id="ref-bryan2017" class="csl-entry" role="listitem">
-Jenny Bryan, Jim Heister. 2017. <em><span class="nocase">Let<span>’</span>s Git started <span><span class="math inline">|</span></span> Happy Git and GitHub for the
-useR</span></em>. <a href="https://happygitwithr.com">https://happygitwithr.com</a>.
+<div class="callout-title-container flex-fill">
+Wichtig
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Alle Pfade im Dokument sind relativ zum Project zu verstehen: <strong>Das Working directory ist der Project folder!!</strong>.</p>
+</div>
+</div>
+<section id="text" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="text"><span class="header-section-number">9.1</span> Text</h2>
+<ul>
+<li>Kursiv: Wörter, die mit * umgeben werden, sind Kursiv: <code>*kursiv*</code> wird zu <em>kursiv</em></li>
+<li>Fett: Wörter die mit doppelten * umgeben werden, sind Fett: <code>**fett**</code> wird zu <strong>fett</strong></li>
+<li>Hyperlinks: Eine hyperlink wird folgenermassen erstellt:
+<ul>
+<li><code>[ZHAW Website](https://www.zhaw.ch)</code> wird zu <a href="https://www.zhaw.ch">ZHAW Website</a></li>
+<li><code>&lt;https://www.zhaw.ch&gt;</code> wird zu <a href="https://www.zhaw.ch" class="uri">https://www.zhaw.ch</a></li>
+</ul></li>
+<li>Überschriften werden mit vorangestelltem <code>#</code> erstellt
+<ul>
+<li>Kapitel: <code># Programmieren I</code></li>
+<li>Unterkapitel: <code>## Komplexe Datentypen</code></li>
+<li>Unter-Unterkapitel: <code>### Integer und Floats</code></li>
+<li>… usw. (bis Stufe 6)</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zum Markdown Syntax: <a href="https://quarto.org/docs/authoring/markdown-basics.html" class="uri">https://quarto.org/docs/authoring/markdown-basics.html</a></p>
+</div>
+</div>
+</section>
+<section id="sec-querverweise" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="sec-querverweise"><span class="header-section-number">9.2</span> Querverweise</h2>
+<p>Um im Text einen Querverweis auf ein Kapitel zu machen, müsst ihr diesem Zuerst eine eindeutige “ID” geben. Zum Beispiel sieht der Titel dieses Kapitels folgendermassen aus:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Querverweise {#sec-querverweise}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Nun kann ich auf dieses Kapitel mit <code>@sec-querverweise</code> verweisen.</p>
+<ul>
+<li><code>@sec-querverweise</code> wird zu</li>
+<li><a href="#sec-querverweise" class="quarto-xref"><span>Kapitel&nbsp;9.2</span></a></li>
+</ul>
+<p>Das Verweisen funktioniert aber nur auf Nummerierte Kapitel und deren Unterkapitel. Wichtig ist auch, das ein <code>sec-</code> vorangestellt wird. Dieses <code>sec-</code> kommuniziert Quarto, dass es sich bei der Referenz um einen Kapitelverweis handelt. Bilder werden mit <code>fig-</code> referenziert und Tabellen mit <code>tbl-</code>. Mehr dazu später, in <a href="#sec-md-tables" class="quarto-xref"><span>Kapitel&nbsp;9.3</span></a> und <a href="#sec-md-images" class="quarto-xref"><span>Kapitel&nbsp;9.4</span></a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zu Querverweisen: <a href="https://quarto.org/docs/authoring/cross-references.html" class="uri">https://quarto.org/docs/authoring/cross-references.html</a></p>
+</div>
+</div>
+</section>
+<section id="sec-md-tables" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="sec-md-tables"><span class="header-section-number">9.3</span> Tabellen</h2>
+<p>Tabellen werden ebenfalls im Markdown-Syntax erstellt, und zwar folgendermassen:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>| BMI         | Nutritional status       | </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>|:------------|:-------------------------|</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>| Below 18.5  | Underweight              |</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>| 18.5–24.9   | Normal weight            |</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>| 25.0–29.9   | Pre-obesity              |</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>| 30.0–34.9   | Obesity class I          |</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>| 35.0–39.9   | Obesity class II         |</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>| Above 40    | Obesity class III        |</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>: WHO Nutritional status {#tbl-beispielstabelle}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese obige Markdown tabelle wird in eine html Tabelle umgewandelt. Diese Markdown Tabelle muss nicht von hand erstellt werden, auf <a href="https://www.tablesgenerator.com/markdown_tables">tablesgenerator.com</a> können bestehende Tabellen in den Markdown Syntax konvertiert werden.</p>
+<div id="tbl-beispielstabelle" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="table quarto-float-caption quarto-float-tbl" id="tbl-beispielstabelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;9.1: WHO Nutritional status
+</figcaption>
+<div aria-describedby="tbl-beispielstabelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">BMI</th>
+<th style="text-align: left;">Nutritional status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Below 18.5</td>
+<td style="text-align: left;">Underweight</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18.5–24.9</td>
+<td style="text-align: left;">Normal weight</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">25.0–29.9</td>
+<td style="text-align: left;">Pre-obesity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">30.0–34.9</td>
+<td style="text-align: left;">Obesity class I</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.0–39.9</td>
+<td style="text-align: left;">Obesity class II</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Above 40</td>
+<td style="text-align: left;">Obesity class III</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Beachtet, dass man eine Tabellenüberschrift nach einen <code>:</code> anbringen kann. Nach der Tabellenüberschrift kann man einen “Key” erstellen, mit dem man diese Tabelle referenzieren kann. Der “Key” muss</p>
+<ul>
+<li><em>nach</em> der Tabellenüberschrift angebracht werden (mit leerschlag!)</li>
+<li>sich in geschweiften Klammern befinden</li>
+<li>mit <code>#tbl-</code> beginnen</li>
+</ul>
+<p>Nun kann ich mich im Text auf diese Tabelle beziehen.</p>
+<ul>
+<li><code>siehe @tbl-beispielstabelle</code> wird zu:</li>
+<li>siehe <a href="#tbl-beispielstabelle" class="quarto-xref">Tabelle&nbsp;<span>9.1</span></a></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zum einfügen von Tabellen: <a href="https://quarto.org/docs/authoring/tables.html" class="uri">https://quarto.org/docs/authoring/tables.html</a></p>
+</div>
+</div>
+</section>
+<section id="sec-md-images" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="sec-md-images"><span class="header-section-number">9.4</span> Bilder</h2>
+<p>Um Bilder einzufügen muss man diese erstmals auf Github hochladen. Dafür wählt man auf Github.com den “Parent Folder” des Dokuments, wo das Bild hin soll und dort dann <em>Add file &gt; Upload file</em>. Nun kann man das Bild folgendermasen einfügen:</p>
+<ul>
+<li>Nur Bild: <code>![](bild.jpg)</code></li>
+<li>Bild mit Bildunterschrift: <code>![Hier kommt die Bildunterschrift ](bild.jpg)</code></li>
+<li>Bild mit Querverweis: <code>![Bildunterschrift](bild.jpg){#fig-test}</code></li>
+</ul>
+<pre><code>![Logo der ZHAW](zhaw_lsfm_iunr_blau.jpg){#fig-zhaw-logo}</code></pre>
+<p>Wird dann zu:</p>
+<div id="fig-zhaw-logo" class="quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-zhaw-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="zhaw_lsfm_iunr_blau.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-zhaw-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;9.1: Logo der ZHAW
+</figcaption>
+</figure>
+</div>
+<p>Genau wie auf Tabellen verweist man folgendermasssen auf Bilder im Text:</p>
+<ul>
+<li><code>@fig-zhaw-logo</code> wird zu</li>
+<li><a href="#fig-zhaw-logo" class="quarto-xref">Abbildung&nbsp;<span>9.1</span></a></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zum einfügen von Bildern: <a href="https://quarto.org/docs/authoring/figures.html" class="uri">https://quarto.org/docs/authoring/figures.html</a></p>
+</div>
+</div>
+</section>
+<section id="hervorhebungen-kästchen" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="hervorhebungen-kästchen"><span class="header-section-number">9.5</span> Hervorhebungen (Kästchen)</h2>
+<p>Die ganze Hinweis-kästchen in diesem Dokument werden mit folgendem Syntax erstellt:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Mehr zu diesen sogenannten *Callout Blocks*: <span class="ot">&lt;https://quarto.org/docs/authoring/callouts.html&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dies wir dann zu:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zu diesen sogenannten <em>Callout Blocks</em>: <a href="https://quarto.org/docs/authoring/callouts.html" class="uri">https://quarto.org/docs/authoring/callouts.html</a></p>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -655,11 +884,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./05-faq.html" class="pagination-link  aria-label=" &lt;span="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAQ</span></span>
+      <a href="./02-projekt.html" class="pagination-link  aria-label=" &lt;span="" aufsetzen&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./03-vorschau-erstellen.html" class="pagination-link" aria-label="<span class='chapter-number'>10</span>&nbsp; <span class='chapter-title'>Vorschau erstellen</span>">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

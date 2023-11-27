@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fit mit Markdown - References</title>
+<title>Fit mit Markdown - 10&nbsp; Vorschau erstellen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./05-faq.html" rel="prev">
+<link href="./03-publish.html" rel="next">
+<link href="./03-qmd-editieren.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -98,7 +80,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-vorschau-erstellen.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -185,7 +167,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-vorschau-erstellen.html" class="sidebar-item-text sidebar-link">
+  <a href="./03-vorschau-erstellen.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span></a>
   </div>
 </li>
@@ -215,7 +197,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./06-references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -232,7 +214,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></h1>
 </div>
 
 
@@ -249,14 +231,19 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-chacon2014" class="csl-entry" role="listitem">
-Chacon, Scott, and Ben Straub. 2014. <em>Pro Git</em>. 2nd Edition.
-Apress. <a href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a>.
+<p>Wir empfehlen, dass ihr beim Editieren von Quarto Files immer eine Live Vorschau <em>in html</em> offen habt. Auch dann, wenn ihr als Output pdf gewählt habt. Der Grund dafür ist, dass HTML viel schneller kompiliert wird als PDF.</p>
+<p>Um eine Vorschau zu erstellen empfehlen wir, im Terminal den Befehl <code>quarto preview</code> auszuführen. Dieser Befehl erstellt eine Vorschau in html und öffnet diese in eurem Browser.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div id="ref-bryan2017" class="csl-entry" role="listitem">
-Jenny Bryan, Jim Heister. 2017. <em><span class="nocase">Let<span>’</span>s Git started <span><span class="math inline">|</span></span> Happy Git and GitHub for the
-useR</span></em>. <a href="https://happygitwithr.com">https://happygitwithr.com</a>.
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Auf gewissen Windows Versionen muss man den Befehl <code>quarto</code> mit <code>quarto.cmd</code> oder <code>quarto.exe</code> ersetzen. Versuche es zuerst mit quarto, wenn das nicht klappt versuche die erwähnten Varianten (siehe <a href="https://community.rstudio.com/t/bash-quarto-command-not-found/144187/2">hier</a>).</p>
 </div>
 </div>
 
@@ -655,11 +642,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./05-faq.html" class="pagination-link  aria-label=" &lt;span="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAQ</span></span>
+      <a href="./03-qmd-editieren.html" class="pagination-link  aria-label=" &lt;span="" editieren&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./03-publish.html" class="pagination-link" aria-label="<span class='chapter-number'>11</span>&nbsp; <span class='chapter-title'>Änderungen veröffentlichen</span>">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Änderungen veröffentlichen</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

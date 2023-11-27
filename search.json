@@ -14,139 +14,269 @@
     "href": "index.html#wie-funktioniert-quarto",
     "title": "Fit mit Markdown",
     "section": "Wie funktioniert Quarto?",
-    "text": "Wie funktioniert Quarto?\nWie Eingangs erwähnt, funktionieren die verschiedenen Computational Notebook Systeme sehr ähnlich. Um möglichst Konkret zu sein, werden wir uns vor allem auf Quarto in Kombination mit R und den Output Formaten HTML und PDF konzentrieren.\nIn einem Textfile mit der Erweiterung .qmd werden Fliesstext und Code gemischt. Der Fliesstext wird in Markdown geschrieben, der Code in einer beliebigen Programmiersprache. Das R Package knitr führt den Code aus und erstellt ein neues Markdown File wo der Fliesstext und die Resultate des Codes zusammengeführt werden. Dieses File wiederum wird mittels der Software pandoc (welche mit Quarto mitgeliefert wird) in das gewünschte Format konvertiert.\n\n\n\n\n\n\n\nNote\n\n\n\nIn diesem letzten Schritt werden, je nach Output Format, ebenfalls temporäre Files erstellt. Beispielweise wird für die Erstellung eines PDF Files ein LaTeX File erstellt (.tex), welches dann mittel xelatex in ein PDF File konvertiert wird. Allerdings ist Latex zwar mächtig, aber auch sehr komplex. Wir hoffen, dass Latex mittelfristig durch typst ersetzt wird.  HTML ist ja bereits textbasiert, so dass hier kein weiterer Schritt notwendig ist.",
+    "text": "Wie funktioniert Quarto?\nWie Eingangs erwähnt, funktionieren die verschiedenen Computational Notebook Systeme sehr ähnlich. Um möglichst Konkret zu sein, werden wir uns vor allem auf Quarto in Kombination mit R und den Output Formaten HTML und PDF konzentrieren.\nIn einem Textfile mit der Erweiterung .qmd werden Fliesstext und Code gemischt. Der Fliesstext wird in Markdown geschrieben, der Code in einer beliebigen Programmiersprache. Das R Package knitr führt den Code aus und erstellt ein neues Markdown File wo der Fliesstext und die Resultate des Codes zusammengeführt werden. Dieses File wiederum wird mittels der Software pandoc (welche mit Quarto mitgeliefert wird) in das gewünschte Format konvertiert.\n\n\n\n\n\n\n\nHinweis\n\n\n\nIm letzten Schritt werden, je nach Output Format, ebenfalls temporäre Files erstellt. Beispielweise wird für die Erstellung eines PDF Files ein LaTeX File erstellt (.tex), welches dann mittel xelatex in ein PDF File konvertiert wird. Latex ist zwar mächtig, aber auch sehr komplex. Wir hoffen, dass Latex mittelfristig durch typst ersetzt wird, siehe quarto.org.",
     "crumbs": [
       "Einleitung"
     ]
   },
   {
-    "objectID": "01-software.html#r-rstudio-und-git",
-    "href": "01-software.html#r-rstudio-und-git",
-    "title": "1  Software aufsetzen",
-    "section": "1.1 R, RStudio und Git",
-    "text": "1.1 R, RStudio und Git\nDie drei genannten Programme sind zentral, um mit Quarto arbeiten zu können. Allerdings kann man RStudio auch gut durch eine andere IDE oder einerm einfachen Texteditor ersetzen (VSCode, Sublime). Allerdings empfehlen wir dies eher für Fortgeschrittene benutzer.\nDie drei Programme muss man nicht zwingend lokal installieren, es gibt auch Cloud Lösungen, welche alle drei Programme als Dienst anbieten. Eine dieser Dienste ist Posit Cloud. Die ZHAW selbst hat ebenfalls eine RStudio Cloud Lösung für Mitarbeiter und Studierende. Allerdings ist diese zur Zeit des schreibens (Ende 2023) noch im Umbruch und es ist nicht klar, wie diese Lösung in Zukunft aussehen wird. Aktuell ist sie noch unter https://statistik-ide.zhaw.ch/ erreichbar.\nWer hingegen Lokal auf seinem eingenen PC arbeiten will, muss eine aktuell version von R, RStudio und Git installieren. Siehe dazu folgende Anleitungen von Jenny Bryan (2017):\n\nhappygitwithr: Install or upgrade R and RStudio\nhappygitwithr: Install Git",
+    "objectID": "index.html#setup",
+    "href": "index.html#setup",
+    "title": "Fit mit Markdown",
+    "section": "Setup",
+    "text": "Setup\nEs gibt eine unendliche Anzahl von verschiedenen möglichen Setups denkbar. Hier ein paar Beispiele, die wir an der ZHAW nutzen und empfehlen:\n\nEditor: RStudio, VSCode oder JupyterLab\nInstallation:\n\nLokal: Via Software Center oder interim Admin\nCloud: Lösungen gibt es für RStudio (siehe Kapitel 2.1), VSCode (siehe Kapitel 2.2) und für JupyterLab (siehe Kapitel 2.3)\n\nProgrammiersprache: R oder Python",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Software aufsetzen</span>"
+      "Einleitung"
     ]
   },
   {
-    "objectID": "01-software.html#rstudio-konfigurieren",
-    "href": "01-software.html#rstudio-konfigurieren",
-    "title": "1  Software aufsetzen",
-    "section": "1.2 RStudio Konfigurieren",
-    "text": "1.2 RStudio Konfigurieren\nWir empfehlen folgende Konfiguration in RStudio (Tools → Global Options):\n\n\n\n\n\n\n\n\nRMarkdown\nShow document outline by default\nchecked1\n\n\nSoft-wrap R Markdown files\nchecked2\n\n\nShow in document outline\nSections Only3\n\n\nShow output preview in\nWindow4\n\n\nShow equation and image previews\nIn a popup\n\n\nEvaluate chunks in directory\nDocument\n\n\nCode\nDefault Text Encoding\nUTF-8",
+    "objectID": "01-r-rstudio-installieren.html#r-installieren-updaten",
+    "href": "01-r-rstudio-installieren.html#r-installieren-updaten",
+    "title": "1  R / RStudio",
+    "section": "1.1 R installieren / updaten",
+    "text": "1.1 R installieren / updaten\nWenn Sie R noch nicht installiert haben, können Sie dies jetzt tun, indem Sie die neueste Version von CRAN herunterladen. Wenn Sie R bereits installiert haben, überprüfen Sie Ihre Version von R, indem Sie RStudio öffnen und den folgenden Befehl in die Konsole eingeben.\n\nR.version.string\n\n[1] \"R version 4.3.1 (2023-06-16)\"\n\n\nDies gibt die Versionsnummer Ihrer R-Installation zurück, wobei die erste Ziffer (4) die Nummer der Hauptversion, die zweite Ziffer (3) die Unterversion und die letzte Ziffer (1) die Patch-Version angibt. Als generelle Faustregel gilt, dass Sie R aktualisieren sollten, wenn Sie\n\nnicht die aktuelle Hauptversion haben oder\nzwei (oder mehr) Versionen hinter der aktuellen Minor-Version zurückbleiben\n\nZum Zeitpunkt des Schreibens (November, 2023) ist die aktuelle R Version 4.3.2 (freigegeben am 31.10.2023, siehe cran.r-project.org). Ihre Installation sollte daher nicht älter sein als 4.2.0. Falls doch, sollten R aktualisiert werden (siehe diese Anleitung zur Aktualisierung von R)",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Software aufsetzen</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>R / RStudio</span>"
     ]
   },
   {
-    "objectID": "01-software.html#git-konfigurieren",
-    "href": "01-software.html#git-konfigurieren",
-    "title": "1  Software aufsetzen",
-    "section": "1.3 Git konfigurieren",
-    "text": "1.3 Git konfigurieren\n\n1.3.1 Email / Benutzername\nUm git benutzen zu können, muss man Benutzernamen und Mailadresse festlegen. Allenfalls habt ihr das schon gemacht. Wenn folgende Befehle (im Terminal!) euren Nutzernamen / Mailadresse anzeigen, könnt ihr diesen Schritt überspringen:\ngit config --global user.email\ngit config --global user.name\nFalls die obigen Befehle nichts ausgeben, müsst ihr euren Namen und eure Mailadresse noch festlegen. Dabei ist es wichtig, dass ihr die gleiche Mailadresse verwendet, wie ihr sie auch für GitHub angegeben habt. Um euren Namen und eure Mailadresse festzulegen, führt folgende Befehle (wieder im Terminal) aus:\n1git config --global user.name \"Jane Doe\"\n2git config --global user.email \"jane@example.com\"\n3git config --global --list\n\n1\n\nErsetzt Jane Doe durch euren Namen\n\n2\n\nNutzt wenn möglich eure ZHAW Mailadresse\n\n3\n\nZeigt die Konfiguration an\n\n\n\n\n\n\n\n\nVerschiedene Git Server oder Accounts\n\n\n\nJetzt wird es ein bisschen haarig: github.com ist nur eine von vielen Möglichkeiten, das lokale git-Repo mit einem Server zu Synchronisieren. Weitere Möglichkeiten sind z.B. gitlab.com oder bitbucket.com, oder github.zhaw.ch. Für Lehre benutzen und empfehlen wir github.com, für Forschung github.zhaw.ch. Wenn ihr verschiedene git-Servers benutzt oder auf github.com verschiedene Accounts habt, müsst ihr entweder überall die gleiche Mailadresse verwenden, oder user.email für jedes lokale Repo separat festlegen.\nDafür müsst ihr folgende Befehle im Terminal ausführen:\ngit config user.name \"Jane Doe\"\ngit config user.email \"jane@example.com\"\ngit config --list\nWir empfehlen jedoch, insbesondere für Anfänger, überall eure ZHAW-Mailadresse zu verwenden. Tipp: Ihr könnt auf github.com auch mehrere Mailadressen hinterlegen.\n\n\nWeitere Informationen in Jenny Bryan (2017): Introduce yourself to Git.\n\n\n1.3.2 Authentifizierung\nAls nächstes müssen wir das lokale Git mit GitHub verbinden und euren Computer dazu berechtigen, Code in euer GitHub repository zu pushen. Für diesen Schritt gibt es zwei mögliche Technologien: HTTPS und SSH. Jenny Bryan (2017) empfiehlt für Anfänger, HTTPS zu nutzen, und an diese Empfehlung halten wir uns auch.\nWie ihr diesen Schritt macht, ist in Jenny Bryan (2017) ebenfalls gut beschrieben: happygitwithr - Cache credentials for HTTPS.\n\n\n\n\nJenny Bryan, Jim Heister. 2017. Let’s Git started \\(\\vert\\) Happy Git and GitHub for the useR. https://happygitwithr.com.",
+    "objectID": "01-r-rstudio-installieren.html#rstudio-installieren-updaten",
+    "href": "01-r-rstudio-installieren.html#rstudio-installieren-updaten",
+    "title": "1  R / RStudio",
+    "section": "1.2 RStudio installieren / updaten",
+    "text": "1.2 RStudio installieren / updaten\nRStudio ist die IDE (integrierte Entwicklungsumgebung), die wir in unserem Kurs verwenden, um mit R zu arbeiten. Es gibt gute Alternativen, die Sie verwenden können, RStudio scheint einfach [die beliebteste Wahl] zu sein (https://twitter.com/mdancho84/status/1502237075550392323). Wenn Sie Ihre eigene IDE verwenden möchten, können Sie das gerne tun. Wir empfehlen dies jedoch nicht, wenn Sie ein Anfänger sind.\nWir empfehlen, RStudio vor dem Kurs auf die neueste Version zu aktualisieren: Überprüfen Sie, ob dies der Fall ist, indem Sie auf help &gt; check for updates klicken.\nWeitere Infos dazu findet ihr in Jenny Bryan (2017): Install or upgrade R and RStudio\n\n\n\n\n\n\nWichtig\n\n\n\nFalls keine neue Version von RStudio installiert ist, fehlt die Software quarto, welche manuell installiert werden muss, siehe dazu diese Anleitung.\n\n\n\n\n\n\nJenny Bryan, Jim Heister. 2017. Let’s Git started \\(\\vert\\) Happy Git and GitHub for the useR. https://happygitwithr.com.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Software aufsetzen</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>R / RStudio</span>"
+    ]
+  },
+  {
+    "objectID": "01-cloud-umgebungen.html#sec-cloud-rstudio",
+    "href": "01-cloud-umgebungen.html#sec-cloud-rstudio",
+    "title": "2  Cloud Umgebungen",
+    "section": "2.1 RStudio",
+    "text": "2.1 RStudio\nDie ZHAW selbst hat ebenfalls eine RStudio Cloud Lösung für Mitarbeiter und Studierende. Allerdings ist diese zur Zeit des schreibens (Ende 2023) noch im Umbruch und es ist nicht klar, wie diese Lösung in Zukunft aussehen wird. Aktuell ist sie noch unter https://statistik-ide.zhaw.ch/ erreichbar.\n\nZHAW Posit Workbench\nposit.cloud\nRenku",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Cloud Umgebungen</span>"
+    ]
+  },
+  {
+    "objectID": "01-cloud-umgebungen.html#sec-cloud-vscode",
+    "href": "01-cloud-umgebungen.html#sec-cloud-vscode",
+    "title": "2  Cloud Umgebungen",
+    "section": "2.2 VSCode",
+    "text": "2.2 VSCode\n\nZHAW Posit Workbench\nCodespaces",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Cloud Umgebungen</span>"
+    ]
+  },
+  {
+    "objectID": "01-cloud-umgebungen.html#sec-cloud-jupyterlab",
+    "href": "01-cloud-umgebungen.html#sec-cloud-jupyterlab",
+    "title": "2  Cloud Umgebungen",
+    "section": "2.3 JupyterLab",
+    "text": "2.3 JupyterLab\n\nZHAW Posit Workbench\nRenku\nGoogle Colab",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Cloud Umgebungen</span>"
+    ]
+  },
+  {
+    "objectID": "01-rstudio-konfigurieren.html",
+    "href": "01-rstudio-konfigurieren.html",
+    "title": "3  RStudio konfigurieren",
+    "section": "",
+    "text": "Wir empfehlen folgende Konfiguration in RStudio (Tools → Global Options):\n\n\n\n\n\n\n\n\nGeneral\n(Advanced) User Interface Language\nEnglish\n\n\nRMarkdown\nShow document outline by default\nchecked1\n\n\nSoft-wrap R Markdown files\nchecked2\n\n\nShow in document outline\nSections Only3\n\n\nShow output preview in\nWindow4\n\n\nShow equation and image previews\nIn a popup\n\n\nEvaluate chunks in directory\nDocument\n\n\nShow output inline for all markdown documents\nunchecked\n\n\nCode\n(Saving) Default Text Encoding\nUTF-8\n\n\n\n\n\n\n\n\nStellt ein Inhaltsverzeichnis rechts von .Qmd files dar↩︎\nmacht autmatische Zeilenumbrüche bei .Qmd files↩︎\nzeigt nur “Sections” im Inhaltsverzeichnis↩︎\nbeim kopilieren von Qmd Files wird im Anschluss ein Popup mit dem Resultat dargestellt↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RStudio konfigurieren</span>"
+    ]
+  },
+  {
+    "objectID": "01-git-installation.html",
+    "href": "01-git-installation.html",
+    "title": "4  Git installieren",
+    "section": "",
+    "text": "Git ist eine Software zur Verfolgung von Änderungen in Textdateien (z. B. R-Skripten). Sie wird sowohl in der Softwareindustrie als auch im Bereich der Datenwissenschaft häufig eingesetzt. In diesem Kurs werden wir die grundlegenden Funktionen von Git kennenlernen und es mit dem Online-Portal Github kombinieren.\nDer nächste Schritt ist daher die Installation von Git. Es gibt verschiedene Git-Installer zur Auswahl, wir empfehlen die folgenden:\n\nWindows:\n\nWir empfehlen die Installation von Git für Windows, auch bekannt als msysgit oder “Git Bash”.\nWählen Sie bei der Frage “Anpassen der PATH-Umgebung” (Adjusting your PATH environment) die Option “Git von der Kommandozeile und auch von Drittanbieter-Software” (Git from the command line and also from 3rd-party software).\nRStudio bevorzugt die Installation von Git unter C:/Programme/Git, wir empfehlen, dieser Konvention zu folgen.\nAnsonsten halten wir es für sinnvoll, die Standardeinstellungen zu übernehmen\n\nmacOS:\n\nWir empfehlen die Installation der Xcode-Kommandozeilen-Tools (nicht alle Xcode-Tools), die Git enthalten\nGehen Sie zur Shell und geben Sie xcode-select --install ein, um die Kommandozeilenwerkzeuge für Entwickler zu installieren\n\nLinux:\n\nUnter Ubuntu oder Debian Linux: sudo apt-get install git\nUnter Fedora oder RedHat Linux: sudo yum install git\n\n\nEin großer Teil dieses Kapitels wurde von Jenny Bryan (2017) übernommen (Kapitel Install Git). Wenn Sie tiefer in die Verwendung von Git eintauchen wollen, empfehlen wir Ihnen dieses Buch sehr. Für einen noch tieferen Einstieg in Git lesen Sie Chacon und Straub (2014). Beide Bücher sind kostenlos und quelloffen auf happygitwithr.com bzw. git-scm.com/book erhältlich.\n\n\n\n\nChacon, Scott, und Ben Straub. 2014. Pro Git. 2nd Edition. Apress. https://git-scm.com/book/en/v2.\n\n\nJenny Bryan, Jim Heister. 2017. Let’s Git started \\(\\vert\\) Happy Git and GitHub for the useR. https://happygitwithr.com.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Git installieren</span>"
+    ]
+  },
+  {
+    "objectID": "01-github-account.html",
+    "href": "01-github-account.html",
+    "title": "5  GitHub Account erstellen",
+    "section": "",
+    "text": "Die Macht von git kommt vor allem zu tragen, wenn das repo mit einem Git Server Synchronisiert wird. Dazu brauchen wir einen Account bei einem Git-Dienstleister, wie zum Beispiel GitHub.com. Legen Sie dazu ein Github-Konto auf github.com an (das ist natürlich kostenlos). Verwenden Sie die ZHAW E-Mail-Adresse. Der Benutzername ist frei Wählbar. Hier ein paar Vorschläge für die Nahmenswahl:\n\nIhren tatsächlichen Namen einzubauen ist nett, die Leute wollen wissen, mit wem sie es zu tun haben\nWählen Sie einen Namen, den Sie einem Chef ruhig verraten können\nkürzer ist besser als länger\nWählen Sie einen zeitlosen Namen (z. B. nicht den Namen Ihrer Universität)\n\n\n\n\n\n\n\nVerschiedene Git Servers mehrere GitHub Accounts\n\n\n\ngithub.com ist nur eine von vielen Möglichkeiten1, das lokale git-Repo mit einem Server zu Synchronisieren. Für Lehre benutzen und empfehlen wir github.com, für Forschung github.zhaw.ch. Wenn ihr verschiedene git-Servers benutzt oder auf github.com verschiedene Accounts habt, emfehlen wir:\n\nEntweder überall die gleiche Mailadresse (z.B. die ZHAW Mailadresse) zu verwenden oder\ndie ZHAW Mailadresse überall als als sekundäre Mailadresse zu hinterlegen.\n\n\n\n\n\n\n\n\nWeitere Möglichkeiten sind z.B. gitlab.com oder bitbucket.com, oder github.zhaw.ch.↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>GitHub Account erstellen</span>"
+    ]
+  },
+  {
+    "objectID": "01-git-configure.html#benutzername-und-mailadresse",
+    "href": "01-git-configure.html#benutzername-und-mailadresse",
+    "title": "6  Git konfigurieren",
+    "section": "6.1 Benutzername und Mailadresse",
+    "text": "6.1 Benutzername und Mailadresse\nUm git benutzen zu können, muss man Benutzernamen und Mailadresse festlegen. Allenfalls habt ihr das schon gemacht. Wenn folgende Befehle (im Terminal!) euren Nutzernamen / Mailadresse anzeigen, könnt ihr diesen Schritt überspringen:\ngit config --global user.email\ngit config --global user.name\nFalls die obigen Befehle nichts ausgeben, müsst ihr euren Namen und eure Mailadresse noch festlegen. Dabei ist es wichtig, dass ihr die gleiche Mailadresse verwendet, wie ihr sie auch für GitHub angegeben habt. Um euren Namen und eure Mailadresse festzulegen, führt folgende Befehle (wieder im Terminal) aus:\n1git config --global user.name \"Jane Doe\"\n2git config --global user.email \"jane@example.com\"\n3git config --global --list\n\n1\n\nErsetzt Jane Doe durch euren Namen\n\n2\n\nVerwendet eure ZHAW Mailadresse\n\n3\n\nZeigt die Konfiguration an\n\n\nWeitere Informationen in Jenny Bryan (2017): Introduce yourself to Git.\n\n\n\n\nJenny Bryan, Jim Heister. 2017. Let’s Git started \\(\\vert\\) Happy Git and GitHub for the useR. https://happygitwithr.com.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Git konfigurieren</span>"
+    ]
+  },
+  {
+    "objectID": "01-github-authenticate.html",
+    "href": "01-github-authenticate.html",
+    "title": "7  GitHub Authentifizieren",
+    "section": "",
+    "text": "Als nächstes müssen wir das lokale Git mit GitHub verbinden und euren Computer dazu berechtigen, Code in euer GitHub repository zu pushen. Für diesen Schritt gibt es zwei mögliche Technologien: HTTPS und SSH. Jenny Bryan (2017) empfiehlt für Anfänger, HTTPS zu nutzen, und an diese Empfehlung halten wir uns auch.\nErstellen Sie zunächst ein persönliches Zugangs-Token (PAT) auf Github\n\nMelden Sie sich bei github.com an, klicken Sie auf Ihr Benutzerprofil (oben rechts) und dann auf “Einstellungen”.\nWählen Sie Entwicklereinstellungen &gt; Persönliche Zugangstoken &gt; Neues Token generieren (Developer settings &gt; Personal access tokens &gt; Generate new token).\nFügen Sie einen beschreibenden Vermerk hinzu (z.B. https access from my personal laptop)\nWählen Sie den Bereich “Repo”.\nKlicken Sie auf “Token generieren” (Generate token).\nKopieren Sie Ihr neues persönliches Zugriffstoken (in das grüne Feld)\n\nSie werden dieses Token später nicht mehr sehen können.\nWenn Sie es verlieren, können Sie einfach ein neues Token erstellen.\nWenn Sie es speichern möchten, müssen Sie dieses persönliche Zugangs-Token (PAT) wie ein Passwort behandeln. Speichern Sie es nur an einem sicheren Ort (z. B. in einer Passwortverwaltungs-App) und veröffentlichen Sie dieses PAT niemals öffentlich.\n\n\nDann speichern Sie Ihr PAT in Ihrem lokalen Git\n\nInstallieren Sie in R das Paket gitcreds (install.packages(\"gitcreds\"))\nLaden Sie diese Bibliothek (library(\"gitcreds\"))\nRufen Sie die Funktion gitcreds_set() auf.\nBeantworten Sie die Eingabeaufforderung mit Ihrem PAT aus dem letzten Schritt\nPrüfen Sie, ob Sie mit gitcreds_get() einen Berechtigungsnachweis gespeichert haben.\n\nWeitere Informationen findet ihr in Jenny Bryan (2017): Cache credentials for HTTPS.\n\n\n\n\nJenny Bryan, Jim Heister. 2017. Let’s Git started \\(\\vert\\) Happy Git and GitHub for the useR. https://happygitwithr.com.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>GitHub Authentifizieren</span>"
     ]
   },
   {
     "objectID": "02-projekt.html#repo-klonen",
     "href": "02-projekt.html#repo-klonen",
-    "title": "2  Projekt aufsetzen",
-    "section": "2.1 Repo Klonen",
-    "text": "2.1 Repo Klonen\nUm die ganzen *.Qmd Files lokal bearbeiten zu können, muss das Repository geklont werden. Mit RStudio ist dies sehr einfach, siehe dazu folgende Anleitung von Jenny Bryan (2017): happygitwithr: New RStudio Project via RStudio IDE. Als Repo-URL wählt ihr den URL des jeweiligen Repos aus (siehe Table 2.1):\n\n\n\nTable 2.1: Eine Sammlung aus Lehrunterlagen, die wir mit Quarto zur Verfügung stellen. Ggf. muss das Semester angepasst werden\n\n\n\n\n\n\n\n\n\nResearch Methods (Übungen)\nhttps//github.com/ResearchMethods-ZHAW/HS23.git\n\n\nResearch Methods (Stastik)\nhttps//github.com/ResearchMethods-ZHAW/Statistik\n\n\nAngewandte Geoinformatik\nhttps//github.com/modul-AGI/HS23\n\n\nCircular Economy Management\nhttps//github.com/zhaw-data-analysis-and-monitoring/FS24\n\n\nPatterns and Trends in Environmental Data\nhttps//github.com/ComputationalMovementAnalysis/FS22\n\n\nCAS Vegetationanalyse und Feldbotanik\nhttps//github.com/CAS-Vegetationsanalyse-Feldbotanik/HS23\n\n\nRemote Sensing\nhttps//github.com/remote-sensing-zhaw/google-earth-enginge-code\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nJe nach gewählter “Clone”-Methode, muss das GitHub Repo als upstream gesetzt werden. Dafür gibt es mehrere Möglichkeiten. Beispielsweise mit dem folgenden Befehl im Terminal\ngit branch -u origin/main\n\n\nNun solltet ihr fast das ganze Repo lokal auf eurem Computer haben und die einzelnen Files bearbeiten können.",
+    "title": "8  Projekt aufsetzen",
+    "section": "8.1 Repo Klonen",
+    "text": "8.1 Repo Klonen\nUm *.Qmd Files bearbeiten zu können, muss das Repository geklont werden. Mit RStudio ist dies sehr einfach, siehe dazu folgende Anleitung von Jenny Bryan (2017): happygitwithr: New RStudio Project via RStudio IDE. Als Repo-URL wählt ihr den URL des jeweiligen Repos aus (siehe Tabelle 8.1):\n\n\n\n\nTabelle 8.1: Eine Sammlung aus Lehrunterlagen, die wir mit Quarto zur Verfügung stellen. Ggf. muss das Semester angepasst werden\n\n\n\n\n\n\n\n\n\nResearch Methods (Übungen)\nhttps//github.com/ResearchMethods-ZHAW/HS23\n\n\nResearch Methods (Stastik)\nhttps//github.com/ResearchMethods-ZHAW/Statistik\n\n\nAngewandte Geoinformatik\nhttps//github.com/modul-AGI/HS23\n\n\nCircular Economy Management\nhttps//github.com/zhaw-data-analysis-and-monitoring/FS24\n\n\nPatterns and Trends in Environmental Data\nhttps//github.com/ComputationalMovementAnalysis/FS22\n\n\nCAS Vegetationanalyse und Feldbotanik\nhttps//github.com/CAS-Vegetationsanalyse-Feldbotanik/HS23\n\n\nRemote Sensing\nhttps//github.com/remote-sensing-zhaw/google-earth-enginge-code\n\n\n\n\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nJe nach gewählter “Clone”-Methode, muss das GitHub Repo als upstream gesetzt werden. Dafür gibt es mehrere Möglichkeiten. Beispielsweise mit dem folgenden Befehl im Terminal\ngit branch -u origin/main\n\n\nNun solltet ihr fast das ganze Repo lokal auf eurem Computer haben und die einzelnen Files bearbeiten können.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Projekt aufsetzen</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Projekt aufsetzen</span>"
     ]
   },
   {
     "objectID": "02-projekt.html#daten-und-code",
     "href": "02-projekt.html#daten-und-code",
-    "title": "2  Projekt aufsetzen",
-    "section": "2.2 Daten und Code",
-    "text": "2.2 Daten und Code\nTypischerweise braucht der R-Code Daten, um diese zu Analysieren und Visualisieren. Bei wenigen, kleinen Datensätzen und seltenen Änderungen können diese Daten direkt ins GitHub Repo eingebaut werden. Sind es jedoch grössere Datensätze oder Datensätze die sich häufig ändern, dann ist es besser, diese separat zu verwalten. Im Modul Research Methods haben die Datensätze aber dazu geführt, dass das entsprechende Repo von Jahr zu Jahr übermässig an Grösse zugelegt hat und das Repo mehrere 100 MB gross wurde. Aus diesem Grund verwalten wir in diesem Modul die Datensätze in einem separatem Repo. Dieses Repo wird als sogeanntes submodule in das jeweilige Modul-Repo eingebunden.\nEin weiterer Grund, Datensätze in einem separaten Repo zu führen ist, wenn der Quellcode der Unterlagen öffentlich sein darf (und soll), die Datensätze aber nicht.\nFalls das Repo mit einem Submodule aufgesetzt wurde, dann muss dieses noch initialisiert werden. Dazu braucht es noch folgenden Befehl im Terminal:\ngit submodule update --init --recursive\n\n\n\n\nJenny Bryan, Jim Heister. 2017. Let’s Git started \\(\\vert\\) Happy Git and GitHub for the useR. https://happygitwithr.com.",
+    "title": "8  Projekt aufsetzen",
+    "section": "8.2 Daten und Code",
+    "text": "8.2 Daten und Code\nTypischerweise braucht der R-Code Daten, um diese zu Analysieren und Visualisieren. Bei wenigen, kleinen Datensätzen und seltenen Änderungen können diese Daten direkt ins GitHub Repo eingebaut werden. Sind es jedoch grössere Datensätze oder Datensätze die sich häufig ändern, dann ist es besser, diese separat zu verwalten. Im Modul Research Methods haben die Datensätze aber dazu geführt, dass das entsprechende Repo von Jahr zu Jahr übermässig an Grösse zugelegt hat und das Repo mehrere 100 MB gross wurde. Aus diesem Grund verwalten wir in diesem Modul die Datensätze in einem separatem Repo. Dieses Repo wird als sogeanntes submodule in das jeweilige Modul-Repo eingebunden.\nEin weiterer Grund, Datensätze in einem separaten Repo zu führen ist, wenn der Quellcode der Unterlagen öffentlich sein darf (und soll), die Datensätze aber nicht.\nFalls das Repo mit einem Submodule aufgesetzt wurde, dann muss dieses noch initialisiert werden. Dazu braucht es noch folgenden Befehl im Terminal:\ngit submodule update --init --recursive\n\n\n\n\nJenny Bryan, Jim Heister. 2017. Let’s Git started \\(\\vert\\) Happy Git and GitHub for the useR. https://happygitwithr.com.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Projekt aufsetzen</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Projekt aufsetzen</span>"
     ]
   },
   {
-    "objectID": "03-editieren.html#qmd-erstellen",
-    "href": "03-editieren.html#qmd-erstellen",
-    "title": "3  Inhalte Editieren und veröffentlichen",
-    "section": "3.1 Qmd erstellen",
-    "text": "3.1 Qmd erstellen\nDie meisten Inhalte exisitieren bereits und ihr müsst sie nur noch anpassen. Falls ihr aber ein neues .Qmd File erstellen möchtet, müsst ihr einen Unterordner in einem der Ordner erstellen.",
+    "objectID": "03-qmd-editieren.html#text",
+    "href": "03-qmd-editieren.html#text",
+    "title": "9  Qmd editieren",
+    "section": "9.1 Text",
+    "text": "9.1 Text\n\nKursiv: Wörter, die mit * umgeben werden, sind Kursiv: *kursiv* wird zu kursiv\nFett: Wörter die mit doppelten * umgeben werden, sind Fett: **fett** wird zu fett\nHyperlinks: Eine hyperlink wird folgenermassen erstellt:\n\n[ZHAW Website](https://www.zhaw.ch) wird zu ZHAW Website\n&lt;https://www.zhaw.ch&gt; wird zu https://www.zhaw.ch\n\nÜberschriften werden mit vorangestelltem # erstellt\n\nKapitel: # Programmieren I\nUnterkapitel: ## Komplexe Datentypen\nUnter-Unterkapitel: ### Integer und Floats\n… usw. (bis Stufe 6)\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nMehr zum Markdown Syntax: https://quarto.org/docs/authoring/markdown-basics.html",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Inhalte Editieren und veröffentlichen</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Qmd editieren</span>"
     ]
   },
   {
-    "objectID": "03-editieren.html#qmd-editieren",
-    "href": "03-editieren.html#qmd-editieren",
-    "title": "3  Inhalte Editieren und veröffentlichen",
-    "section": "3.2 Qmd editieren",
-    "text": "3.2 Qmd editieren\nUm Inhalte zu editieren, öffnet ihr das entsprechende .Qmd file in einem der Ordner prepro, infovis, rauman usw.. Ihr könnt dieses File wie ein reguläres, eigenständiges .Qmd File handhaben. Wichtig: Alle Pfade im Dokument sind relativ zum Project zu verstehen: Das Working directory ist der Project folder!!.",
+    "objectID": "03-qmd-editieren.html#sec-querverweise",
+    "href": "03-qmd-editieren.html#sec-querverweise",
+    "title": "9  Qmd editieren",
+    "section": "9.2 Querverweise",
+    "text": "9.2 Querverweise\nUm im Text einen Querverweis auf ein Kapitel zu machen, müsst ihr diesem Zuerst eine eindeutige “ID” geben. Zum Beispiel sieht der Titel dieses Kapitels folgendermassen aus:\n## Querverweise {#sec-querverweise}\nNun kann ich auf dieses Kapitel mit @sec-querverweise verweisen.\n\n@sec-querverweise wird zu\nKapitel 9.2\n\nDas Verweisen funktioniert aber nur auf Nummerierte Kapitel und deren Unterkapitel. Wichtig ist auch, das ein sec- vorangestellt wird. Dieses sec- kommuniziert Quarto, dass es sich bei der Referenz um einen Kapitelverweis handelt. Bilder werden mit fig- referenziert und Tabellen mit tbl-. Mehr dazu später, in Kapitel 9.3 und Kapitel 9.4.\n\n\n\n\n\n\nHinweis\n\n\n\nMehr zu Querverweisen: https://quarto.org/docs/authoring/cross-references.html",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Inhalte Editieren und veröffentlichen</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Qmd editieren</span>"
     ]
   },
   {
-    "objectID": "03-editieren.html#qmd-kompilieren-vorschau",
-    "href": "03-editieren.html#qmd-kompilieren-vorschau",
-    "title": "3  Inhalte Editieren und veröffentlichen",
-    "section": "3.3 Qmd Kompilieren / Vorschau",
-    "text": "3.3 Qmd Kompilieren / Vorschau\nStatt auf den Preview button in RStudio zu clicken empfehlen wir, quarto von der Konsole (Terminal) aus zu bedienen. quarto render kompiliert das jeweilige File / Projekt in html (oder pdf). Sehr praktisch ist aber quarto preview, welches zusätzlich zum rendern erstellt einen “Webserver” zur Verfügung stellt, wo Änderungen an den qmd Files detektiert und live ge-updated werden.\nHinweis: Auf gewissen Windows Versionen muss man den Befehl quarto mit quarto.cmd oder quarto.exe ersetzen. Versuche es zuerst mit quarto, wenn das nicht klappt versuche die erwähnten Varianten (siehe hier).",
+    "objectID": "03-qmd-editieren.html#sec-md-tables",
+    "href": "03-qmd-editieren.html#sec-md-tables",
+    "title": "9  Qmd editieren",
+    "section": "9.3 Tabellen",
+    "text": "9.3 Tabellen\nTabellen werden ebenfalls im Markdown-Syntax erstellt, und zwar folgendermassen:\n| BMI         | Nutritional status       | \n|:------------|:-------------------------|\n| Below 18.5  | Underweight              |\n| 18.5–24.9   | Normal weight            |\n| 25.0–29.9   | Pre-obesity              |\n| 30.0–34.9   | Obesity class I          |\n| 35.0–39.9   | Obesity class II         |\n| Above 40    | Obesity class III        |\n\n: WHO Nutritional status {#tbl-beispielstabelle}\nDiese obige Markdown tabelle wird in eine html Tabelle umgewandelt. Diese Markdown Tabelle muss nicht von hand erstellt werden, auf tablesgenerator.com können bestehende Tabellen in den Markdown Syntax konvertiert werden.\n\n\n\nTabelle 9.1: WHO Nutritional status\n\n\n\n\n\nBMI\nNutritional status\n\n\n\n\nBelow 18.5\nUnderweight\n\n\n18.5–24.9\nNormal weight\n\n\n25.0–29.9\nPre-obesity\n\n\n30.0–34.9\nObesity class I\n\n\n35.0–39.9\nObesity class II\n\n\nAbove 40\nObesity class III\n\n\n\n\n\n\nBeachtet, dass man eine Tabellenüberschrift nach einen : anbringen kann. Nach der Tabellenüberschrift kann man einen “Key” erstellen, mit dem man diese Tabelle referenzieren kann. Der “Key” muss\n\nnach der Tabellenüberschrift angebracht werden (mit leerschlag!)\nsich in geschweiften Klammern befinden\nmit #tbl- beginnen\n\nNun kann ich mich im Text auf diese Tabelle beziehen.\n\nsiehe @tbl-beispielstabelle wird zu:\nsiehe Tabelle 9.1\n\n\n\n\n\n\n\nHinweis\n\n\n\nMehr zum einfügen von Tabellen: https://quarto.org/docs/authoring/tables.html",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Inhalte Editieren und veröffentlichen</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Qmd editieren</span>"
     ]
   },
   {
-    "objectID": "03-editieren.html#änderungen-veröffentlichen",
-    "href": "03-editieren.html#änderungen-veröffentlichen",
-    "title": "3  Inhalte Editieren und veröffentlichen",
-    "section": "3.4 Änderungen veröffentlichen",
-    "text": "3.4 Änderungen veröffentlichen\nHier müssen wir unterscheiden zwischen den Änderungen den Source Files (Qmd) und Änderungen an den Output Files (pdf)\nUm die Änderungen an den Source Files zu veröffentlichen müsst ihr diese via git auf das Repository “pushen”. Vorher aber müsst ihr die Änderungen stage-en und commit-en. Ich empfehle, dass ihr zumindest zu beginn mit dem RStudio “Git” Fenster arbeitet.\n\nstage: Setzen eines Häckchens bei “Staged” (im Terminal mit git add .)\ncommit: Klick auf den Button “commit” (im Terminal mit git commit -m \"deine message\")\npull: Klick auf den Button “Pull” (im Terminal mit git pull)\npush: Click auf den button “Push” (im Terminal mit git push)\n\n\nUm Änderungen an den Output Files zu Veröffentlichen muss (TBD)\nquarto publish gh-pages --no-prompt",
+    "objectID": "03-qmd-editieren.html#sec-md-images",
+    "href": "03-qmd-editieren.html#sec-md-images",
+    "title": "9  Qmd editieren",
+    "section": "9.4 Bilder",
+    "text": "9.4 Bilder\nUm Bilder einzufügen muss man diese erstmals auf Github hochladen. Dafür wählt man auf Github.com den “Parent Folder” des Dokuments, wo das Bild hin soll und dort dann Add file &gt; Upload file. Nun kann man das Bild folgendermasen einfügen:\n\nNur Bild: ![](bild.jpg)\nBild mit Bildunterschrift: ![Hier kommt die Bildunterschrift ](bild.jpg)\nBild mit Querverweis: ![Bildunterschrift](bild.jpg){#fig-test}\n\n![Logo der ZHAW](zhaw_lsfm_iunr_blau.jpg){#fig-zhaw-logo}\nWird dann zu:\n\n\n\n\n\n\nAbbildung 9.1: Logo der ZHAW\n\n\n\nGenau wie auf Tabellen verweist man folgendermasssen auf Bilder im Text:\n\n@fig-zhaw-logo wird zu\nAbbildung 9.1\n\n\n\n\n\n\n\nHinweis\n\n\n\nMehr zum einfügen von Bildern: https://quarto.org/docs/authoring/figures.html",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Inhalte Editieren und veröffentlichen</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Qmd editieren</span>"
+    ]
+  },
+  {
+    "objectID": "03-qmd-editieren.html#hervorhebungen-kästchen",
+    "href": "03-qmd-editieren.html#hervorhebungen-kästchen",
+    "title": "9  Qmd editieren",
+    "section": "9.5 Hervorhebungen (Kästchen)",
+    "text": "9.5 Hervorhebungen (Kästchen)\nDie ganze Hinweis-kästchen in diesem Dokument werden mit folgendem Syntax erstellt:\n:::{.callout-note}\nMehr zu diesen sogenannten *Callout Blocks*: &lt;https://quarto.org/docs/authoring/callouts.html&gt;\n:::\nDies wir dann zu:\n\n\n\n\n\n\nHinweis\n\n\n\nMehr zu diesen sogenannten Callout Blocks: https://quarto.org/docs/authoring/callouts.html",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Qmd editieren</span>"
+    ]
+  },
+  {
+    "objectID": "03-vorschau-erstellen.html",
+    "href": "03-vorschau-erstellen.html",
+    "title": "10  Vorschau erstellen",
+    "section": "",
+    "text": "Wir empfehlen, dass ihr beim Editieren von Quarto Files immer eine Live Vorschau in html offen habt. Auch dann, wenn ihr als Output pdf gewählt habt. Der Grund dafür ist, dass HTML viel schneller kompiliert wird als PDF.\nUm eine Vorschau zu erstellen empfehlen wir, im Terminal den Befehl quarto preview auszuführen. Dieser Befehl erstellt eine Vorschau in html und öffnet diese in eurem Browser.\n\n\n\n\n\n\nHinweis\n\n\n\nAuf gewissen Windows Versionen muss man den Befehl quarto mit quarto.cmd oder quarto.exe ersetzen. Versuche es zuerst mit quarto, wenn das nicht klappt versuche die erwähnten Varianten (siehe hier).",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Vorschau erstellen</span>"
+    ]
+  },
+  {
+    "objectID": "03-publish.html",
+    "href": "03-publish.html",
+    "title": "11  Änderungen veröffentlichen",
+    "section": "",
+    "text": "Hier müssen wir unterscheiden zwischen den Änderungen den Source Files (Qmd) und Änderungen an den Output Files (pdf)\nUm die Änderungen an den Source Files zu veröffentlichen müsst ihr diese via git auf das Repository “pushen”. Vorher aber müsst ihr die Änderungen stage-en und commit-en. Ich empfehle, dass ihr zumindest zu beginn mit dem RStudio “Git” Fenster arbeitet.\n\nstage: Setzen eines Häckchens bei “Staged” (im Terminal mit git add .)\ncommit: Klick auf den Button “commit” (im Terminal mit git commit -m \"deine message\")\npull: Klick auf den Button “Pull” (im Terminal mit git pull)\npush: Click auf den button “Push” (im Terminal mit git push)\n\nUm Änderungen an den Output Files zu Veröffentlichen muss (TBD)\nquarto publish gh-pages --no-prompt",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Änderungen veröffentlichen</span>"
+    ]
+  },
+  {
+    "objectID": "03-inhalte-erstellen.html",
+    "href": "03-inhalte-erstellen.html",
+    "title": "12  Neue Inhalte hinzufügen",
+    "section": "",
+    "text": "Die meisten Inhalte exisitieren bereits und ihr müsst sie nur noch anpassen. Falls ihr aber ein neues .Qmd File erstellen möchtet, müsst ihr einen Unterordner in einem der Ordner erstellen.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Neue Inhalte hinzufügen</span>"
     ]
   },
   {
     "objectID": "05-faq.html#wie-funktioniert-quarto-wirklich",
     "href": "05-faq.html#wie-funktioniert-quarto-wirklich",
-    "title": "5  FAQ",
-    "section": "5.1 Wie funktioniert Quarto wirklich?",
-    "text": "5.1 Wie funktioniert Quarto wirklich?\nAngenommen, wir haben folgendes Quarto-File:\n\n\n\nindex.qmd\n\n---\nformat: \n    html:\n        keep-md: true\n        minimal: true\n---\n\nFliesstext wird in *Markdown* geschrieben.\n\n```{r}\nSys.Date()\n```\n\n```{r}\nplot(1:10, (1:10)^2)\n```\n\n\nWenn wir den Befehl quarto render ausführen, erstellt knitr ein Markdown file mit dem Namen index.html.md, welches folgendermassen aussieht:\n(keep-md sorgt dafür, dass das Markdown-File nicht gelöscht wird, minimal sorgt dafür, dass das resultierende HTML-File etwas simpler wird)\n\n\n\nindex.html.md\n\n---\nformat: \n    html:\n        keep-md: true\n        minimal: true\n---\n\n\n\nFliesstext wird in *Markdown* geschrieben.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nSys.Date()\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"2023-11-23\"\n```\n\n\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(1:10, (1:10)^2)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\nDer Output aus dem ersten Chunk ist text (das Aktuelle Datum), dieser kann direkt in Markdown eingefügt werden. Der Output aus dem zweiten Chunk ist ein Plot: Dieser wird mit R gerendert, an einem geeigneten Ort abgespeichert und dann in Markdown verlinkt. Die Software pandoc nimmt dann index.html.md und wandelt es in index.html um, welches folgendermassen aussieht:\n\n\n\nindex.html (nur der &lt;body&gt;-Teil)\n\n&lt;body&gt;\n    &lt;p&gt;Fliesstext wird in &lt;em&gt;Markdown&lt;/em&gt; geschrieben.&lt;/p&gt;\n    &lt;div class=\"cell\"&gt;\n        &lt;div class=\"sourceCode cell-code\" id=\"cb1\"&gt;\n            &lt;pre\n                class=\"sourceCode r\"&gt;&lt;code class=\"sourceCode r\"&gt;&lt;span id=\"cb1-1\"&gt;&lt;a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"&gt;&lt;/a&gt;&lt;span class=\"fu\"&gt;Sys.Date&lt;/span&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;\n        &lt;/div&gt;\n        &lt;div class=\"cell-output cell-output-stdout\"&gt;\n            &lt;pre&gt;&lt;code&gt;[1] \"2023-11-23\"&lt;/code&gt;&lt;/pre&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"cell\"&gt;\n        &lt;div class=\"sourceCode cell-code\" id=\"cb3\"&gt;\n            &lt;pre\n                class=\"sourceCode r\"&gt;&lt;code class=\"sourceCode r\"&gt;&lt;span id=\"cb3-1\"&gt;&lt;a href=\"#cb3-1\" aria-hidden=\"true\" tabindex=\"-1\"&gt;&lt;/a&gt;&lt;span class=\"fu\"&gt;plot&lt;/span&gt;(&lt;span class=\"dv\"&gt;1&lt;/span&gt;&lt;span class=\"sc\"&gt;:&lt;/span&gt;&lt;span class=\"dv\"&gt;10&lt;/span&gt;, (&lt;span class=\"dv\"&gt;1&lt;/span&gt;&lt;span class=\"sc\"&gt;:&lt;/span&gt;&lt;span class=\"dv\"&gt;10&lt;/span&gt;)&lt;span class=\"sc\"&gt;^&lt;/span&gt;&lt;span class=\"dv\"&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;\n        &lt;/div&gt;\n        &lt;div class=\"cell-output-display\"&gt;\n            &lt;p&gt;&lt;img src=\"index_files/figure-html/unnamed-chunk-2-1.png\" width=\"672\"&gt;&lt;/p&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/body&gt;\n\n\nWie wir sehen, wird der Text Markdown im HTML-File mit &lt;em&gt; umschlossen, während der Plot mit &lt;img&gt; eingefügt wird.",
+    "title": "14  FAQ",
+    "section": "14.1 Wie funktioniert Quarto wirklich?",
+    "text": "14.1 Wie funktioniert Quarto wirklich?\nAngenommen, wir haben folgendes Quarto-File:\n\n\n\nindex.qmd\n\n---\nformat: \n    html:\n        keep-md: true\n        minimal: true\n---\n\nFliesstext wird in *Markdown* geschrieben.\n\n```{r}\nSys.Date()\n```\n\n```{r}\nplot(1:10, (1:10)^2)\n```\n\n\nWenn wir den Befehl quarto render ausführen, erstellt knitr ein Markdown file mit dem Namen index.html.md, welches folgendermassen aussieht:\n(keep-md sorgt dafür, dass das Markdown-File nicht gelöscht wird, minimal sorgt dafür, dass das resultierende HTML-File etwas simpler wird)\n\n\n\nindex.html.md\n\n---\nformat: \n    html:\n        keep-md: true\n        minimal: true\n---\n\n\n\nFliesstext wird in *Markdown* geschrieben.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nSys.Date()\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"2023-11-23\"\n```\n\n\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(1:10, (1:10)^2)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\nDer Output aus dem ersten Chunk ist text (das Aktuelle Datum), dieser kann direkt in Markdown eingefügt werden. Der Output aus dem zweiten Chunk ist ein Plot: Dieser wird mit R gerendert, an einem geeigneten Ort abgespeichert und dann in Markdown verlinkt. Die Software pandoc nimmt dann index.html.md und wandelt es in index.html um, welches folgendermassen aussieht:\n\n\n\nindex.html (nur der &lt;body&gt;-Teil)\n\n&lt;body&gt;\n    &lt;p&gt;Fliesstext wird in &lt;em&gt;Markdown&lt;/em&gt; geschrieben.&lt;/p&gt;\n    &lt;div class=\"cell\"&gt;\n        &lt;div class=\"sourceCode cell-code\" id=\"cb1\"&gt;\n            &lt;pre\n                class=\"sourceCode r\"&gt;&lt;code class=\"sourceCode r\"&gt;&lt;span id=\"cb1-1\"&gt;&lt;a href=\"#cb1-1\" aria-hidden=\"true\" tabindex=\"-1\"&gt;&lt;/a&gt;&lt;span class=\"fu\"&gt;Sys.Date&lt;/span&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;\n        &lt;/div&gt;\n        &lt;div class=\"cell-output cell-output-stdout\"&gt;\n            &lt;pre&gt;&lt;code&gt;[1] \"2023-11-23\"&lt;/code&gt;&lt;/pre&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"cell\"&gt;\n        &lt;div class=\"sourceCode cell-code\" id=\"cb3\"&gt;\n            &lt;pre\n                class=\"sourceCode r\"&gt;&lt;code class=\"sourceCode r\"&gt;&lt;span id=\"cb3-1\"&gt;&lt;a href=\"#cb3-1\" aria-hidden=\"true\" tabindex=\"-1\"&gt;&lt;/a&gt;&lt;span class=\"fu\"&gt;plot&lt;/span&gt;(&lt;span class=\"dv\"&gt;1&lt;/span&gt;&lt;span class=\"sc\"&gt;:&lt;/span&gt;&lt;span class=\"dv\"&gt;10&lt;/span&gt;, (&lt;span class=\"dv\"&gt;1&lt;/span&gt;&lt;span class=\"sc\"&gt;:&lt;/span&gt;&lt;span class=\"dv\"&gt;10&lt;/span&gt;)&lt;span class=\"sc\"&gt;^&lt;/span&gt;&lt;span class=\"dv\"&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;\n        &lt;/div&gt;\n        &lt;div class=\"cell-output-display\"&gt;\n            &lt;p&gt;&lt;img src=\"index_files/figure-html/unnamed-chunk-2-1.png\" width=\"672\"&gt;&lt;/p&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/body&gt;\n\n\nWie wir sehen, wird der Text Markdown im HTML-File mit &lt;em&gt; umschlossen, während der Plot mit &lt;img&gt; eingefügt wird.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FAQ</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>FAQ</span>"
     ]
   },
   {
     "objectID": "05-faq.html#fehlermeldungen",
     "href": "05-faq.html#fehlermeldungen",
-    "title": "5  FAQ",
-    "section": "5.2 Fehlermeldungen",
-    "text": "5.2 Fehlermeldungen\n\n5.2.1 ERROR: SyntaxError: Unexpected token &lt; in JSON at position 2\nNach ausführen von quarto preview erhalte ich den obigen Fehler. Der output im Terminal sieht folgendermassen aus:\n[54/59] fallstudie_n/1_Vorbemerkung.qmd\n[55/59] fallstudie_n/2_Datenverarbeitung_Uebung.qmd\n[56/59] fallstudie_n/2_Datenverarbeitung_Loesung.qmd\nERROR: SyntaxError: Unexpected token &lt; in JSON at position 2\nIch kann den Fehler beheben, indem ich quarto render das-letzte-qmd-file-vor-der-fehlermeldung.qmd ausführe. In dem obigen Fall also:\nquarto render fallstudie_n/2_Datenverarbeitung_Loesung.qmd\n\n\n5.2.2 error: Your local changes to the following files would be overwritten by merge:\nBei einem git pull kann es zu folgender Fehlermeldung kommen.\nerror: Your local changes to the following files would be overwritten by merge:\n        prepro/Prepro1_Demo.qmd\n        ...\nPlease commit your changes or stash them before you merge.\nAborting\nDies bedeutet, dass das genannte File (bzw. die genannten Files) auf Github in Konfikt stehehen könnten mit dem File (bzw. den Files) bei dir auf der Festplatte. Um allfällige Konflikte zu lösen, müssen die lokalen Änderungen zuerst gestageed und dann commited werden. Anschliessend können die Änderungen von Github heruntergeladen werden.\ngit add \"*.qmd\"                # staged alle Files mit der Endung .qmd\ngit commit -m \"meine message\" \ngit pull                       # lädt die Änderungen von Github herunter",
+    "title": "14  FAQ",
+    "section": "14.2 Fehlermeldungen",
+    "text": "14.2 Fehlermeldungen\n\n14.2.1 ERROR: SyntaxError: Unexpected token &lt; in JSON at position 2\nNach ausführen von quarto preview erhalte ich den obigen Fehler. Der output im Terminal sieht folgendermassen aus:\n[54/59] fallstudie_n/1_Vorbemerkung.qmd\n[55/59] fallstudie_n/2_Datenverarbeitung_Uebung.qmd\n[56/59] fallstudie_n/2_Datenverarbeitung_Loesung.qmd\nERROR: SyntaxError: Unexpected token &lt; in JSON at position 2\nIch kann den Fehler beheben, indem ich quarto render das-letzte-qmd-file-vor-der-fehlermeldung.qmd ausführe. In dem obigen Fall also:\nquarto render fallstudie_n/2_Datenverarbeitung_Loesung.qmd\n\n\n14.2.2 error: Your local changes to the following files would be overwritten by merge:\nBei einem git pull kann es zu folgender Fehlermeldung kommen.\nerror: Your local changes to the following files would be overwritten by merge:\n        prepro/Prepro1_Demo.qmd\n        ...\nPlease commit your changes or stash them before you merge.\nAborting\nDies bedeutet, dass das genannte File (bzw. die genannten Files) auf Github in Konfikt stehehen könnten mit dem File (bzw. den Files) bei dir auf der Festplatte. Um allfällige Konflikte zu lösen, müssen die lokalen Änderungen zuerst gestageed und dann commited werden. Anschliessend können die Änderungen von Github heruntergeladen werden.\ngit add \"*.qmd\"                # staged alle Files mit der Endung .qmd\ngit commit -m \"meine message\" \ngit pull                       # lädt die Änderungen von Github herunter",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FAQ</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>FAQ</span>"
+    ]
+  },
+  {
+    "objectID": "05-faq.html#you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them",
+    "href": "05-faq.html#you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them",
+    "title": "14  FAQ",
+    "section": "14.3 You have divergent branches and need to specify how to reconcile them",
+    "text": "14.3 You have divergent branches and need to specify how to reconcile them\n\ngit pull\nhint: You have divergent branches and need to specify how to reconcile them.\nhint: You can do so by running one of the following commands sometime before\nhint: your next pull:\nhint: \nhint:   git config pull.rebase false  # merge (the default strategy)\nhint:   git config pull.rebase true   # rebase\nhint:   git config pull.ff only       # fast-forward only\nhint: \nhint: You can replace \"git config\" with \"git config --global\" to set a default\nhint: preference for all repositories. You can also pass --rebase, --no-rebase,\nhint: or --ff-only on the command line to override the configured default per\nhint: invocation.",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>FAQ</span>"
     ]
   },
   {
     "objectID": "05-faq.html#wie-löse-ich-einen-merge-conflict",
     "href": "05-faq.html#wie-löse-ich-einen-merge-conflict",
-    "title": "5  FAQ",
-    "section": "5.3 Wie löse ich einen merge-conflict?",
-    "text": "5.3 Wie löse ich einen merge-conflict?\nTBD",
+    "title": "14  FAQ",
+    "section": "14.4 Wie löse ich einen merge-conflict?",
+    "text": "14.4 Wie löse ich einen merge-conflict?\nTBD",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FAQ</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>FAQ</span>"
     ]
   },
   {
     "objectID": "05-faq.html#warum-ist-datasets-ein-separates-git-repo",
     "href": "05-faq.html#warum-ist-datasets-ein-separates-git-repo",
-    "title": "5  FAQ",
-    "section": "5.4 Warum ist datasets ein separates Git-Repo?",
-    "text": "5.4 Warum ist datasets ein separates Git-Repo?\n\nDie Datensätze sind häufig ein paar megabyte gross. In der Vergangenheit haben kleine Änderungen an diesen Files das Repo extrem ge-bloatet (vergrössert)\nDie Datenstäze sind teilweise vertraulich und sollten nicht öffentlich geteilt werden (das entsprechende Repo ist private) → dies sollte sich in Zukunft hoffentlich ändern (OER!)",
+    "title": "14  FAQ",
+    "section": "14.5 Warum ist datasets ein separates Git-Repo?",
+    "text": "14.5 Warum ist datasets ein separates Git-Repo?\n\nDie Datensätze sind häufig ein paar megabyte gross. In der Vergangenheit haben kleine Änderungen an diesen Files das Repo extrem ge-bloatet (vergrössert)\nDie Datenstäze sind teilweise vertraulich und sollten nicht öffentlich geteilt werden (das entsprechende Repo ist private) → dies sollte sich in Zukunft hoffentlich ändern (OER!)",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FAQ</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>FAQ</span>"
     ]
   },
   {
@@ -154,7 +284,7 @@
     "href": "06-references.html",
     "title": "References",
     "section": "",
-    "text": "Jenny Bryan, Jim Heister. 2017. Let’s Git started | Happy Git and GitHub for the\nuseR. https://happygitwithr.com.",
+    "text": "Chacon, Scott, and Ben Straub. 2014. Pro Git. 2nd Edition.\nApress. https://git-scm.com/book/en/v2.\n\n\nJenny Bryan, Jim Heister. 2017. Let’s Git started | Happy Git and GitHub for the\nuseR. https://happygitwithr.com.",
     "crumbs": [
       "References"
     ]

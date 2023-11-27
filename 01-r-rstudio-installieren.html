@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fit mit Markdown - References</title>
+<title>Fit mit Markdown - 1&nbsp; R / RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,10 +20,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -49,7 +84,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./05-faq.html" rel="prev">
+<link href="./01-cloud-umgebungen.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -86,6 +122,8 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -98,7 +136,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-r-rstudio-installieren.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -131,7 +169,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-r-rstudio-installieren.html" class="sidebar-item-text sidebar-link">
+  <a href="./01-r-rstudio-installieren.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></span></a>
   </div>
 </li>
@@ -215,7 +253,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./06-references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -225,14 +263,21 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#r-installieren-updaten" id="toc-r-installieren-updaten" class="nav-link active" data-scroll-target="#r-installieren-updaten"><span class="header-section-number">1.1</span> R installieren / updaten</a></li>
+  <li><a href="#rstudio-installieren-updaten" id="toc-rstudio-installieren-updaten" class="nav-link" data-scroll-target="#rstudio-installieren-updaten"><span class="header-section-number">1.2</span> RStudio installieren / updaten</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></h1>
 </div>
 
 
@@ -249,18 +294,50 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-chacon2014" class="csl-entry" role="listitem">
-Chacon, Scott, and Ben Straub. 2014. <em>Pro Git</em>. 2nd Edition.
-Apress. <a href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a>.
+<p>Diese beiden Programme sind zentral, um mit Quarto arbeiten zu können. Allerdings kann man RStudio auch gut durch eine andere IDE oder einerm einfachen Texteditor ersetzen (VSCode, Sublime). Allerdings empfehlen wir dies eher für Fortgeschrittene benutzer.</p>
+<p>Die Programme muss man nicht zwingend lokal installieren, es gibt auch Cloud Lösungen, siehe dazu <a href="01-cloud-umgebungen.html#sec-cloud-rstudio" class="quarto-xref"><span>Kapitel&nbsp;2.1</span></a>. Wer hingegen Lokal auf seinem eingenen PC arbeiten will, muss eine aktuell version von R, RStudio und Git installieren. Siehe dazu folgende Anleitungen von <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span>:</p>
+<section id="r-installieren-updaten" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="r-installieren-updaten"><span class="header-section-number">1.1</span> R installieren / updaten</h2>
+<p>Wenn Sie R noch nicht installiert haben, können Sie dies jetzt tun, indem Sie die neueste Version von <a href="https://cran.r-project.org/">CRAN</a> herunterladen. Wenn Sie R bereits installiert haben, überprüfen Sie Ihre Version von <code>R</code>, indem Sie RStudio öffnen und den folgenden Befehl in die Konsole eingeben.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>R.version.string</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "R version 4.3.1 (2023-06-16)"</code></pre>
 </div>
+</div>
+<p>Dies gibt die Versionsnummer Ihrer R-Installation zurück, wobei die erste Ziffer (<code>4</code>) die Nummer der <em>Hauptversion</em>, die zweite Ziffer (<code>3</code>) die <em>Unterversion</em> und die letzte Ziffer (<code>1</code>) die <em>Patch-Version</em> angibt. Als generelle Faustregel gilt, dass Sie R aktualisieren sollten, wenn Sie</p>
+<ul>
+<li>nicht die aktuelle <em>Hauptversion</em> haben oder</li>
+<li>zwei (oder mehr) Versionen hinter der aktuellen <em>Minor-Version</em> zurückbleiben</li>
+</ul>
+<p>Zum Zeitpunkt des Schreibens (November, 2023) ist die aktuelle <code>R</code> Version 4.3.2 (freigegeben am 31.10.2023, siehe <a href="https://cran.r-project.org/">cran.r-project.org</a>). Ihre Installation sollte daher nicht älter sein als 4.2.0. Falls doch, sollten R aktualisiert werden (siehe <a href="https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol/">diese Anleitung zur Aktualisierung von R</a>)</p>
+</section>
+<section id="rstudio-installieren-updaten" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="rstudio-installieren-updaten"><span class="header-section-number">1.2</span> RStudio installieren / updaten</h2>
+<p>RStudio ist die IDE (integrierte Entwicklungsumgebung), die wir in unserem Kurs verwenden, um mit R zu arbeiten. Es gibt gute Alternativen, die Sie verwenden können, RStudio scheint einfach [die beliebteste Wahl] zu sein (https://twitter.com/mdancho84/status/1502237075550392323). Wenn Sie Ihre eigene IDE verwenden möchten, können Sie das gerne tun. Wir empfehlen dies jedoch nicht, wenn Sie ein Anfänger sind.</p>
+<p>Wir empfehlen, RStudio vor dem Kurs auf die neueste Version zu aktualisieren: Überprüfen Sie, ob dies der Fall ist, indem Sie auf <em>help &gt; check for updates</em> klicken.</p>
+<p>Weitere Infos dazu findet ihr in <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span>: <a href="https://happygitwithr.com/install-r-rstudio.html">Install or upgrade R and RStudio</a></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Wichtig
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Falls keine neue Version von RStudio installiert ist, fehlt die Software <code>quarto</code>, welche manuell installiert werden muss, siehe dazu <a href="https://quarto.org/docs/get-started/">diese Anleitung</a>.</p>
+</div>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-bryan2017" class="csl-entry" role="listitem">
-Jenny Bryan, Jim Heister. 2017. <em><span class="nocase">Let<span>’</span>s Git started <span><span class="math inline">|</span></span> Happy Git and GitHub for the
-useR</span></em>. <a href="https://happygitwithr.com">https://happygitwithr.com</a>.
+Jenny Bryan, Jim Heister. 2017. <em><span>Let<span>’</span>s Git started <span><span class="math inline">\(\vert\)</span></span> Happy Git and GitHub for the useR</span></em>. <a href="https://happygitwithr.com">https://happygitwithr.com</a>.
 </div>
 </div>
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -655,11 +732,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./05-faq.html" class="pagination-link  aria-label=" &lt;span="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAQ</span></span>
+      <a href="./index.html" class="pagination-link  aria-label=" einleitung"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Einleitung</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./01-cloud-umgebungen.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Cloud Umgebungen</span>">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Cloud Umgebungen</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

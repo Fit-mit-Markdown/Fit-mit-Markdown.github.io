@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.489">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fit mit Markdown - 1&nbsp; Software aufsetzen</title>
+<title>Fit mit Markdown - 10&nbsp; Markdown</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,27 +54,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -84,8 +64,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./02-projekt.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./04-advanced.html" rel="next">
+<link href="./03-editieren.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -109,21 +89,19 @@ div.csl-indent {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -133,11 +111,11 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-software.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Software aufsetzen</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-markdown.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Markdown</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -156,7 +134,7 @@ div.csl-indent {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Suchen"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -169,32 +147,74 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-software.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Software aufsetzen</span></span></a>
+  <a href="./01-r-rstudio-installieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio Installieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-cloud-umgebungen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">RStudio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-rstudio-konfigurieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RStudio konfigurieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-git-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git installieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-github-account.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-git-configure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Git konfigurieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-github-authenticate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">GitHub Authentifizieren</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-projekt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-editieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Inhalte Editieren und veröffentlichen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Inhalte Editieren und veröffentlichen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-markdown.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Markdown</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-advanced.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Fortgeschritten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Fortgeschritten</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -210,16 +230,14 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#r-rstudio-und-git" id="toc-r-rstudio-und-git" class="nav-link active" data-scroll-target="#r-rstudio-und-git"><span class="header-section-number">1.1</span> R, RStudio und Git</a></li>
-  <li><a href="#rstudio-konfigurieren" id="toc-rstudio-konfigurieren" class="nav-link" data-scroll-target="#rstudio-konfigurieren"><span class="header-section-number">1.2</span> RStudio Konfigurieren</a></li>
-  <li><a href="#git-konfigurieren" id="toc-git-konfigurieren" class="nav-link" data-scroll-target="#git-konfigurieren"><span class="header-section-number">1.3</span> Git konfigurieren</a>
-  <ul class="collapse">
-  <li><a href="#email-benutzername" id="toc-email-benutzername" class="nav-link" data-scroll-target="#email-benutzername"><span class="header-section-number">1.3.1</span> Email / Benutzername</a></li>
-  <li><a href="#authentifizierung" id="toc-authentifizierung" class="nav-link" data-scroll-target="#authentifizierung"><span class="header-section-number">1.3.2</span> Authentifizierung</a></li>
-  </ul></li>
+  <li><a href="#text" id="toc-text" class="nav-link active" data-scroll-target="#text"><span class="header-section-number">10.1</span> Text</a></li>
+  <li><a href="#sec-querverweise" id="toc-sec-querverweise" class="nav-link" data-scroll-target="#sec-querverweise"><span class="header-section-number">10.2</span> Querverweise</a></li>
+  <li><a href="#sec-md-tables" id="toc-sec-md-tables" class="nav-link" data-scroll-target="#sec-md-tables"><span class="header-section-number">10.3</span> Tabellen</a></li>
+  <li><a href="#sec-md-images" id="toc-sec-md-images" class="nav-link" data-scroll-target="#sec-md-images"><span class="header-section-number">10.4</span> Bilder</a></li>
+  <li><a href="#hervorhebungen-kästchen" id="toc-hervorhebungen-kästchen" class="nav-link" data-scroll-target="#hervorhebungen-kästchen"><span class="header-section-number">10.5</span> Hervorhebungen (Kästchen)</a></li>
   </ul>
 </nav>
     </div>
@@ -228,7 +246,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Software aufsetzen</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Markdown</span></h1>
 </div>
 
 
@@ -245,126 +263,212 @@ div.csl-indent {
 </header>
 
 
-<section id="r-rstudio-und-git" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="r-rstudio-und-git"><span class="header-section-number">1.1</span> R, RStudio und Git</h2>
-<p>Die drei genannten Programme sind zentral, um mit Quarto arbeiten zu können. Allerdings kann man RStudio auch gut durch eine andere IDE oder einerm einfachen Texteditor ersetzen (VSCode, Sublime). Allerdings empfehlen wir dies eher für Fortgeschrittene benutzer.</p>
-<p>Die drei Programme muss man nicht zwingend lokal installieren, es gibt auch Cloud Lösungen, welche alle drei Programme als Dienst anbieten. Eine dieser Dienste ist <a href="https://posit.cloud/">Posit Cloud</a>. Die ZHAW selbst hat ebenfalls eine RStudio Cloud Lösung für Mitarbeiter und Studierende. Allerdings ist diese zur Zeit des schreibens (Ende 2023) noch im Umbruch und es ist nicht klar, wie diese Lösung in Zukunft aussehen wird. Aktuell ist sie noch unter <a href="https://statistik-ide.zhaw.ch/" class="uri">https://statistik-ide.zhaw.ch/</a> erreichbar.</p>
-<p>Wer hingegen Lokal auf seinem eingenen PC arbeiten will, muss eine aktuell version von R, RStudio und Git installieren. Siehe dazu folgende Anleitungen von <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span>:</p>
+<p>Um Änderungen an diesem Dokument machen zu können, braucht man einen kostenlosen Github Account <a href="https://github.com/signup" class="uri">https://github.com/signup</a>.</p>
 <ul>
-<li><a href="https://happygitwithr.com/install-r-rstudio.html">happygitwithr: Install or upgrade R and RStudio</a></li>
-<li><a href="https://happygitwithr.com/install-git.html">happygitwithr: Install Git</a></li>
+<li>Kursleiter melden sich am besten bei Nils, damit er sie als “Collaborator” hinzufügen kann.</li>
+<li>Kursteilnehmer arbeiten über ein “Fork” des Repositories, siehe <a href="https://modul-agi.github.io/GitHub-Anleitung/" target="_blank">diese Anleitung</a>.</li>
 </ul>
-</section>
-<section id="rstudio-konfigurieren" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="rstudio-konfigurieren"><span class="header-section-number">1.2</span> RStudio Konfigurieren</h2>
-<p>Wir empfehlen folgende Konfiguration in RStudio (Tools → <code>Global Options</code>):</p>
-<table class="table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 47%">
-<col style="width: 35%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td rowspan="6">RMarkdown</td>
-<td>Show document outline by default</td>
-<td>checked<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></td>
-</tr>
-<tr class="even">
-<td>Soft-wrap R Markdown files</td>
-<td>checked<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></td>
-</tr>
-<tr class="odd">
-<td>Show in document outline</td>
-<td>Sections Only<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></td>
-</tr>
-<tr class="even">
-<td>Show output preview in</td>
-<td>Window<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></td>
-</tr>
-<tr class="odd">
-<td>Show equation and image previews</td>
-<td>In a popup</td>
-</tr>
-<tr class="even">
-<td>Evaluate chunks in directory</td>
-<td>Document</td>
-</tr>
-<tr class="odd">
-<td>Code</td>
-<td>Default Text Encoding</td>
-<td>UTF-8</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="git-konfigurieren" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="git-konfigurieren"><span class="header-section-number">1.3</span> Git konfigurieren</h2>
-<section id="email-benutzername" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="email-benutzername"><span class="header-section-number">1.3.1</span> Email / Benutzername</h3>
-<p>Um <code>git</code> benutzen zu können, muss man Benutzernamen und Mailadresse festlegen. Allenfalls habt ihr das schon gemacht. Wenn folgende Befehle (im <em>Terminal</em>!) euren Nutzernamen / Mailadresse anzeigen, könnt ihr diesen Schritt überspringen:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Falls die obigen Befehle nichts ausgeben, müsst ihr euren Namen und eure Mailadresse noch festlegen. <strong>Dabei ist es wichtig, dass ihr die gleiche Mailadresse verwendet, wie ihr sie auch für GitHub angegeben habt</strong>. Um euren Namen und eure Mailadresse festzulegen, führt folgende Befehle (wieder im Terminal) aus:</p>
-<div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode bash code-annotation-code code-with-copy code-annotated"><code class="sourceCode bash"><a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Jane Doe"</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-2-2" class="code-annotation-target"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"jane@example.com"</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-2-3" class="code-annotation-target"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">--list</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="1" data-code-annotation="1">Ersetzt Jane Doe durch euren Namen</span>
-</dd>
-<dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="2" data-code-annotation="2">Nutzt wenn möglich eure ZHAW Mailadresse</span>
-</dd>
-<dt data-target-cell="annotated-cell-2" data-target-annotation="3">3</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="3" data-code-annotation="3">Zeigt die Konfiguration an</span>
-</dd>
-</dl>
+<p>Um bestehende Einträge zu verändern, navigiert ihr auf der Webseite (<a href="https://modul-agi.github.io">modul-agi.github.io</a>) zum entsprechenden Eintrag und klickt dort auf den Button <code>Seite editieren</code> (ganz Rechts unter dem Inhaltsverzeichnis). Nun könnt ihr eure Änderungen im Online Editor auf Github.com vornehmen. Anders als mit Microsoft Word, arbeiten wir hier in einer “Markup” Sprache. Das heisst, der Inhalt wird gewissermassen programmiert. Beispiele findet ihr unten:</p>
+<section id="text" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="text"><span class="header-section-number">10.1</span> Text</h2>
+<ul>
+<li>Kursiv: Wörter, die mit * umgeben werden, sind Kursiv: <code>*kursiv*</code> wird zu <em>kursiv</em></li>
+<li>Fett: Wörter die mit doppelten * umgeben werden, sind Fett: <code>**fett**</code> wird zu <strong>fett</strong></li>
+<li>Hyperlinks: Eine hyperlink wird folgenermassen erstellt:
+<ul>
+<li><code>[ZHAW Website](https://www.zhaw.ch)</code> wird zu <a href="https://www.zhaw.ch">ZHAW Website</a></li>
+<li><code>&lt;https://www.zhaw.ch&gt;</code> wird zu <a href="https://www.zhaw.ch" class="uri">https://www.zhaw.ch</a></li>
+</ul></li>
+<li>Überschriften werden mit vorangestelltem <code>#</code> erstellt
+<ul>
+<li>Kapitel: <code># Programmieren I</code></li>
+<li>Unterkapitel: <code>## Komplexe Datentypen</code></li>
+<li>Unter-Unterkapitel: <code>### Integer und Floats</code></li>
+<li>… usw. (bis Stufe 6)</li>
+</ul></li>
+</ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Verschiedene Git Server oder Accounts
+Hinweis
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Jetzt wird es ein bisschen haarig: github.com ist nur eine von vielen Möglichkeiten, das lokale <code>git</code>-Repo mit einem Server zu Synchronisieren. Weitere Möglichkeiten sind z.B. <em>gitlab.com</em> oder <em>bitbucket.com</em>, oder <em>github.zhaw.ch</em>. Für Lehre benutzen und empfehlen wir <em>github.com</em>, für Forschung <em>github.zhaw.ch</em>. Wenn ihr verschiedene <code>git</code>-Servers benutzt oder auf <em>github.com</em> verschiedene Accounts habt, müsst ihr entweder überall die gleiche Mailadresse verwenden, oder <code>user.email</code> für jedes lokale Repo separat festlegen.</p>
-<p>Dafür müsst ihr folgende Befehle im Terminal ausführen:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config user.name <span class="st">"Jane Doe"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config user.email <span class="st">"jane@example.com"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Wir empfehlen jedoch, insbesondere für Anfänger, überall eure ZHAW-Mailadresse zu verwenden. Tipp: Ihr könnt auf github.com auch mehrere Mailadressen hinterlegen.</strong></p>
+<p>Mehr zum Markdown Syntax: <a href="https://quarto.org/docs/authoring/markdown-basics.html" class="uri">https://quarto.org/docs/authoring/markdown-basics.html</a></p>
 </div>
 </div>
-<p>Weitere Informationen in <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span>: <a href="https://happygitwithr.com/hello-git.html">Introduce yourself to Git</a>.</p>
 </section>
-<section id="authentifizierung" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="authentifizierung"><span class="header-section-number">1.3.2</span> Authentifizierung</h3>
-<p>Als nächstes müssen wir das lokale Git mit GitHub verbinden und euren Computer dazu berechtigen, Code in euer GitHub repository zu pushen. Für diesen Schritt gibt es zwei mögliche Technologien: HTTPS und SSH. <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span> <a href="https://happygitwithr.com/https-pat#https-vs-ssh">empfiehlt für Anfänger, HTTPS zu nutzen</a>, und an diese Empfehlung halten wir uns auch.</p>
-<p>Wie ihr diesen Schritt macht, ist in <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span> ebenfalls gut beschrieben: <a href="https://happygitwithr.com/https-pat">happygitwithr - Cache credentials for HTTPS</a>.</p>
+<section id="sec-querverweise" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="sec-querverweise"><span class="header-section-number">10.2</span> Querverweise</h2>
+<p>Um im Text einen Querverweis auf ein Kapitel zu machen, müsst ihr diesem Zuerst eine eindeutige “ID” geben. Zum Beispiel sieht der Titel dieses Kapitels folgendermassen aus:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Querverweise {#sec-querverweise}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Nun kann ich auf dieses Kapitel mit <code>@sec-querverweise</code> verweisen.</p>
+<ul>
+<li><code>@sec-querverweise</code> wird zu</li>
+<li><a href="#sec-querverweise" class="quarto-xref"><span>Kapitel&nbsp;10.2</span></a></li>
+</ul>
+<p>Das Verweisen funktioniert aber nur auf Nummerierte Kapitel und deren Unterkapitel. Wichtig ist auch, das ein <code>sec-</code> vorangestellt wird. Dieses <code>sec-</code> kommuniziert Quarto, dass es sich bei der Referenz um einen Kapitelverweis handelt. Bilder werden mit <code>fig-</code> referenziert und Tabellen mit <code>tbl-</code>. Mehr dazu später, in <a href="#sec-md-tables" class="quarto-xref"><span>Kapitel&nbsp;10.3</span></a> und <a href="#sec-md-images" class="quarto-xref"><span>Kapitel&nbsp;10.4</span></a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zu Querverweisen: <a href="https://quarto.org/docs/authoring/cross-references.html" class="uri">https://quarto.org/docs/authoring/cross-references.html</a></p>
+</div>
+</div>
+</section>
+<section id="sec-md-tables" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="sec-md-tables"><span class="header-section-number">10.3</span> Tabellen</h2>
+<p>Tabellen werden ebenfalls im Markdown-Syntax erstellt, und zwar folgendermassen:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>| BMI         | Nutritional status       | </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>|:------------|:-------------------------|</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>| Below 18.5  | Underweight              |</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>| 18.5–24.9   | Normal weight            |</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>| 25.0–29.9   | Pre-obesity              |</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>| 30.0–34.9   | Obesity class I          |</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>| 35.0–39.9   | Obesity class II         |</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>| Above 40    | Obesity class III        |</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>: WHO Nutritional status {#tbl-beispielstabelle}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese obige Markdown tabelle wird in eine html Tabelle umgewandelt. Diese Markdown Tabelle muss nicht von hand erstellt werden, auf <a href="https://www.tablesgenerator.com/markdown_tables">tablesgenerator.com</a> können bestehende Tabellen in den Markdown Syntax konvertiert werden.</p>
+<div id="tbl-beispielstabelle" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="table quarto-float-caption quarto-float-tbl" id="tbl-beispielstabelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;10.1: WHO Nutritional status
+</figcaption>
+<div aria-describedby="tbl-beispielstabelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">BMI</th>
+<th style="text-align: left;">Nutritional status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Below 18.5</td>
+<td style="text-align: left;">Underweight</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18.5–24.9</td>
+<td style="text-align: left;">Normal weight</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">25.0–29.9</td>
+<td style="text-align: left;">Pre-obesity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">30.0–34.9</td>
+<td style="text-align: left;">Obesity class I</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.0–39.9</td>
+<td style="text-align: left;">Obesity class II</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Above 40</td>
+<td style="text-align: left;">Obesity class III</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Beachtet, dass man eine Tabellenüberschrift nach einen <code>:</code> anbringen kann. Nach der Tabellenüberschrift kann man einen “Key” erstellen, mit dem man diese Tabelle referenzieren kann. Der “Key” muss</p>
+<ul>
+<li><em>nach</em> der Tabellenüberschrift angebracht werden (mit leerschlag!)</li>
+<li>sich in geschweiften Klammern befinden</li>
+<li>mit <code>#tbl-</code> beginnen</li>
+</ul>
+<p>Nun kann ich mich im Text auf diese Tabelle beziehen.</p>
+<ul>
+<li><code>siehe @tbl-beispielstabelle</code> wird zu:</li>
+<li>siehe <a href="#tbl-beispielstabelle" class="quarto-xref">Tabelle&nbsp;<span>10.1</span></a></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zum einfügen von Tabellen: <a href="https://quarto.org/docs/authoring/tables.html" class="uri">https://quarto.org/docs/authoring/tables.html</a></p>
+</div>
+</div>
+</section>
+<section id="sec-md-images" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="sec-md-images"><span class="header-section-number">10.4</span> Bilder</h2>
+<p>Um Bilder einzufügen muss man diese erstmals auf Github hochladen. Dafür wählt man auf Github.com den “Parent Folder” des Dokuments, wo das Bild hin soll und dort dann <em>Add file &gt; Upload file</em>. Nun kann man das Bild folgendermasen einfügen:</p>
+<ul>
+<li>Nur Bild: <code>![](bild.jpg)</code></li>
+<li>Bild mit Bildunterschrift: <code>![Hier kommt die Bildunterschrift ](bild.jpg)</code></li>
+<li>Bild mit Querverweis: <code>![Bildunterschrift](bild.jpg){#fig-test}</code></li>
+</ul>
+<pre><code>![Logo der ZHAW](zhaw_lsfm_iunr_blau.jpg){#fig-zhaw-logo}</code></pre>
+<p>Wird dann zu:</p>
+<div id="fig-zhaw-logo" class="quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-zhaw-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="zhaw_lsfm_iunr_blau.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-zhaw-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;10.1: Logo der ZHAW
+</figcaption>
+</figure>
+</div>
+<p>Genau wie auf Tabellen verweist man folgendermasssen auf Bilder im Text:</p>
+<ul>
+<li><code>@fig-zhaw-logo</code> wird zu</li>
+<li><a href="#fig-zhaw-logo" class="quarto-xref">Abbildung&nbsp;<span>10.1</span></a></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zum einfügen von Bildern: <a href="https://quarto.org/docs/authoring/figures.html" class="uri">https://quarto.org/docs/authoring/figures.html</a></p>
+</div>
+</div>
+</section>
+<section id="hervorhebungen-kästchen" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="hervorhebungen-kästchen"><span class="header-section-number">10.5</span> Hervorhebungen (Kästchen)</h2>
+<p>Die ganze Hinweis-kästchen in diesem Dokument werden mit folgendem Syntax erstellt:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Mehr zu diesen sogenannten *Callout Blocks*: <span class="ot">&lt;https://quarto.org/docs/authoring/callouts.html&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dies wir dann zu:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zu diesen sogenannten <em>Callout Blocks</em>: <a href="https://quarto.org/docs/authoring/callouts.html" class="uri">https://quarto.org/docs/authoring/callouts.html</a></p>
+</div>
+</div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-bryan2017" class="csl-entry" role="listitem">
-Jenny Bryan, Jim Heister. 2017. <em><span class="nocase">Let<span>’</span>s Git started <span><span class="math inline">\(\vert\)</span></span> Happy Git and GitHub for the useR</span></em>. <a href="https://happygitwithr.com">https://happygitwithr.com</a>.
-</div>
-</div>
 </section>
-</section>
-<aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>Stellt ein Inhaltsverzeichnis rechts von .Qmd files dar<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>macht autmatische Zeilenumbrüche bei .Qmd files<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>zeigt nur “Sections” im Inhaltsverzeichnis<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>beim kopilieren von Qmd Files wird im Anschluss ein Popup mit dem Resultat dargestellt<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</aside>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -421,12 +525,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopiert");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopiert");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -759,13 +863,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link  aria-label=" einleitung"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Einleitung</span>
+      <a href="./03-editieren.html" class="pagination-link  aria-label=" &lt;span="" editieren="" und="" veröffentlichen&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Inhalte Editieren und veröffentlichen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./02-projekt.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Projekt aufsetzen</span>">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./04-advanced.html" class="pagination-link" aria-label="<span class='chapter-number'>11</span>&nbsp; <span class='chapter-title'>Fortgeschritten</span>">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Fortgeschritten</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

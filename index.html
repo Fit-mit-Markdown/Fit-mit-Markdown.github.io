@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.489">
@@ -8,7 +8,6 @@
 
 <meta name="author" content="Nils Ratnaweera">
 <meta name="author" content="Dominic Lüönd">
-<meta name="dcterms.date" content="2023-11-22">
 
 <title>Fit mit Markdown</title>
 <style>
@@ -33,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-software.html" rel="next">
+<link href="./01-r-rstudio-installieren.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -57,16 +56,16 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 
@@ -79,11 +78,11 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Einleitung</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -102,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Suchen"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -115,32 +114,86 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Software aufsetzen</span></span></a>
+  <a href="./01-r-rstudio-installieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-cloud-umgebungen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Cloud Umgebungen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-rstudio-konfigurieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RStudio konfigurieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-git-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git installieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-github-account.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-git-configure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Git konfigurieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-github-authenticate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">GitHub Authentifizieren</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-projekt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-editieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Inhalte Editieren und veröffentlichen</span></span></a>
+  <a href="./03-qmd-editieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-vorschau-erstellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-publish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Änderungen veröffentlichen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-inhalte-erstellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Neue Inhalte hinzufügen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-advanced.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Fortgeschritten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Fortgeschritten</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -156,12 +209,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
   <li><a href="#einleitung" id="toc-einleitung" class="nav-link active" data-scroll-target="#einleitung">Einleitung</a>
   <ul class="collapse">
   <li><a href="#wie-funktioniert-quarto" id="toc-wie-funktioniert-quarto" class="nav-link" data-scroll-target="#wie-funktioniert-quarto">Wie funktioniert Quarto?</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -179,7 +233,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-heading">Autor:innen</div>
     <div class="quarto-title-meta-contents">
              <p>Nils Ratnaweera </p>
              <p>Dominic Lüönd </p>
@@ -187,9 +241,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 22, 2023</p>
+      <p class="date">22. November 2023</p>
     </div>
   </div>
   
@@ -210,20 +264,33 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="wie-funktioniert-quarto">Wie funktioniert Quarto?</h2>
 <p>Wie Eingangs erwähnt, funktionieren die verschiedenen <em>Computational Notebook</em> Systeme sehr ähnlich. Um möglichst Konkret zu sein, werden wir uns vor allem auf Quarto in Kombination mit <code>R</code> und den Output Formaten HTML und PDF konzentrieren.</p>
 <p>In einem Textfile mit der Erweiterung <code>.qmd</code> werden Fliesstext und Code gemischt. Der Fliesstext wird in Markdown geschrieben, der Code in einer beliebigen Programmiersprache. Das <code>R</code> Package <code>knitr</code> führt den Code aus und erstellt ein neues Markdown File wo der Fliesstext und die Resultate des Codes zusammengeführt werden. Dieses File wiederum wird mittels der Software <code>pandoc</code> (welche mit Quarto mitgeliefert wird) in das gewünschte Format konvertiert.</p>
-<p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
+<p><img src="./images/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Hinweis
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In diesem letzten Schritt werden, je nach Output Format, ebenfalls temporäre Files erstellt. Beispielweise wird für die Erstellung eines PDF Files ein LaTeX File erstellt (<code>.tex</code>), welches dann mittel <code>xelatex</code> in ein PDF File konvertiert wird. Allerdings ist Latex zwar mächtig, aber auch sehr komplex. Wir hoffen, dass Latex mittelfristig durch <code>typst</code> ersetzt wird. <!-- TODO: Link auf typst und mehr infos --> HTML ist ja bereits textbasiert, so dass hier kein weiterer Schritt notwendig ist.</p>
+<p>Im letzten Schritt werden, je nach Output Format, ebenfalls temporäre Files erstellt. Beispielweise wird für die Erstellung eines PDF Files ein LaTeX File erstellt (<code>.tex</code>), welches dann mittel <code>xelatex</code> in ein PDF File konvertiert wird. Latex ist zwar mächtig, aber auch sehr komplex. Wir hoffen, dass Latex mittelfristig durch <code>typst</code> ersetzt wird, siehe <a href="https://quarto.org/docs/prerelease/1.4/typst.html">quarto.org</a>.</p>
 </div>
 </div>
+</section>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<p>Es gibt eine unendliche Anzahl von verschiedenen möglichen Setups denkbar. Hier ein paar Beispiele, die wir an der ZHAW nutzen und empfehlen:</p>
+<ul>
+<li>Editor: RStudio, VSCode oder JupyterLab</li>
+<li>Installation:
+<ul>
+<li>Lokal: Via Software Center oder <em>interim Admin</em></li>
+<li>Cloud: Lösungen gibt es für RStudio (siehe <a href="01-cloud-umgebungen.html#sec-cloud-rstudio" class="quarto-xref"><span>Kapitel&nbsp;2.1</span></a>), VSCode (siehe <a href="01-cloud-umgebungen.html#sec-cloud-vscode" class="quarto-xref"><span>Kapitel&nbsp;2.2</span></a>) und für JupyterLab (siehe <a href="01-cloud-umgebungen.html#sec-cloud-jupyterlab" class="quarto-xref"><span>Kapitel&nbsp;2.3</span></a>)</li>
+</ul></li>
+<li>Programmiersprache: R oder Python</li>
+</ul>
 
 
 </section>
@@ -284,12 +351,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopiert");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopiert");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -624,8 +691,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-software.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Software aufsetzen</span>">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Software aufsetzen</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01-r-rstudio-installieren.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>R / RStudio</span>">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

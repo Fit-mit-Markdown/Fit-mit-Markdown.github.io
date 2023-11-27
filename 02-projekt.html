@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.489">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fit mit Markdown - 2&nbsp; Projekt aufsetzen</title>
+<title>Fit mit Markdown - 8&nbsp; Projekt aufsetzen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,8 +84,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./03-editieren.html" rel="next">
-<link href="./01-software.html" rel="prev">
+<link href="./03-qmd-editieren.html" rel="next">
+<link href="./01-github-authenticate.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -109,16 +109,16 @@ div.csl-indent {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 
@@ -133,11 +133,11 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-projekt.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-projekt.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -156,7 +156,7 @@ div.csl-indent {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Suchen"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -169,32 +169,86 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Software aufsetzen</span></span></a>
+  <a href="./01-r-rstudio-installieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-cloud-umgebungen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Cloud Umgebungen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-rstudio-konfigurieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RStudio konfigurieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-git-installation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git installieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-github-account.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-git-configure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Git konfigurieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-github-authenticate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">GitHub Authentifizieren</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-projekt.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-editieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Inhalte Editieren und veröffentlichen</span></span></a>
+  <a href="./03-qmd-editieren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-vorschau-erstellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-publish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Änderungen veröffentlichen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-inhalte-erstellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Neue Inhalte hinzufügen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-advanced.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Fortgeschritten</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Fortgeschritten</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -210,11 +264,11 @@ div.csl-indent {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#repo-klonen" id="toc-repo-klonen" class="nav-link active" data-scroll-target="#repo-klonen"><span class="header-section-number">2.1</span> Repo Klonen</a></li>
-  <li><a href="#daten-und-code" id="toc-daten-und-code" class="nav-link" data-scroll-target="#daten-und-code"><span class="header-section-number">2.2</span> Daten und Code</a></li>
+  <li><a href="#repo-klonen" id="toc-repo-klonen" class="nav-link active" data-scroll-target="#repo-klonen"><span class="header-section-number">8.1</span> Repo Klonen</a></li>
+  <li><a href="#daten-und-code" id="toc-daten-und-code" class="nav-link" data-scroll-target="#daten-und-code"><span class="header-section-number">8.2</span> Daten und Code</a></li>
   </ul>
 </nav>
     </div>
@@ -223,7 +277,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></h1>
 </div>
 
 
@@ -240,13 +294,14 @@ div.csl-indent {
 </header>
 
 
-<section id="repo-klonen" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="repo-klonen"><span class="header-section-number">2.1</span> Repo Klonen</h2>
-<p>Um die ganzen *.Qmd Files lokal bearbeiten zu können, muss das Repository geklont werden. Mit RStudio ist dies sehr einfach, siehe dazu folgende Anleitung von <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span>: <a href="https://happygitwithr.com/new-github-first#rstudio-ide">happygitwithr: New RStudio Project via RStudio IDE</a>. Als Repo-URL wählt ihr den URL des jeweiligen Repos aus (siehe <a href="#tbl-github-repos" class="quarto-xref">Table&nbsp;<span>2.1</span></a>):</p>
+<section id="repo-klonen" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="repo-klonen"><span class="header-section-number">8.1</span> Repo Klonen</h2>
+<p>Um *.Qmd Files bearbeiten zu können, muss das Repository geklont werden. Mit RStudio ist dies sehr einfach, siehe dazu folgende Anleitung von <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span>: <a href="https://happygitwithr.com/new-github-first#rstudio-ide">happygitwithr: New RStudio Project via RStudio IDE</a>. Als Repo-URL wählt ihr den URL des jeweiligen Repos aus (siehe <a href="#tbl-github-repos" class="quarto-xref">Tabelle&nbsp;<span>8.1</span></a>):</p>
+<!-- todo: explain fully here, rather than linking to bryan2017 -->
 <div id="tbl-github-repos" class="anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="table quarto-float-caption quarto-float-tbl" id="tbl-github-repos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.1: Eine Sammlung aus Lehrunterlagen, die wir mit Quarto zur Verfügung stellen. Ggf. muss das Semester angepasst werden
+Tabelle&nbsp;8.1: Eine Sammlung aus Lehrunterlagen, die wir mit Quarto zur Verfügung stellen. Ggf. muss das Semester angepasst werden
 </figcaption>
 <div aria-describedby="tbl-github-repos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
@@ -257,7 +312,7 @@ Table&nbsp;2.1: Eine Sammlung aus Lehrunterlagen, die wir mit Quarto zur Verfüg
 <tbody>
 <tr class="odd">
 <td>Research Methods (Übungen)</td>
-<td><code>https//github.com/ResearchMethods-ZHAW/HS23.git</code></td>
+<td><code>https//github.com/ResearchMethods-ZHAW/HS23</code></td>
 </tr>
 <tr class="even">
 <td>Research Methods (Stastik)</td>
@@ -294,27 +349,27 @@ Table&nbsp;2.1: Eine Sammlung aus Lehrunterlagen, die wir mit Quarto zur Verfüg
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Hinweis
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Je nach gewählter “Clone”-Methode, muss das Git<em>Hub</em> Repo als <em>upstream</em> gesetzt werden. Dafür gibt es mehrere Möglichkeiten. Beispielsweise mit dem folgenden Befehl im Terminal</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-u</span> origin/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-u</span> origin/main</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <p>Nun solltet ihr fast das ganze Repo lokal auf eurem Computer haben und die einzelnen Files bearbeiten können.</p>
 </section>
-<section id="daten-und-code" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="daten-und-code"><span class="header-section-number">2.2</span> Daten und Code</h2>
+<section id="daten-und-code" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="daten-und-code"><span class="header-section-number">8.2</span> Daten und Code</h2>
 <p>Typischerweise braucht der R-Code Daten, um diese zu Analysieren und Visualisieren. Bei wenigen, kleinen Datensätzen und seltenen Änderungen können diese Daten direkt ins GitHub Repo eingebaut werden. Sind es jedoch grössere Datensätze oder Datensätze die sich häufig ändern, dann ist es besser, diese separat zu verwalten. Im Modul <em>Research Methods</em> haben die Datensätze aber dazu geführt, dass das entsprechende Repo von Jahr zu Jahr übermässig an Grösse zugelegt hat und das Repo mehrere 100 MB gross wurde. Aus diesem Grund verwalten wir in diesem Modul die Datensätze in einem separatem Repo. Dieses Repo wird als sogeanntes <em>submodule</em> in das jeweilige Modul-Repo eingebunden.</p>
 <p>Ein weiterer Grund, Datensätze in einem separaten Repo zu führen ist, wenn der Quellcode der Unterlagen öffentlich sein darf (und soll), die Datensätze aber nicht.</p>
 <p>Falls das Repo mit einem Submodule aufgesetzt wurde, dann muss dieses noch initialisiert werden. Dazu braucht es noch folgenden Befehl im Terminal:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule update <span class="at">--init</span> <span class="at">--recursive</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule update <span class="at">--init</span> <span class="at">--recursive</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-bryan2017" class="csl-entry" role="listitem">
-Jenny Bryan, Jim Heister. 2017. <em><span class="nocase">Let<span>’</span>s Git started <span><span class="math inline">\(\vert\)</span></span> Happy Git and GitHub for the useR</span></em>. <a href="https://happygitwithr.com">https://happygitwithr.com</a>.
+Jenny Bryan, Jim Heister. 2017. <em><span>Let<span>’</span>s Git started <span><span class="math inline">\(\vert\)</span></span> Happy Git and GitHub for the useR</span></em>. <a href="https://happygitwithr.com">https://happygitwithr.com</a>.
 </div>
 </div>
 </section>
@@ -374,12 +429,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopiert");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopiert");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -712,13 +767,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./01-software.html" class="pagination-link  aria-label=" &lt;span="" aufsetzen&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Software aufsetzen</span></span>
+      <a href="./01-github-authenticate.html" class="pagination-link  aria-label=" &lt;span="" authentifizieren&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">GitHub Authentifizieren</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./03-editieren.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Inhalte Editieren und veröffentlichen</span>">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Inhalte Editieren und veröffentlichen</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./03-qmd-editieren.html" class="pagination-link" aria-label="<span class='chapter-number'>9</span>&nbsp; <span class='chapter-title'>Qmd editieren</span>">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
