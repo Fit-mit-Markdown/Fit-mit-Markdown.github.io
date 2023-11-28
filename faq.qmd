@@ -154,7 +154,7 @@ git pull                       # lädt die Änderungen von Github herunter
 ```
 
 
-## You have divergent branches and need to specify how to reconcile them
+### You have divergent branches and need to specify how to reconcile them
 
 
 <!-- TODO: explain -->

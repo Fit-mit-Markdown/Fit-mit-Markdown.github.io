@@ -1,5 +1,12 @@
 # Einleitung {.unnumbered}
 
+```{r}
+#| output: false
+#| echo: false
+Sys.getenv("QUARTO_PROFILE")
+
+```
+
 Quarto, RMarkown und Jupyter Notebooks haben eine Sache gemeinsam. Sie sind *Computational Notebooks*. Das heisst, sie sind eine Mischung aus Fliesstext und Code. Der Fliesstext wird in einerm Markupsprache namens Markdown geschrieben, der Code kann in einer beliebigen Programmiersprache geschrieben werden, typischerweise verwendet man aber Python, R oder Julia. 
 
 Diese Computational Notebooks werden mittels einer Software typischerweise in HTML oder PDF konvertiert. Möglich sind aber auch andere Formate wie epub (EBook) oder Docx. Dieses System eignet sich sehr gut, um Datenanalysen zu dokumentieren und zu publizieren. Es eignet sich aber auch sehr gut, um Unterrichtsmaterialien zu erstellen.

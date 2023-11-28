@@ -1,0 +1,60 @@
+# Änderungen hochladen / teilen
+
+Grundsätzlich müssen wir zwischen zwei Arten von Änderungen unterscheiden: 
+
+1. Änderungen den Source Files (Qmd)
+2. Änderungen an den Output Files (website oder pdf)
+
+Im ersten Fall geht es darum, dass die Quell Daten, also die Qmd Files geändert wurden und diese Änderungen im mit den Mitautoren geteilt werden wollen. Dafür muss man die Quelldaten mit dem GitHub Repository synchronisieren (mehr dazu in @sec-share-source).
+
+Im zweiten Fall geht es darum, die Output Files mit den Lesern zu teilen. Dabei handelt es sich meist um enweder eine Website oder ein PDF. Mehr dazu in @sec-share-target.
+
+## Änderungen an den Source Files {#sec-share-source}
+
+Um die Änderungen an den Source Files zu teilen müsst ihr diese via git auf das Repository "pushen". Vorher aber müsst ihr die Änderungen *stage*en, *comitt*en und dann *push*en. Ich empfehle, dass ihr zumindest zu beginn dafür ein Graphical User Interface verwendet.
+
+:::{.content-visible when-profile="research-methods"}
+
+In RStudio befindet sich ein Git-Interface rechts oben. Dabei müssen folgende Schritte ausgeführt werden:
+
+1. *Stagen*: Setzen eines Häckchens bei "Staged" (im Terminal mit `git add .`)
+2. *Commit*: Klick auf den Button "commit" (im Terminal mit `git commit -m "deine message"`)
+3. (Optional, aber empfohlen: *pull*en, mit Klick auf den button "Pull" (im Terminal mit `git pull`))
+3. *Push*: Klick auf den Button "Push" (im Terminal mit `git push`)
+
+:::
+
+
+:::{.content-visible when-profile="statistik"}
+
+In GitHub Codespaces befindet sich das Git-Interface im Tab "Source Control". Dabei müssen folgende Schritte ausgeführt werden:
+
+1. *Stagen*: Klick auf das `+`-Symbol beim entsprechenden File (im Terminal mit `git add .`)
+2. *Commit*: "Message" eingeben und Klick auf den Button "Commit" (im Terminal mit `git commit -m "deine message"`)
+3. *Pull/Push*: Klick auf den Button "Sync Changes" (im Terminal mit `git pull` und `git push`)
+
+:::
+
+
+## Änderungen an den Target Files {#sec-share-target}
+
+
+:::{.content-visible when-profile="research-methods"}
+Um Änderungen an den Output Files zu Veröffentlichen, gehen wir in **{{< meta vars.module >}}** wie folgt vor:
+
+Im Terminal folgender Befehl eingeben:
+
+```sh
+quarto publish gh-pages --no-prompt 
+```
+:::
+
+
+:::{.content-visible when-profile="statistik"}
+
+Grundsätzlich müssen die Änderungen der Target Files (pdf/html) ebenfall mit dem Git-Repository synchronisiert werden. In **{{< meta vars.module >}}** haben wir das Projekt jedoch so aufgesetzt, dass die Target Files automatisch bei jedem Commit neu generiert werden. Das bedeutet, dass wir die Target Files nicht explizit synchronisieren müssen.
+
+:::
+
+
+

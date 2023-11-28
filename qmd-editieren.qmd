@@ -1,33 +1,53 @@
 # Qmd editieren
 
-Um Inhalte zu editieren, öffnet ihr das entsprechende .Qmd file. 
+Um Inhalte zu editieren, öffnet ihr das entsprechende .Qmd file. Falls ihr mit einzelnen Quarto- / RMarkdown Files gearbeitet habt: Die Handhabung ist sehr ähnlich. Zu beachten ist lediglich folgendes:
 
-(Im Modul Research Methods befindet sich diese in einen der Unterordner (`prepro`, `infovis`, `rauman`, `fallstudio_n`, `fallstudie_s`).)
+- Pfadangaben sind relativ zum Projekt zu verstehen
+- Code Chunk Options sind ggf. auf Projektebene bereits gesetzt (können aber auf Stufe Dokument oder einzelnem Chunk überschrieben werden)
 
-:::{.callout-important}
-
-Alle Pfade im Dokument sind relativ zum Project zu verstehen: **Das Working directory ist der Project folder!!**.
-
+:::{.content-visible when-profile="research-methods"}
+Im Modul Research Methods befindet sich diese in einen der Unterordner (`prepro`, `infovis`, `rauman`, `fallstudio_n`, `fallstudie_s`).
 :::
+
+Im folgenden wollen wir auf die wichtigsten Markdown Syntax Elemente eingehen:
 
 
 ## Text
 
-- Kursiv: Wörter, die mit \* umgeben werden, sind Kursiv: `*kursiv*` wird zu *kursiv*
-- Fett: Wörter die mit doppelten \* umgeben werden, sind Fett:  `**fett**` wird zu **fett**
-- Hyperlinks: Eine hyperlink wird folgenermassen erstellt: 
-  - `[ZHAW Website](https://www.zhaw.ch)` wird zu [ZHAW Website](https://www.zhaw.ch)
-  - `<https://www.zhaw.ch>` wird zu <https://www.zhaw.ch>
-- Überschriften werden mit vorangestelltem `#` erstellt
-  - Kapitel: `# Programmieren I`
-  - Unterkapitel: `## Komplexe Datentypen`
-  - Unter-Unterkapitel: `### Integer und Floats`
-  - ... usw. (bis Stufe 6)
+*Kursiv*, **fett**, ~~durchgestrichen~~, `Code`, und [Links](https//www.example.com) können wie folgt erstellt werden:
+
+
++-------------------------------------+-------------------------------------+
+| Input                               | Output                              |
++=====================================+=====================================+
+| `*kursiv*`                          | *kursiv*                            |
++-------------------------------------+-------------------------------------+
+| `**fett**`                          | **fett**                            |
++-------------------------------------+-------------------------------------+
+| `~~durchgestrichen~~`               | ~~durchgestrichen~~                 |
++-------------------------------------+-------------------------------------+
+| `` `Code` ``                        | `Code`                              |
++-------------------------------------+-------------------------------------+
+| `[ZHAW](https://www.zhaw.ch)`       | [ZHAW](https://www.zhaw.ch)         |
++-------------------------------------+-------------------------------------+
+| `<https://www.zhaw.ch>`             | <https://www.zhaw.ch>               |
++-------------------------------------+-------------------------------------+
+
+
 
 
 :::{.callout-note}
 Mehr zum Markdown Syntax: <https://quarto.org/docs/authoring/markdown-basics.html>
 :::
+
+## Überschriften
+
+Überschriften werden mit vorangestelltem `#` erstellt
+
+- Kapitel: `# Programmieren I`
+- Unterkapitel: `## Komplexe Datentypen`
+- Unter-Unterkapitel: `### Integer und Floats`
+- ... usw. (bis Stufe 6)
 
 
 ## Querverweise {#sec-querverweise}
@@ -40,8 +60,17 @@ Um im Text einen Querverweis auf ein Kapitel zu machen, müsst ihr diesem Zuerst
 
 Nun kann ich auf dieses Kapitel mit `@sec-querverweise` verweisen. 
 
-- `@sec-querverweise` wird zu 
-- @sec-querverweise
++-----------------------------------+-----------------------------------+
+| Input:                            | Output:                           |
++-----------------------------------+-----------------------------------+
+| `@sec-querverweise`               | @sec-querverweise                 |
++-----------------------------------+-----------------------------------+
+| `@fig-zhaw-logo`                  | @fig-zhaw-logo                    |
++-----------------------------------+-----------------------------------+
+| `@tbl-beispielstabelle`           | siehe @tbl-beispielstabelle       |
++-----------------------------------+-----------------------------------+
+
+: Querverweise {#tbl-querverweise}
 
 Das Verweisen funktioniert aber nur auf Nummerierte Kapitel und deren Unterkapitel. Wichtig ist auch, das ein `sec-` vorangestellt wird. Dieses `sec-` kommuniziert Quarto, dass es sich bei der Referenz um einen Kapitelverweis handelt. Bilder werden mit `fig-` referenziert und Tabellen mit `tbl-`. Mehr dazu später, in @sec-md-tables und @sec-md-images.
 
@@ -87,13 +116,11 @@ Diese obige Markdown tabelle wird in eine html Tabelle umgewandelt. Diese Markdo
 Beachtet, dass man eine Tabellenüberschrift nach einen `:` anbringen kann. Nach der Tabellenüberschrift kann man einen "Key" erstellen, mit dem man diese Tabelle referenzieren kann. Der "Key" muss 
 
 - *nach* der Tabellenüberschrift angebracht werden (mit leerschlag!)
-- sich in geschweiften Klammern befinden
+- sich in geschweiften Klammern (`{` und `}`) befinden
 - mit `#tbl-` beginnen
 
-Nun kann ich mich im Text auf diese Tabelle beziehen.
+Nun kann man sich im Text auf diese Tabelle beziehen (siehe @tbl-querverweise)
 
-- `siehe @tbl-beispielstabelle` wird zu:
-- siehe @tbl-beispielstabelle
 
 :::{.callout-note}
 Mehr zum einfügen von Tabellen: <https://quarto.org/docs/authoring/tables.html>
@@ -115,10 +142,7 @@ Wird dann zu:
 
 ![Logo der ZHAW](zhaw_lsfm_iunr_blau.jpg){#fig-zhaw-logo}
 
-Genau wie auf Tabellen verweist man folgendermasssen auf Bilder im Text:
-
-- `@fig-zhaw-logo` wird zu
-- @fig-zhaw-logo
+Siehe @tbl-querverweise
 
 
 :::{.callout-note}

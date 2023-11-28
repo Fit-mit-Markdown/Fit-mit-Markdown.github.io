@@ -6,10 +6,10 @@ Wir empfehlen, dass ihr beim Editieren von Quarto Files immer eine Live Vorschau
 
 Um eine Vorschau zu erstellen empfehlen wir, im Terminal den Befehl `quarto preview` auszuführen. Dieser Befehl erstellt eine Vorschau in html und öffnet diese in eurem Browser.
 
-
+::::{.content-hidden when-profile="statistik"}
 :::{.callout-note}
 
 Auf gewissen Windows Versionen muss man den Befehl `quarto` mit `quarto.cmd` oder `quarto.exe` ersetzen. Versuche es zuerst mit quarto, wenn das nicht klappt versuche die erwähnten Varianten (siehe [hier](https://community.rstudio.com/t/bash-quarto-command-not-found/144187/2)).
 
 :::
-
+::::

@@ -1,0 +1,26 @@
+
+
+## GitHub Account erstellen
+
+Die Macht von `git` kommt vor allem zu tragen, wenn das repo mit einem Git Server Synchronisiert wird. Dazu brauchen wir einen Account bei einem Git-Cloud-Anbieter[^git-servers]. Für **{{< meta vars.module >}}** brauchen wir dazu [github.com](https://github.com/). 
+
+Legen Sie ein Github-Konto auf [github.com](https://github.com/) an (das ist natürlich kostenlos). Verwenden Sie dabei Ihre ZHAW E-Mail-Adresse. Der Benutzername ist allerdings frei Wählbar. Hier ein paar Vorschläge für die Nahmenswahl:
+
+- Ihren tatsächlichen Namen einzubauen ist nett, die Leute wollen wissen, mit wem sie es zu tun haben
+- Wählen Sie einen Namen, den Sie einem Mitarbeiter oder Vorgesetzten ruhig verraten können
+- kürzer ist besser als länger
+- Wählen Sie einen zeitlosen Namen (z. B. nicht den Namen Ihrer Universität)
+
+
+:::{.callout-note}
+## Verschiedene Git Servers mehrere GitHub Accounts
+
+Wenn ihr verschiedene `git`-Servers benutzt oder auf *github.com* verschiedene Accounts habt, emfehlen wir entweder:
+
+1. Überall die gleiche Mailadresse (z.B. die ZHAW Mailadresse) zu verwenden *oder*
+2. Die ZHAW Mailadresse überall als als sekundäre Mailadresse zu hinterlegen.
+
+:::
+
+[^git-servers]: Zum Beispiel: *github.com*, *gitlab.com*, *bitbucket.com*, oder *github.zhaw.ch*. 
+
