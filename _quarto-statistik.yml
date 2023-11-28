@@ -1,0 +1,27 @@
+
+
+book:
+  subtitle: "Markdown für das Statistik Skript"
+  chapters:
+    # - r-rstudio-installieren.qmd
+    # - cloud-umgebungen.qmd
+    # - rstudio-konfigurieren.qmd
+    # - git-installation.qmd
+    - github-account.qmd
+    - github-codespaces.qmd
+    # - git-configure.qmd
+    # - github-authenticate.qmd
+    # - projekt.qmd
+    - qmd-editieren.qmd
+    - vorschau-erstellen.qmd
+    - publish.qmd
+    - inhalte-erstellen.qmd
+    - faq.qmd
+    - references.qmd
+
+project:
+  output-dir: _site-statistik
+
+vars:
+  module: "Research Methods Statistik Unterlagen"
+  codespace: <https://codespaces.new/ResearchMethods-ZHAW/Statistik>
