@@ -1,0 +1,17 @@
+book:
+  chapters:
+    - r-rstudio-installieren.qmd
+    - cloud-umgebungen.qmd
+    - rstudio-konfigurieren.qmd
+    - github-codespaces.qmd
+    - git-installation.qmd
+    - github-account.qmd
+    - git-configure.qmd
+    - github-authenticate.qmd
+    - projekt.qmd
+    - qmd-editieren.qmd
+    - vorschau-erstellen.qmd
+    - publish.qmd
+    - inhalte-erstellen.qmd
+    - faq.qmd
+    - references.qmd
