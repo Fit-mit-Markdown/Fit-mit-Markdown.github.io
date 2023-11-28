@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fit mit Markdown - 1&nbsp; R / RStudio</title>
+<title>Fit mit Markdown - 3&nbsp; Qmd editieren</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,27 +54,7 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -84,8 +64,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-cloud-umgebungen.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./vorschau-erstellen.html" rel="next">
+<link href="./github-codespaces.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -122,8 +102,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -136,7 +114,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-r-rstudio-installieren.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./qmd-editieren.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Qmd editieren</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -169,91 +147,49 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-r-rstudio-installieren.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></span></a>
+  <a href="./github-account.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-cloud-umgebungen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Cloud Umgebungen</span></span></a>
+  <a href="./github-codespaces.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GitHub Codespace</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-rstudio-konfigurieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RStudio konfigurieren</span></span></a>
+  <a href="./qmd-editieren.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-git-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git installieren</span></span></a>
+  <a href="./vorschau-erstellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-github-account.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span></a>
+  <a href="./publish.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Änderungen veröffentlichen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-git-configure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Git konfigurieren</span></span></a>
+  <a href="./inhalte-erstellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Neue Inhalte hinzufügen</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-github-authenticate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">GitHub Authentifizieren</span></span></a>
+  <a href="./faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-projekt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-qmd-editieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-vorschau-erstellen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Änderungen veröffentlichen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./03-inhalte-erstellen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Neue Inhalte hinzufügen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./04-advanced.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Fortgeschritten</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./05-faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./06-references.html" class="sidebar-item-text sidebar-link">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -267,8 +203,12 @@ div.csl-indent {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#r-installieren-updaten" id="toc-r-installieren-updaten" class="nav-link active" data-scroll-target="#r-installieren-updaten"><span class="header-section-number">1.1</span> R installieren / updaten</a></li>
-  <li><a href="#rstudio-installieren-updaten" id="toc-rstudio-installieren-updaten" class="nav-link" data-scroll-target="#rstudio-installieren-updaten"><span class="header-section-number">1.2</span> RStudio installieren / updaten</a></li>
+  <li><a href="#text" id="toc-text" class="nav-link active" data-scroll-target="#text"><span class="header-section-number">3.1</span> Text</a></li>
+  <li><a href="#überschriften" id="toc-überschriften" class="nav-link" data-scroll-target="#überschriften"><span class="header-section-number">3.2</span> Überschriften</a></li>
+  <li><a href="#sec-querverweise" id="toc-sec-querverweise" class="nav-link" data-scroll-target="#sec-querverweise"><span class="header-section-number">3.3</span> Querverweise</a></li>
+  <li><a href="#sec-md-tables" id="toc-sec-md-tables" class="nav-link" data-scroll-target="#sec-md-tables"><span class="header-section-number">3.4</span> Tabellen</a></li>
+  <li><a href="#sec-md-images" id="toc-sec-md-images" class="nav-link" data-scroll-target="#sec-md-images"><span class="header-section-number">3.5</span> Bilder</a></li>
+  <li><a href="#hervorhebungen-kästchen" id="toc-hervorhebungen-kästchen" class="nav-link" data-scroll-target="#hervorhebungen-kästchen"><span class="header-section-number">3.6</span> Hervorhebungen (Kästchen)</a></li>
   </ul>
 </nav>
     </div>
@@ -277,7 +217,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Qmd editieren</span></h1>
 </div>
 
 
@@ -294,49 +234,261 @@ div.csl-indent {
 </header>
 
 
-<p>Diese beiden Programme sind zentral, um mit Quarto arbeiten zu können. Allerdings kann man RStudio auch gut durch eine andere IDE oder einerm einfachen Texteditor ersetzen (VSCode, Sublime). Allerdings empfehlen wir dies eher für Fortgeschrittene benutzer.</p>
-<p>Die Programme muss man nicht zwingend lokal installieren, es gibt auch Cloud Lösungen, siehe dazu <a href="01-cloud-umgebungen.html#sec-cloud-rstudio" class="quarto-xref"><span>Kapitel&nbsp;2.1</span></a>. Wer hingegen Lokal auf seinem eingenen PC arbeiten will, muss eine aktuell version von R, RStudio und Git installieren. Siehe dazu folgende Anleitungen von <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span>:</p>
-<section id="r-installieren-updaten" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="r-installieren-updaten"><span class="header-section-number">1.1</span> R installieren / updaten</h2>
-<p>Wenn Sie R noch nicht installiert haben, können Sie dies jetzt tun, indem Sie die neueste Version von <a href="https://cran.r-project.org/">CRAN</a> herunterladen. Wenn Sie R bereits installiert haben, überprüfen Sie Ihre Version von <code>R</code>, indem Sie RStudio öffnen und den folgenden Befehl in die Konsole eingeben.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>R.version.string</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "R version 4.3.1 (2023-06-16)"</code></pre>
-</div>
-</div>
-<p>Dies gibt die Versionsnummer Ihrer R-Installation zurück, wobei die erste Ziffer (<code>4</code>) die Nummer der <em>Hauptversion</em>, die zweite Ziffer (<code>3</code>) die <em>Unterversion</em> und die letzte Ziffer (<code>1</code>) die <em>Patch-Version</em> angibt. Als generelle Faustregel gilt, dass Sie R aktualisieren sollten, wenn Sie</p>
+<p>Um Inhalte zu editieren, öffnet ihr das entsprechende .Qmd file. Falls ihr mit einzelnen Quarto- / RMarkdown Files gearbeitet habt: Die Handhabung ist sehr ähnlich. Zu beachten ist lediglich folgendes:</p>
 <ul>
-<li>nicht die aktuelle <em>Hauptversion</em> haben oder</li>
-<li>zwei (oder mehr) Versionen hinter der aktuellen <em>Minor-Version</em> zurückbleiben</li>
+<li>Pfadangaben sind relativ zum Projekt zu verstehen</li>
+<li>Code Chunk Options sind ggf. auf Projektebene bereits gesetzt (können aber auf Stufe Dokument oder einzelnem Chunk überschrieben werden)</li>
 </ul>
-<p>Zum Zeitpunkt des Schreibens (November, 2023) ist die aktuelle <code>R</code> Version 4.3.2 (freigegeben am 31.10.2023, siehe <a href="https://cran.r-project.org/">cran.r-project.org</a>). Ihre Installation sollte daher nicht älter sein als 4.2.0. Falls doch, sollten R aktualisiert werden (siehe <a href="https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol/">diese Anleitung zur Aktualisierung von R</a>)</p>
-</section>
-<section id="rstudio-installieren-updaten" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="rstudio-installieren-updaten"><span class="header-section-number">1.2</span> RStudio installieren / updaten</h2>
-<p>RStudio ist die IDE (integrierte Entwicklungsumgebung), die wir in unserem Kurs verwenden, um mit R zu arbeiten. Es gibt gute Alternativen, die Sie verwenden können, RStudio scheint einfach [die beliebteste Wahl] zu sein (https://twitter.com/mdancho84/status/1502237075550392323). Wenn Sie Ihre eigene IDE verwenden möchten, können Sie das gerne tun. Wir empfehlen dies jedoch nicht, wenn Sie ein Anfänger sind.</p>
-<p>Wir empfehlen, RStudio vor dem Kurs auf die neueste Version zu aktualisieren: Überprüfen Sie, ob dies der Fall ist, indem Sie auf <em>help &gt; check for updates</em> klicken.</p>
-<p>Weitere Infos dazu findet ihr in <span class="citation" data-cites="bryan2017">Jenny Bryan (<a href="06-references.html#ref-bryan2017" role="doc-biblioref">2017</a>)</span>: <a href="https://happygitwithr.com/install-r-rstudio.html">Install or upgrade R and RStudio</a></p>
-<div class="callout callout-style-default callout-important callout-titled">
+<p>Im folgenden wollen wir auf die wichtigsten Markdown Syntax Elemente eingehen:</p>
+<section id="text" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="text"><span class="header-section-number">3.1</span> Text</h2>
+<p><em>Kursiv</em>, <strong>fett</strong>, <del>durchgestrichen</del>, <code>Code</code>, und <a href="https//www.example.com">Links</a> können wie folgt erstellt werden:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>*kursiv*</code></td>
+<td><em>kursiv</em></td>
+</tr>
+<tr class="even">
+<td><code>**fett**</code></td>
+<td><strong>fett</strong></td>
+</tr>
+<tr class="odd">
+<td><code>~~durchgestrichen~~</code></td>
+<td><del>durchgestrichen</del></td>
+</tr>
+<tr class="even">
+<td><code>`Code`</code></td>
+<td><code>Code</code></td>
+</tr>
+<tr class="odd">
+<td><code>[ZHAW](https://www.zhaw.ch)</code></td>
+<td><a href="https://www.zhaw.ch">ZHAW</a></td>
+</tr>
+<tr class="even">
+<td><code>&lt;https://www.zhaw.ch&gt;</code></td>
+<td><a href="https://www.zhaw.ch" class="uri">https://www.zhaw.ch</a></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Wichtig
+Hinweis
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Falls keine neue Version von RStudio installiert ist, fehlt die Software <code>quarto</code>, welche manuell installiert werden muss, siehe dazu <a href="https://quarto.org/docs/get-started/">diese Anleitung</a>.</p>
+<p>Mehr zum Markdown Syntax: <a href="https://quarto.org/docs/authoring/markdown-basics.html" class="uri">https://quarto.org/docs/authoring/markdown-basics.html</a></p>
+</div>
+</div>
+</section>
+<section id="überschriften" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="überschriften"><span class="header-section-number">3.2</span> Überschriften</h2>
+<p>Überschriften werden mit vorangestelltem <code>#</code> erstellt</p>
+<ul>
+<li>Kapitel: <code># Programmieren I</code></li>
+<li>Unterkapitel: <code>## Komplexe Datentypen</code></li>
+<li>Unter-Unterkapitel: <code>### Integer und Floats</code></li>
+<li>… usw. (bis Stufe 6)</li>
+</ul>
+</section>
+<section id="sec-querverweise" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-querverweise"><span class="header-section-number">3.3</span> Querverweise</h2>
+<p>Um im Text einen Querverweis auf ein Kapitel zu machen, müsst ihr diesem Zuerst eine eindeutige “ID” geben. Zum Beispiel sieht der Titel dieses Kapitels folgendermassen aus:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Querverweise {#sec-querverweise}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Nun kann ich auf dieses Kapitel mit <code>@sec-querverweise</code> verweisen.</p>
+<div id="tbl-querverweise" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="table quarto-float-caption quarto-float-tbl" id="tbl-querverweise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;3.1: Querverweise
+</figcaption>
+<div aria-describedby="tbl-querverweise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Input:</td>
+<td>Output:</td>
+</tr>
+<tr class="even">
+<td><code>@sec-querverweise</code></td>
+<td><a href="#sec-querverweise" class="quarto-xref"><span>Kapitel&nbsp;3.3</span></a></td>
+</tr>
+<tr class="odd">
+<td><code>@fig-zhaw-logo</code></td>
+<td><a href="#fig-zhaw-logo" class="quarto-xref">Abbildung&nbsp;<span>3.1</span></a></td>
+</tr>
+<tr class="even">
+<td><code>@tbl-beispielstabelle</code></td>
+<td>siehe <a href="#tbl-beispielstabelle" class="quarto-xref">Tabelle&nbsp;<span>3.2</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Das Verweisen funktioniert aber nur auf Nummerierte Kapitel und deren Unterkapitel. Wichtig ist auch, das ein <code>sec-</code> vorangestellt wird. Dieses <code>sec-</code> kommuniziert Quarto, dass es sich bei der Referenz um einen Kapitelverweis handelt. Bilder werden mit <code>fig-</code> referenziert und Tabellen mit <code>tbl-</code>. Mehr dazu später, in <a href="#sec-md-tables" class="quarto-xref"><span>Kapitel&nbsp;3.4</span></a> und <a href="#sec-md-images" class="quarto-xref"><span>Kapitel&nbsp;3.5</span></a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zu Querverweisen: <a href="https://quarto.org/docs/authoring/cross-references.html" class="uri">https://quarto.org/docs/authoring/cross-references.html</a></p>
+</div>
+</div>
+</section>
+<section id="sec-md-tables" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-md-tables"><span class="header-section-number">3.4</span> Tabellen</h2>
+<p>Tabellen werden ebenfalls im Markdown-Syntax erstellt, und zwar folgendermassen:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>| BMI         | Nutritional status       | </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>|:------------|:-------------------------|</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>| Below 18.5  | Underweight              |</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>| 18.5–24.9   | Normal weight            |</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>| 25.0–29.9   | Pre-obesity              |</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>| 30.0–34.9   | Obesity class I          |</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>| 35.0–39.9   | Obesity class II         |</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>| Above 40    | Obesity class III        |</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>: WHO Nutritional status {#tbl-beispielstabelle}</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Diese obige Markdown tabelle wird in eine html Tabelle umgewandelt. Diese Markdown Tabelle muss nicht von hand erstellt werden, auf <a href="https://www.tablesgenerator.com/markdown_tables">tablesgenerator.com</a> können bestehende Tabellen in den Markdown Syntax konvertiert werden.</p>
+<div id="tbl-beispielstabelle" class="anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="table quarto-float-caption quarto-float-tbl" id="tbl-beispielstabelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;3.2: WHO Nutritional status
+</figcaption>
+<div aria-describedby="tbl-beispielstabelle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">BMI</th>
+<th style="text-align: left;">Nutritional status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Below 18.5</td>
+<td style="text-align: left;">Underweight</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">18.5–24.9</td>
+<td style="text-align: left;">Normal weight</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">25.0–29.9</td>
+<td style="text-align: left;">Pre-obesity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">30.0–34.9</td>
+<td style="text-align: left;">Obesity class I</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.0–39.9</td>
+<td style="text-align: left;">Obesity class II</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Above 40</td>
+<td style="text-align: left;">Obesity class III</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Beachtet, dass man eine Tabellenüberschrift nach einen <code>:</code> anbringen kann. Nach der Tabellenüberschrift kann man einen “Key” erstellen, mit dem man diese Tabelle referenzieren kann. Der “Key” muss</p>
+<ul>
+<li><em>nach</em> der Tabellenüberschrift angebracht werden (mit leerschlag!)</li>
+<li>sich in geschweiften Klammern (<code>{</code> und <code>}</code>) befinden</li>
+<li>mit <code>#tbl-</code> beginnen</li>
+</ul>
+<p>Nun kann man sich im Text auf diese Tabelle beziehen (siehe <a href="#tbl-querverweise" class="quarto-xref">Tabelle&nbsp;<span>3.1</span></a>)</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zum einfügen von Tabellen: <a href="https://quarto.org/docs/authoring/tables.html" class="uri">https://quarto.org/docs/authoring/tables.html</a></p>
+</div>
+</div>
+</section>
+<section id="sec-md-images" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-md-images"><span class="header-section-number">3.5</span> Bilder</h2>
+<p>Um Bilder einzufügen muss man diese erstmals auf Github hochladen. Dafür wählt man auf Github.com den “Parent Folder” des Dokuments, wo das Bild hin soll und dort dann <em>Add file &gt; Upload file</em>. Nun kann man das Bild folgendermasen einfügen:</p>
+<ul>
+<li>Nur Bild: <code>![](bild.jpg)</code></li>
+<li>Bild mit Bildunterschrift: <code>![Hier kommt die Bildunterschrift ](bild.jpg)</code></li>
+<li>Bild mit Querverweis: <code>![Bildunterschrift](bild.jpg){#fig-test}</code></li>
+</ul>
+<pre><code>![Logo der ZHAW](zhaw_lsfm_iunr_blau.jpg){#fig-zhaw-logo}</code></pre>
+<p>Wird dann zu:</p>
+<div id="fig-zhaw-logo" class="quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-zhaw-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="zhaw_lsfm_iunr_blau.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-zhaw-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;3.1: Logo der ZHAW
+</figcaption>
+</figure>
+</div>
+<p>Siehe <a href="#tbl-querverweise" class="quarto-xref">Tabelle&nbsp;<span>3.1</span></a></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zum einfügen von Bildern: <a href="https://quarto.org/docs/authoring/figures.html" class="uri">https://quarto.org/docs/authoring/figures.html</a></p>
+</div>
+</div>
+</section>
+<section id="hervorhebungen-kästchen" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="hervorhebungen-kästchen"><span class="header-section-number">3.6</span> Hervorhebungen (Kästchen)</h2>
+<p>Die ganze Hinweis-kästchen in diesem Dokument werden mit folgendem Syntax erstellt:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Mehr zu diesen sogenannten *Callout Blocks*: <span class="ot">&lt;https://quarto.org/docs/authoring/callouts.html&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dies wir dann zu:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mehr zu diesen sogenannten <em>Callout Blocks</em>: <a href="https://quarto.org/docs/authoring/callouts.html" class="uri">https://quarto.org/docs/authoring/callouts.html</a></p>
 </div>
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-bryan2017" class="csl-entry" role="listitem">
-Jenny Bryan, Jim Heister. 2017. <em><span>Let<span>’</span>s Git started <span><span class="math inline">\(\vert\)</span></span> Happy Git and GitHub for the useR</span></em>. <a href="https://happygitwithr.com">https://happygitwithr.com</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -732,13 +884,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link  aria-label=" einleitung"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Einleitung</span>
+      <a href="./github-codespaces.html" class="pagination-link  aria-label=" &lt;span="" codespace&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GitHub Codespace</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-cloud-umgebungen.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Cloud Umgebungen</span>">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Cloud Umgebungen</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./vorschau-erstellen.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Vorschau erstellen</span>">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
