@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.489">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./github-account.html" rel="next">
+<link href="./setup.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -48,13 +48,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "Keine Treffer",
     "search-matching-documents-text": "Treffer",
@@ -78,12 +72,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Einleitung</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Einleitung</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -93,10 +87,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/zhaw_lsfm_iunr_blau.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Fit mit Markdown</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -112,46 +112,113 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Einleitung</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_setup/r-rstudio-installieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">R / RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_setup/rstudio-konfigurieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">RStudio konfigurieren</span></a>
+  </div>
+</li>
+          <li class="px-0"><hr class="sidebar-divider hi "></li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_setup/cloud-umgebungen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cloud Umgebungen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_setup/github-codespaces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Codespace</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./quarto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto/inhalte-erstellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Neue Inhalte hinzufügen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto/qmd-editieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Qmd editieren</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto/vorschau-erstellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vorschau erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto/advanced.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vorgeschrittene Funktionen</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-account.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span></a>
+  <a href="./publish.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Änderungen hochladen / teilen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./collab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collaboration</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_collab/git-installation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git installieren</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_collab/git-configure.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git konfigurieren</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_collab/github-account.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Account erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_collab/github-authenticate.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Authentifizieren</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projekt.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Projekt aufsetzen</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-codespaces.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GitHub Codespace</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./qmd-editieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vorschau-erstellen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Änderungen veröffentlichen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./inhalte-erstellen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Neue Inhalte hinzufügen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+  <a href="./faq.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">FAQ</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -163,20 +230,16 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#einleitung" id="toc-einleitung" class="nav-link active" data-scroll-target="#einleitung">Einleitung</a>
-  <ul class="collapse">
-  <li><a href="#wie-funktioniert-quarto" id="toc-wie-funktioniert-quarto" class="nav-link" data-scroll-target="#wie-funktioniert-quarto">Wie funktioniert Quarto?</a></li>
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
-  </ul></li>
+  <li><a href="#einleitung" id="toc-einleitung" class="nav-link active" data-scroll-target="#einleitung">Einleitung</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io/edit/main/index.qmd" class="toc-action">Seite editieren</a></p><p><a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io/issues/new" class="toc-action">Problem melden</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -184,7 +247,6 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Fit mit Markdown</h1>
-<p class="subtitle lead">Markdown für das Statistik Skript</p>
 </div>
 
 
@@ -202,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22. November 2023</p>
+      <p class="date">1. Februar 2024</p>
     </div>
   </div>
   
@@ -210,49 +272,15 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-
 </header>
-
 
 <section id="einleitung" class="level1 unnumbered">
 <h1 class="unnumbered">Einleitung</h1>
-<p>Quarto, RMarkown und Jupyter Notebooks haben eine Sache gemeinsam. Sie sind <em>Computational Notebooks</em>. Das heisst, sie sind eine Mischung aus Fliesstext und Code. Der Fliesstext wird in einerm Markupsprache namens Markdown geschrieben, der Code kann in einer beliebigen Programmiersprache geschrieben werden, typischerweise verwendet man aber Python, R oder Julia.</p>
-<p>Diese Computational Notebooks werden mittels einer Software typischerweise in HTML oder PDF konvertiert. Möglich sind aber auch andere Formate wie epub (EBook) oder Docx. Dieses System eignet sich sehr gut, um Datenanalysen zu dokumentieren und zu publizieren. Es eignet sich aber auch sehr gut, um Unterrichtsmaterialien zu erstellen.</p>
-<p>Seit ein paar Jahren verwenden wir Quarto für die Bereitstellung von Unterrichtsunterlagen an die Studierenden. Der Umstieg von klassischen Systemen wie Microsoft Word ist nicht ganz einfach. Da wir in vielen Fällen mit anderen Personen zusammenarbeiten, haben wir diese Anleitung geschrieben um den Einstieg zu erleichtern.Mittlerweile sind im Netz zahlreiche Anleitung, Videos und ander Ressourcen verfügbar. Unsere, also die vorliegende Anleitung, soll spezifisch für ZHAW Mitarbeit hilfreich sein, den Einstieg zu machen. Dabei werden wir punktuell auf solche Ressourcen verweisen, dabei aber sehr spezifisch sein.</p>
-<section id="wie-funktioniert-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="wie-funktioniert-quarto">Wie funktioniert Quarto?</h2>
-<p>Wie Eingangs erwähnt, funktionieren die verschiedenen <em>Computational Notebook</em> Systeme sehr ähnlich. Um möglichst Konkret zu sein, werden wir uns vor allem auf Quarto in Kombination mit <code>R</code> und den Output Formaten HTML und PDF konzentrieren.</p>
-<p>In einem Textfile mit der Erweiterung <code>.qmd</code> werden Fliesstext und Code gemischt. Der Fliesstext wird in Markdown geschrieben, der Code in einer beliebigen Programmiersprache. Das <code>R</code> Package <code>knitr</code> führt den Code aus und erstellt ein neues Markdown File wo der Fliesstext und die Resultate des Codes zusammengeführt werden. Dieses File wiederum wird mittels der Software <code>pandoc</code> (welche mit Quarto mitgeliefert wird) in das gewünschte Format konvertiert.</p>
-<p><img src="./images/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hinweis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Im letzten Schritt werden, je nach Output Format, ebenfalls temporäre Files erstellt. Beispielweise wird für die Erstellung eines PDF Files ein LaTeX File erstellt (<code>.tex</code>), welches dann mittel <code>xelatex</code> in ein PDF File konvertiert wird. Latex ist zwar mächtig, aber auch sehr komplex. Wir hoffen, dass Latex mittelfristig durch <code>typst</code> ersetzt wird, siehe <a href="https://quarto.org/docs/prerelease/1.4/typst.html">quarto.org</a>.</p>
-</div>
-</div>
-</section>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
-<p>Es gibt eine unendliche Anzahl von verschiedenen möglichen Setups denkbar. Hier ein paar Beispiele, die wir an der ZHAW nutzen und empfehlen:</p>
-<ul>
-<li>Editor: RStudio, VSCode oder JupyterLab</li>
-<li>Installation:
-<ul>
-<li>Lokal: Via Software Center oder <em>interim Admin</em></li>
-<li>Cloud: Lösungen gibt es für RStudio (siehe <span class="quarto-unresolved-ref">?sec-cloud-rstudio</span>), VSCode (siehe <span class="quarto-unresolved-ref">?sec-cloud-vscode</span>) und für JupyterLab (siehe <span class="quarto-unresolved-ref">?sec-cloud-jupyterlab</span>)</li>
-</ul></li>
-<li>Programmiersprache: R oder Python</li>
-</ul>
+<p><strong>Quarto</strong>, RMarkown und Jupyter Notebooks haben eine Sache gemeinsam. Sie sind <em>Computational Notebooks</em>. Das heisst, sie sind eine Mischung aus Fliesstext und Code. Der Fliesstext wird in einer Markupsprache namens Markdown geschrieben, der Code kann in einer beliebigen Programmiersprache geschrieben werden, typischerweise verwendet man Python, R oder Julia.</p>
+<p>Diese <em>Computational Notebooks</em> werden mittels einer Software typischerweise in HTML oder PDF konvertiert. Möglich sind aber auch andere Formate wie epub (EBook), Docx und viele mehr. Dieses System eignet sich sehr gut, um Datenanalysen zu dokumentieren und zu publizieren. Es eignet sich aber auch sehr gut, um Unterrichtsmaterialien zu erstellen.</p>
+<p>Seit ein paar Jahren verwenden wir <strong>Quarto</strong> für die Bereitstellung von Unterrichtsunterlagen an die Studierenden. Der Umstieg von klassischen Systemen wie Microsoft Word ist nicht ganz einfach. Da wir in vielen Fällen mit anderen Personen zusammenarbeiten, haben wir diese Anleitung geschrieben um den Einstieg zu erleichtern. Mittlerweile sind im Netz zahlreiche Anleitung, Videos und ander Ressourcen verfügbar. Unsere, also die vorliegende Anleitung, soll spezifisch für ZHAW Mitarbeiter hilfreich sein, den Einstieg zu machen. Dabei werden wir punktuell auf solche Ressourcen verweisen, dabei aber sehr spezifisch bleiben.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -335,9 +363,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -347,17 +376,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -370,128 +390,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        typesetMath(container);
-        return container.innerHTML
-      } else {
-        typesetMath(note);
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      typesetMath(note);
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -535,7 +433,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -561,32 +458,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -650,13 +521,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./github-account.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>GitHub Account erstellen</span>">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./setup.html" class="pagination-link">
+        <span class="nav-page-text">Setup</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-
 
 
 

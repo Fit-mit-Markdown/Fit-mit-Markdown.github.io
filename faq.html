@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.489">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fit mit Markdown - 7&nbsp; FAQ</title>
+<title>Fit mit Markdown - FAQ</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./references.html" rel="next">
-<link href="./inhalte-erstellen.html" rel="prev">
+<link href="./projekt.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,13 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "Keine Treffer",
     "search-matching-documents-text": "Treffer",
@@ -111,12 +105,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./faq.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">FAQ</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./faq.html"><span class="chapter-title">FAQ</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -126,10 +120,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/zhaw_lsfm_iunr_blau.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Fit mit Markdown</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -145,46 +145,113 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Einleitung</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_setup/r-rstudio-installieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">R / RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_setup/rstudio-konfigurieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">RStudio konfigurieren</span></a>
+  </div>
+</li>
+          <li class="px-0"><hr class="sidebar-divider hi "></li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_setup/cloud-umgebungen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cloud Umgebungen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_setup/github-codespaces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Codespace</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./quarto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto/inhalte-erstellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Neue Inhalte hinzufügen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto/qmd-editieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Qmd editieren</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto/vorschau-erstellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vorschau erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto/advanced.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vorgeschrittene Funktionen</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-account.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span></a>
+  <a href="./publish.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Änderungen hochladen / teilen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./collab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collaboration</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_collab/git-installation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git installieren</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_collab/git-configure.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git konfigurieren</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_collab/github-account.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Account erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_collab/github-authenticate.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Authentifizieren</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projekt.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Projekt aufsetzen</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-codespaces.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GitHub Codespace</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./qmd-editieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./vorschau-erstellen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Änderungen veröffentlichen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./inhalte-erstellen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Neue Inhalte hinzufügen</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./faq.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+  <a href="./faq.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">FAQ</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -196,31 +263,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#wie-funktioniert-quarto-wirklich" id="toc-wie-funktioniert-quarto-wirklich" class="nav-link active" data-scroll-target="#wie-funktioniert-quarto-wirklich"><span class="header-section-number">7.1</span> Wie funktioniert Quarto <em>wirklich</em>?</a></li>
-  <li><a href="#fehlermeldungen" id="toc-fehlermeldungen" class="nav-link" data-scroll-target="#fehlermeldungen"><span class="header-section-number">7.2</span> Fehlermeldungen</a>
+  <li><a href="#wie-funktioniert-quarto-wirklich" id="toc-wie-funktioniert-quarto-wirklich" class="nav-link active" data-scroll-target="#wie-funktioniert-quarto-wirklich">Wie funktioniert Quarto <em>wirklich</em>?</a></li>
+  <li><a href="#fehlermeldungen" id="toc-fehlermeldungen" class="nav-link" data-scroll-target="#fehlermeldungen">Fehlermeldungen</a>
   <ul class="collapse">
-  <li><a href="#error-syntaxerror-unexpected-token-in-json-at-position-2" id="toc-error-syntaxerror-unexpected-token-in-json-at-position-2" class="nav-link" data-scroll-target="#error-syntaxerror-unexpected-token-in-json-at-position-2"><span class="header-section-number">7.2.1</span> ERROR: SyntaxError: Unexpected token &lt; in JSON at position 2</a></li>
-  <li><a href="#error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge" id="toc-error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge" class="nav-link" data-scroll-target="#error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge"><span class="header-section-number">7.2.2</span> error: Your local changes to the following files would be overwritten by merge:</a></li>
-  <li><a href="#you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them" id="toc-you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them" class="nav-link" data-scroll-target="#you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them"><span class="header-section-number">7.2.3</span> You have divergent branches and need to specify how to reconcile them</a></li>
+  <li><a href="#error-syntaxerror-unexpected-token-in-json-at-position-2" id="toc-error-syntaxerror-unexpected-token-in-json-at-position-2" class="nav-link" data-scroll-target="#error-syntaxerror-unexpected-token-in-json-at-position-2">ERROR: SyntaxError: Unexpected token &lt; in JSON at position 2</a></li>
+  <li><a href="#error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge" id="toc-error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge" class="nav-link" data-scroll-target="#error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge">error: Your local changes to the following files would be overwritten by merge:</a></li>
+  <li><a href="#you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them" id="toc-you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them" class="nav-link" data-scroll-target="#you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them">You have divergent branches and need to specify how to reconcile them</a></li>
   </ul></li>
-  <li><a href="#wie-löse-ich-einen-merge-conflict" id="toc-wie-löse-ich-einen-merge-conflict" class="nav-link" data-scroll-target="#wie-löse-ich-einen-merge-conflict"><span class="header-section-number">7.3</span> Wie löse ich einen merge-conflict?</a></li>
-  <li><a href="#warum-ist-datasets-ein-separates-git-repo" id="toc-warum-ist-datasets-ein-separates-git-repo" class="nav-link" data-scroll-target="#warum-ist-datasets-ein-separates-git-repo"><span class="header-section-number">7.4</span> Warum ist <code>datasets</code> ein separates Git-Repo?</a></li>
+  <li><a href="#wie-löse-ich-einen-merge-conflict" id="toc-wie-löse-ich-einen-merge-conflict" class="nav-link" data-scroll-target="#wie-löse-ich-einen-merge-conflict">Wie löse ich einen merge-conflict?</a></li>
+  <li><a href="#warum-ist-datasets-ein-separates-git-repo" id="toc-warum-ist-datasets-ein-separates-git-repo" class="nav-link" data-scroll-target="#warum-ist-datasets-ein-separates-git-repo">Warum ist <code>datasets</code> ein separates Git-Repo?</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io/edit/main/faq.qmd" class="toc-action">Seite editieren</a></p><p><a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io/issues/new" class="toc-action">Problem melden</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">FAQ</span></h1>
+<h1 class="title"><span class="chapter-title">FAQ</span></h1>
 </div>
 
 
@@ -233,12 +300,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
-
 </header>
 
-
-<section id="wie-funktioniert-quarto-wirklich" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="wie-funktioniert-quarto-wirklich"><span class="header-section-number">7.1</span> Wie funktioniert Quarto <em>wirklich</em>?</h2>
+<section id="wie-funktioniert-quarto-wirklich" class="level2">
+<h2 class="anchored" data-anchor-id="wie-funktioniert-quarto-wirklich">Wie funktioniert Quarto <em>wirklich</em>?</h2>
 <p>Angenommen, wir haben folgendes Quarto-File:</p>
 <div class="cell">
 <div class="code-with-filename">
@@ -255,142 +320,124 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Fliesstext wird in *Markdown* geschrieben.</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">Sys.Date()</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="in">plot(1:10, (1:10)^2)</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.Date</span>()</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<pre class="{r}"><code>plot(1:10, (1:10)^2)</code></pre>
+<pre><code>:::
+
+Wenn wir den Befehl `quarto render` ausführen, erstellt `knitr` ein Markdown file mit dem Namen `index.html.md`, welches folgendermassen aussieht:
+
+(`keep-md` sorgt dafür, dass das [Markdown-File nicht gelöscht wird](https://quarto.org/docs/computations/execution-options.html#intermediates), `minimal` sorgt dafür, dass das resultierende HTML-File [etwas simpler](https://quarto.org/docs/output-formats/html-basics.html#minimal-html) wird)
+
+::: {.cell filename='index.html.md'}
+
+```{.markdown .cell-code}
+---
+format: 
+    html:
+        keep-md: true
+        minimal: true
+---
+
+Fliesstext wird in *Markdown* geschrieben.
+
+::: {.cell}
+
+```{.r .cell-code}
+Sys.Date()</code></pre>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "2023-11-23"</code></pre>
 </div>
 </div>
-<p>Wenn wir den Befehl <code>quarto render</code> ausführen, erstellt <code>knitr</code> ein Markdown file mit dem Namen <code>index.html.md</code>, welches folgendermassen aussieht:</p>
-<p>(<code>keep-md</code> sorgt dafür, dass das <a href="https://quarto.org/docs/computations/execution-options.html#intermediates">Markdown-File nicht gelöscht wird</a>, <code>minimal</code> sorgt dafür, dass das resultierende HTML-File <a href="https://quarto.org/docs/output-formats/html-basics.html#minimal-html">etwas simpler</a> wird)</p>
 <div class="cell">
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>index.html.md</strong></pre>
-</div>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">    html:</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">        keep-md: true</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">        minimal: true</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>Fliesstext wird in *Markdown* geschrieben.</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code}</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="in">Sys.Date()</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>::: {.cell-output .cell-output-stdout}</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="in">[1] "2023-11-23"</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code}</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="in">plot(1:10, (1:10)^2)</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>::: {.cell-output-display}</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="al">![](index_files/figure-html/unnamed-chunk-2-1.png)</span>{width=672}</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, (<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Der Output aus dem ersten Chunk ist text (das Aktuelle Datum), dieser kann direkt in Markdown eingefügt werden. Der Output aus dem zweiten Chunk ist ein Plot: Dieser wird mit R gerendert, an einem geeigneten Ort abgespeichert und dann in Markdown <em>verlinkt</em>. Die Software <code>pandoc</code> nimmt dann <code>index.html.md</code> und wandelt es in <code>index.html</code> um, welches folgendermassen aussieht:</p>
-<div class="cell">
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>index.html (nur der &lt;body&gt;-Teil)</strong></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Fliesstext wird in <span class="dt">&lt;</span><span class="kw">em</span><span class="dt">&gt;</span>Markdown<span class="dt">&lt;/</span><span class="kw">em</span><span class="dt">&gt;</span> geschrieben.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"cell"</span><span class="dt">&gt;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"sourceCode cell-code"</span><span class="ot"> id</span><span class="op">=</span><span class="st">"cb1"</span><span class="dt">&gt;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>            <span class="dt">&lt;</span><span class="kw">pre</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ot">                class</span><span class="op">=</span><span class="st">"sourceCode r"</span><span class="dt">&gt;&lt;</span><span class="kw">code</span><span class="ot"> class</span><span class="op">=</span><span class="st">"sourceCode r"</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> id</span><span class="op">=</span><span class="st">"cb1-1"</span><span class="dt">&gt;&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"#cb1-1"</span><span class="ot"> aria-hidden</span><span class="op">=</span><span class="st">"true"</span><span class="ot"> tabindex</span><span class="op">=</span><span class="st">"-1"</span><span class="dt">&gt;&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"fu"</span><span class="dt">&gt;</span>Sys.Date<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span>()<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;/</span><span class="kw">code</span><span class="dt">&gt;&lt;/</span><span class="kw">pre</span><span class="dt">&gt;</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"cell-output cell-output-stdout"</span><span class="dt">&gt;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            <span class="dt">&lt;</span><span class="kw">pre</span><span class="dt">&gt;&lt;</span><span class="kw">code</span><span class="dt">&gt;</span>[1] "2023-11-23"<span class="dt">&lt;/</span><span class="kw">code</span><span class="dt">&gt;&lt;/</span><span class="kw">pre</span><span class="dt">&gt;</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"cell"</span><span class="dt">&gt;</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"sourceCode cell-code"</span><span class="ot"> id</span><span class="op">=</span><span class="st">"cb3"</span><span class="dt">&gt;</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>            <span class="dt">&lt;</span><span class="kw">pre</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ot">                class</span><span class="op">=</span><span class="st">"sourceCode r"</span><span class="dt">&gt;&lt;</span><span class="kw">code</span><span class="ot"> class</span><span class="op">=</span><span class="st">"sourceCode r"</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> id</span><span class="op">=</span><span class="st">"cb3-1"</span><span class="dt">&gt;&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"#cb3-1"</span><span class="ot"> aria-hidden</span><span class="op">=</span><span class="st">"true"</span><span class="ot"> tabindex</span><span class="op">=</span><span class="st">"-1"</span><span class="dt">&gt;&lt;/</span><span class="kw">a</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"fu"</span><span class="dt">&gt;</span>plot<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span>(<span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"dv"</span><span class="dt">&gt;</span>1<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"sc"</span><span class="dt">&gt;</span>:<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"dv"</span><span class="dt">&gt;</span>10<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span>, (<span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"dv"</span><span class="dt">&gt;</span>1<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"sc"</span><span class="dt">&gt;</span>:<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"dv"</span><span class="dt">&gt;</span>10<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span>)<span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"sc"</span><span class="dt">&gt;</span>^<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"dv"</span><span class="dt">&gt;</span>2<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span>)<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;&lt;/</span><span class="kw">code</span><span class="dt">&gt;&lt;/</span><span class="kw">pre</span><span class="dt">&gt;</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"cell-output-display"</span><span class="dt">&gt;</span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>            <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"index_files/figure-html/unnamed-chunk-2-1.png"</span><span class="ot"> width</span><span class="op">=</span><span class="st">"672"</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
+<pre><code>:::
+
+Der Output aus dem ersten Chunk ist text (das Aktuelle Datum), dieser kann direkt in Markdown eingefügt werden. Der Output aus dem zweiten Chunk ist ein Plot: Dieser wird mit R gerendert, an einem geeigneten Ort abgespeichert und dann in Markdown *verlinkt*. Die Software `pandoc` nimmt dann `index.html.md` und wandelt es in `index.html` um, welches folgendermassen aussieht:
+
+
+::: {.cell filename='index.html (nur der &lt;body&gt;-Teil)'}
+
+```{.html .cell-code}
+&lt;body&gt;
+    &lt;p&gt;Fliesstext wird in &lt;em&gt;Markdown&lt;/em&gt; geschrieben.&lt;/p&gt;
+    &lt;div class="cell"&gt;
+        &lt;div class="sourceCode cell-code" id="cb1"&gt;
+            &lt;pre
+                class="sourceCode r"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb1-1"&gt;&lt;a href="#cb1-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;Sys.Date&lt;/span&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+        &lt;div class="cell-output cell-output-stdout"&gt;
+            &lt;pre&gt;&lt;code&gt;[1] "2023-11-23"&lt;/code&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cell"&gt;
+        &lt;div class="sourceCode cell-code" id="cb3"&gt;
+            &lt;pre
+                class="sourceCode r"&gt;&lt;code class="sourceCode r"&gt;&lt;span id="cb3-1"&gt;&lt;a href="#cb3-1" aria-hidden="true" tabindex="-1"&gt;&lt;/a&gt;&lt;span class="fu"&gt;plot&lt;/span&gt;(&lt;span class="dv"&gt;1&lt;/span&gt;&lt;span class="sc"&gt;:&lt;/span&gt;&lt;span class="dv"&gt;10&lt;/span&gt;, (&lt;span class="dv"&gt;1&lt;/span&gt;&lt;span class="sc"&gt;:&lt;/span&gt;&lt;span class="dv"&gt;10&lt;/span&gt;)&lt;span class="sc"&gt;^&lt;/span&gt;&lt;span class="dv"&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+        &lt;div class="cell-output-display"&gt;
+            &lt;p&gt;&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+<p>:::</p>
 <p>Wie wir sehen, wird der Text <code>Markdown</code> im HTML-File mit <code>&lt;em&gt;</code> umschlossen, während der Plot mit <code>&lt;img&gt;</code> eingefügt wird.</p>
 <!-- TODO: Add PDF example -->
 </section>
-<section id="fehlermeldungen" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="fehlermeldungen"><span class="header-section-number">7.2</span> Fehlermeldungen</h2>
-<section id="error-syntaxerror-unexpected-token-in-json-at-position-2" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="error-syntaxerror-unexpected-token-in-json-at-position-2"><span class="header-section-number">7.2.1</span> ERROR: SyntaxError: Unexpected token &lt; in JSON at position 2</h3>
+<section id="fehlermeldungen" class="level2">
+<h2 class="anchored" data-anchor-id="fehlermeldungen">Fehlermeldungen</h2>
+<section id="error-syntaxerror-unexpected-token-in-json-at-position-2" class="level3">
+<h3 class="anchored" data-anchor-id="error-syntaxerror-unexpected-token-in-json-at-position-2">ERROR: SyntaxError: Unexpected token &lt; in JSON at position 2</h3>
 <p>Nach ausführen von <code>quarto preview</code> erhalte ich den obigen Fehler. Der output im Terminal sieht folgendermassen aus:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[54/59]</span> fallstudie_n/1_Vorbemerkung.qmd</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[55/59]</span> fallstudie_n/2_Datenverarbeitung_Uebung.qmd</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[56/59]</span> fallstudie_n/2_Datenverarbeitung_Loesung.qmd</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">ERROR:</span> SyntaxError: Unexpected token <span class="op">&lt;</span> in JSON at position 2</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[54/59]</span> fallstudie_n/1_Vorbemerkung.qmd</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[55/59]</span> fallstudie_n/2_Datenverarbeitung_Uebung.qmd</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[56/59]</span> fallstudie_n/2_Datenverarbeitung_Loesung.qmd</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">ERROR:</span> SyntaxError: Unexpected token <span class="op">&lt;</span> in JSON at position 2</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Ich kann den Fehler beheben, indem ich <code>quarto render das-letzte-qmd-file-vor-der-fehlermeldung.qmd</code> ausführe. In dem obigen Fall also:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render fallstudie_n/2_Datenverarbeitung_Loesung.qmd</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render fallstudie_n/2_Datenverarbeitung_Loesung.qmd</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge"><span class="header-section-number">7.2.2</span> error: Your local changes to the following files would be overwritten by merge:</h3>
+<section id="error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge" class="level3">
+<h3 class="anchored" data-anchor-id="error-your-local-changes-to-the-following-files-would-be-overwritten-by-merge">error: Your local changes to the following files would be overwritten by merge:</h3>
 <p>Bei einem <code>git pull</code> kann es zu folgender Fehlermeldung kommen.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">error:</span> Your local changes to the following files would be overwritten by merge:</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>        <span class="ex">prepro/Prepro1_Demo.qmd</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="ex">...</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Please</span> commit your changes or stash them before you merge.</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Aborting</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">error:</span> Your local changes to the following files would be overwritten by merge:</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>        <span class="ex">prepro/Prepro1_Demo.qmd</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        <span class="ex">...</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Please</span> commit your changes or stash them before you merge.</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Aborting</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Dies bedeutet, dass das genannte File (bzw. die genannten Files) auf Github in Konfikt stehehen könnten mit dem File (bzw. den Files) bei dir auf der Festplatte. Um allfällige Konflikte zu lösen, müssen die lokalen Änderungen zuerst ge<code>stage</code>ed und dann <code>commit</code>ed werden. Anschliessend können die Änderungen von Github heruntergeladen werden.</p>
 <pre><code>git add "*.qmd"                # staged alle Files mit der Endung .qmd
 git commit -m "meine message" 
 git pull                       # lädt die Änderungen von Github herunter</code></pre>
 </section>
-<section id="you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them" class="level3" data-number="7.2.3">
-<h3 data-number="7.2.3" class="anchored" data-anchor-id="you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them"><span class="header-section-number">7.2.3</span> You have divergent branches and need to specify how to reconcile them</h3>
+<section id="you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them" class="level3">
+<h3 class="anchored" data-anchor-id="you-have-divergent-branches-and-need-to-specify-how-to-reconcile-them">You have divergent branches and need to specify how to reconcile them</h3>
 <!-- TODO: explain -->
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> You have divergent branches and need to specify how to reconcile them.</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> You can do so by running one of the following commands sometime before</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> your next pull:</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> </span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span>   git config pull.rebase false  <span class="co"># merge (the default strategy)</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span>   git config pull.rebase true   <span class="co"># rebase</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span>   git config pull.ff only       <span class="co"># fast-forward only</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> </span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> You can replace <span class="st">"git config"</span> with <span class="st">"git config --global"</span> to set a default</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> preference for all repositories. You can also pass <span class="at">--rebase,</span> <span class="at">--no-rebase,</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> or <span class="at">--ff-only</span> on the command line to override the configured default per</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> invocation.</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> You have divergent branches and need to specify how to reconcile them.</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> You can do so by running one of the following commands sometime before</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> your next pull:</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span>   git config pull.rebase false  <span class="co"># merge (the default strategy)</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span>   git config pull.rebase true   <span class="co"># rebase</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span>   git config pull.ff only       <span class="co"># fast-forward only</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> </span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> You can replace <span class="st">"git config"</span> with <span class="st">"git config --global"</span> to set a default</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> preference for all repositories. You can also pass <span class="at">--rebase,</span> <span class="at">--no-rebase,</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> or <span class="at">--ff-only</span> on the command line to override the configured default per</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="ex">hint:</span> invocation.</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="wie-löse-ich-einen-merge-conflict" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="wie-löse-ich-einen-merge-conflict"><span class="header-section-number">7.3</span> Wie löse ich einen merge-conflict?</h2>
+<section id="wie-löse-ich-einen-merge-conflict" class="level2">
+<h2 class="anchored" data-anchor-id="wie-löse-ich-einen-merge-conflict">Wie löse ich einen merge-conflict?</h2>
 <p>TBD</p>
 </section>
-<section id="warum-ist-datasets-ein-separates-git-repo" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="warum-ist-datasets-ein-separates-git-repo"><span class="header-section-number">7.4</span> Warum ist <code>datasets</code> ein separates Git-Repo?</h2>
+<section id="warum-ist-datasets-ein-separates-git-repo" class="level2">
+<h2 class="anchored" data-anchor-id="warum-ist-datasets-ein-separates-git-repo">Warum ist <code>datasets</code> ein separates Git-Repo?</h2>
 <ol type="1">
 <li>Die Datensätze sind häufig ein paar megabyte gross. In der Vergangenheit haben kleine Änderungen an diesen Files das Repo extrem ge-bloatet (vergrössert)</li>
 <li>Die Datenstäze sind teilweise vertraulich und sollten nicht öffentlich geteilt werden (das entsprechende Repo ist <em>private</em>) → dies sollte sich in Zukunft hoffentlich ändern (OER!)</li>
@@ -479,9 +526,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -491,17 +539,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -514,128 +553,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
-        }
-        typesetMath(container);
-        return container.innerHTML
-      } else {
-        typesetMath(note);
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      typesetMath(note);
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -679,7 +596,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -705,32 +621,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -792,18 +682,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./inhalte-erstellen.html" class="pagination-link  aria-label=" &lt;span="" inhalte="" hinzufügen&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Neue Inhalte hinzufügen</span></span>
+      <a href="./projekt.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Projekt aufsetzen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
+      <a href="./references.html" class="pagination-link">
         <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-
 
 
 

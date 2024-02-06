@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fit mit Markdown - 3&nbsp; Cloud Umgebungen</title>
+<title>Fit mit Markdown - Vorgeschrittene Funktionen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./github-codespaces.html" rel="next">
-<link href="./rstudio-konfigurieren.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../publish.html" rel="next">
+<link href="../2_quarto/vorschau-erstellen.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./r-rstudio-installieren.html">Setup</a></li><li class="breadcrumb-item"><a href="./cloud-umgebungen.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cloud Umgebungen</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quarto.html">Quarto</a></li><li class="breadcrumb-item"><a href="../2_quarto/advanced.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Vorgeschrittene Funktionen</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -87,9 +87,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/zhaw_lsfm_iunr_blau.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Fit mit Markdown</a> 
+      <a href="../">Fit mit Markdown</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -101,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Einleitung</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a href="../setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setup</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -116,40 +122,30 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./r-rstudio-installieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R / RStudio</span></span></a>
+  <a href="../1_setup/r-rstudio-installieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">R / RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rstudio-konfigurieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">RStudio konfigurieren</span></span></a>
+  <a href="../1_setup/rstudio-konfigurieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">RStudio konfigurieren</span></a>
   </div>
 </li>
           <li class="px-0"><hr class="sidebar-divider hi "></li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cloud-umgebungen.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cloud Umgebungen</span></span></a>
+  <a href="../1_setup/cloud-umgebungen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cloud Umgebungen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-codespaces.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GitHub Codespace</span></span></a>
+  <a href="../1_setup/github-codespaces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Codespace</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./projekt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Projekt aufsetzen</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a href="../quarto.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quarto</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -158,33 +154,34 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./qmd-editieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Qmd editieren</span></span></a>
+  <a href="../2_quarto/inhalte-erstellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Neue Inhalte hinzufügen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vorschau-erstellen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Vorschau erstellen</span></span></a>
+  <a href="../2_quarto/qmd-editieren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Qmd editieren</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./inhalte-erstellen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Neue Inhalte hinzufügen</span></span></a>
+  <a href="../2_quarto/vorschau-erstellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Vorschau erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../2_quarto/advanced.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Vorgeschrittene Funktionen</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Änderungen hochladen / teilen</span></span></a>
+  <a href="../publish.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Änderungen hochladen / teilen</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a href="../collab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Collaboration</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -193,39 +190,39 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git-installation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Git installieren</span></span></a>
+  <a href="../3_collab/git-installation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git installieren</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git-configure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Git konfigurieren</span></span></a>
+  <a href="../3_collab/git-configure.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Git konfigurieren</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-account.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">GitHub Account erstellen</span></span></a>
+  <a href="../3_collab/github-account.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Account erstellen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github-authenticate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">GitHub Authentifizieren</span></span></a>
+  <a href="../3_collab/github-authenticate.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">GitHub Authentifizieren</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">FAQ</span></span></a>
+  <a href="../projekt.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Projekt aufsetzen</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="../faq.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">FAQ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -239,18 +236,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#sec-cloud-rstudio" id="toc-sec-cloud-rstudio" class="nav-link active" data-scroll-target="#sec-cloud-rstudio"><span class="header-section-number">3.1</span> RStudio</a></li>
-  <li><a href="#sec-cloud-vscode" id="toc-sec-cloud-vscode" class="nav-link" data-scroll-target="#sec-cloud-vscode"><span class="header-section-number">3.2</span> VSCode</a></li>
-  <li><a href="#sec-cloud-jupyterlab" id="toc-sec-cloud-jupyterlab" class="nav-link" data-scroll-target="#sec-cloud-jupyterlab"><span class="header-section-number">3.3</span> JupyterLab</a></li>
+  <li><a href="#quarto-setup" id="toc-quarto-setup" class="nav-link active" data-scroll-target="#quarto-setup">Quarto setup</a></li>
+  <li><a href="#dashoboards" id="toc-dashoboards" class="nav-link" data-scroll-target="#dashoboards">Dashoboards</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io/edit/main/2_quarto/advanced.qmd" class="toc-action">Seite editieren</a></p><p><a href="https://github.com/Fit-mit-Markdown/Fit-mit-Markdown.github.io/issues/new" class="toc-action">Problem melden</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cloud Umgebungen</span></h1>
+<h1 class="title"><span class="chapter-title">Vorgeschrittene Funktionen</span></h1>
 </div>
 
 
@@ -265,29 +262,14 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="sec-cloud-rstudio" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="sec-cloud-rstudio"><span class="header-section-number">3.1</span> RStudio</h2>
-<p>Die ZHAW selbst hat ebenfalls eine RStudio Cloud Lösung für Mitarbeiter und Studierende. Allerdings ist diese zur Zeit des schreibens (Ende 2023) noch im Umbruch und es ist nicht klar, wie diese Lösung in Zukunft aussehen wird. Aktuell ist sie noch unter <a href="https://statistik-ide.zhaw.ch/" class="uri">https://statistik-ide.zhaw.ch/</a> erreichbar.</p>
-<ul>
-<li><a href="https://statistik-ide.zhaw.ch">ZHAW Posit Workbench</a></li>
-<li><a href="https://posit.cloud/">posit.cloud</a></li>
-<li><a href="https://renkulab.io/">Renku</a></li>
-</ul>
+<section id="quarto-setup" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-setup">Quarto setup</h2>
 </section>
-<section id="sec-cloud-vscode" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="sec-cloud-vscode"><span class="header-section-number">3.2</span> VSCode</h2>
-<ul>
-<li><a href="https://statistik-ide.zhaw.ch">ZHAW Posit Workbench</a></li>
-<li><a href="https://code.visualstudio.com/docs/remote/codespaces">Codespaces</a></li>
-</ul>
+<section id="dashoboards" class="level2">
+<h2 class="anchored" data-anchor-id="dashoboards">Dashoboards</h2>
 </section>
-<section id="sec-cloud-jupyterlab" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="sec-cloud-jupyterlab"><span class="header-section-number">3.3</span> JupyterLab</h2>
-<ul>
-<li><a href="https://statistik-ide.zhaw.ch">ZHAW Posit Workbench</a></li>
-<li><a href="https://renkulab.io/">Renku</a></li>
-<li><a href="https://colab.research.google.com/">Google Colab</a></li>
-</ul>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
 </section>
@@ -528,13 +510,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./rstudio-konfigurieren.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">RStudio konfigurieren</span></span>
+      <a href="../2_quarto/vorschau-erstellen.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Vorschau erstellen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./github-codespaces.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GitHub Codespace</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../publish.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">Änderungen hochladen / teilen</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
