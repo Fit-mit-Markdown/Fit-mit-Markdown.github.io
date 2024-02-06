@@ -11,11 +11,9 @@ Im Modul Research Methods befindet sich diese in einen der Unterordner (`prepro`
 
 Im folgenden wollen wir auf die wichtigsten Markdown Syntax Elemente eingehen:
 
-
 ## Text
 
 *Kursiv*, **fett**, ~~durchgestrichen~~, `Code`, und [Links](https//www.example.com) können wie folgt erstellt werden:
-
 
 +-------------------------------------+-------------------------------------+
 | Input                               | Output                              |
@@ -33,9 +31,6 @@ Im folgenden wollen wir auf die wichtigsten Markdown Syntax Elemente eingehen:
 | `<https://www.zhaw.ch>`             | <https://www.zhaw.ch>               |
 +-------------------------------------+-------------------------------------+
 
-
-
-
 :::{.callout-note}
 Mehr zum Markdown Syntax: <https://quarto.org/docs/authoring/markdown-basics.html>
 :::
@@ -48,7 +43,6 @@ Mehr zum Markdown Syntax: <https://quarto.org/docs/authoring/markdown-basics.htm
 - Unterkapitel: `## Komplexe Datentypen`
 - Unter-Unterkapitel: `### Integer und Floats`
 - ... usw. (bis Stufe 6)
-
 
 ## Querverweise {#sec-querverweise}
 
@@ -74,12 +68,9 @@ Nun kann ich auf dieses Kapitel mit `@sec-querverweise` verweisen.
 
 Das Verweisen funktioniert aber nur auf Nummerierte Kapitel und deren Unterkapitel. Wichtig ist auch, das ein `sec-` vorangestellt wird. Dieses `sec-` kommuniziert Quarto, dass es sich bei der Referenz um einen Kapitelverweis handelt. Bilder werden mit `fig-` referenziert und Tabellen mit `tbl-`. Mehr dazu später, in @sec-md-tables und @sec-md-images.
 
-
 :::{.callout-note}
 Mehr zu Querverweisen: <https://quarto.org/docs/authoring/cross-references.html>
 :::
-
-
 
 ## Tabellen{#sec-md-tables}
 
@@ -101,7 +92,6 @@ Tabellen werden ebenfalls im Markdown-Syntax erstellt, und zwar folgendermassen:
 
 Diese obige Markdown tabelle wird in eine html Tabelle umgewandelt. Diese Markdown Tabelle muss nicht von hand erstellt werden, auf [tablesgenerator.com](https://www.tablesgenerator.com/markdown_tables) können bestehende Tabellen in den Markdown Syntax konvertiert werden.
 
-
 | BMI         | Nutritional status       | 
 |:------------|:-------------------------|
 | Below 18.5  | Underweight              |
@@ -120,7 +110,6 @@ Beachtet, dass man eine Tabellenüberschrift nach einen `:` anbringen kann. Nach
 - mit `#tbl-` beginnen
 
 Nun kann man sich im Text auf diese Tabelle beziehen (siehe @tbl-querverweise)
-
 
 :::{.callout-note}
 Mehr zum einfügen von Tabellen: <https://quarto.org/docs/authoring/tables.html>
@@ -143,7 +132,6 @@ Wird dann zu:
 ![Logo der ZHAW](zhaw_lsfm_iunr_blau.jpg){#fig-zhaw-logo}
 
 Siehe @tbl-querverweise
-
 
 :::{.callout-note}
 Mehr zum einfügen von Bildern: <https://quarto.org/docs/authoring/figures.html>

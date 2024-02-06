@@ -16,7 +16,4 @@ Der nächste Schritt ist daher die Installation von Git. Es gibt verschiedene Gi
   - Unter Ubuntu oder Debian Linux: `sudo apt-get install git`
   - Unter Fedora oder RedHat Linux: `sudo yum install git`
 
-
 Ein großer Teil dieses Kapitels wurde von @bryan2017 übernommen ([Kapitel Install Git](https://happygitwithr.com/install-git.html)). Wenn Sie tiefer in die Verwendung von Git eintauchen wollen, empfehlen wir Ihnen dieses Buch sehr. Für einen *noch* tieferen Einstieg in Git lesen Sie @chacon2014. Beide Bücher sind kostenlos und quelloffen auf [happygitwithr.com](https://happygitwithr.com/) bzw. [git-scm.com/book](https://git-scm.com/book/) erhältlich.
-
-

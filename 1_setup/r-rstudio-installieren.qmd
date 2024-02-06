@@ -1,9 +1,8 @@
-
 # R / RStudio
 
-Diese beiden Programme sind zentral, um mit Quarto arbeiten zu können. Allerdings kann man RStudio auch gut durch eine andere IDE oder einerm einfachen Texteditor ersetzen (VSCode, Sublime). Allerdings empfehlen wir dies eher für Fortgeschrittene benutzer. 
+Diese beiden Programme sind zentral, um mit Quarto arbeiten zu können. Allerdings kann man RStudio auch gut durch eine andere IDE oder eine einfachen Texteditor ersetzen (VSCode, Sublime). Allerdings empfehlen wir dies eher für fortgeschrittene Benutzer. 
 
-Die Programme muss man nicht zwingend lokal installieren, es gibt auch Cloud Lösungen, siehe dazu @sec-cloud-rstudio. Wer hingegen Lokal auf seinem eingenen PC arbeiten will, muss eine aktuell version von R, RStudio und Git installieren. Siehe dazu folgende Anleitungen von @bryan2017:
+Die Programme muss man nicht zwingend lokal installieren, es gibt auch Cloud Lösungen, siehe dazu @sec-cloud-rstudio. Wer hingegen Lokal auf seinem eingenen PC arbeiten will, muss eine aktuell Version von R, RStudio installieren. Für die Collaboration unter den Mitarbeitern und Studierenden würde dann noch Git relevant werden (@sec-collaboration). Siehe dazu folgende Anleitungen von @bryan2017:
 
 ## R installieren / updaten
 
@@ -40,16 +39,13 @@ Dies gibt die Versionsnummer Ihrer R-Installation zurück, wobei die erste Ziffe
 
 Zum Zeitpunkt des Schreibens (`r heute`) ist die aktuelle `R` Version `r rv$version` (freigegeben am `r strftime(rv$date, "%d.%m.%Y")`, siehe [cran.r-project.org](https://cran.r-project.org/)). Ihre Installation sollte daher nicht älter sein als `r rversion_minimal(rv$version)`. Falls doch, sollten R aktualisiert werden (siehe [diese Anleitung zur Aktualisierung von R](https://www.linkedin.com/pulse/3-methods-update-r-rstudio-windows-mac-woratana-ngarmtrakulchol/))
 
-
 ## RStudio installieren / updaten
 
-RStudio ist die IDE (integrierte Entwicklungsumgebung), die wir in unserem Kurs verwenden, um mit R zu arbeiten. Es gibt gute Alternativen, die Sie verwenden können, RStudio scheint einfach [die beliebteste Wahl] zu sein (https://twitter.com/mdancho84/status/1502237075550392323). Wenn Sie Ihre eigene IDE verwenden möchten, können Sie das gerne tun. Wir empfehlen dies jedoch nicht, wenn Sie ein Anfänger sind.
+RStudio ist die IDE (integrierte Entwicklungsumgebung), die wir in unserem Kurs verwenden, um mit R zu arbeiten. Es gibt gute Alternativen, die Sie verwenden können, RStudio scheint einfach [die beliebteste Wahl](https://twitter.com/mdancho84/status/1502237075550392323) zu sein. Wenn Sie Ihre eigene IDE verwenden möchten, können Sie das gerne tun. Wir empfehlen dies jedoch nicht, wenn Sie ein Anfänger sind.
 
 Wir empfehlen, RStudio vor dem Kurs auf die neueste Version zu aktualisieren: Überprüfen Sie, ob dies der Fall ist, indem Sie auf *help > check for updates* klicken.
 
-
 Weitere Infos dazu findet ihr in @bryan2017: [Install or upgrade R and RStudio](https://happygitwithr.com/install-r-rstudio.html)
-
 
 :::{.callout-important}
 

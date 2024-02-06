@@ -24,11 +24,9 @@ Um \*.Qmd Files bearbeiten zu können, muss das Repository geklont werden. Mit R
 
 : Eine Sammlung aus Lehrunterlagen, die wir mit Quarto zur Verfügung stellen. Ggf. muss das Semester angepasst werden {#tbl-github-repos}
 
-
 :::{.callout-note}
 
-Je nach gewählter "Clone"-Methode, muss das Git*Hub* Repo als *upstream* gesetzt werden. Dafür gibt es mehrere Möglichkeiten. Beispielsweise mit dem folgenden Befehl im Terminal
-
+Je nach gewählter "Clone"-Methode, muss das *GitHub* Repo als *upstream* gesetzt werden. Dafür gibt es mehrere Möglichkeiten. Beispielsweise mit dem folgenden Befehl im Terminal
 
 ```{.bash}
 git branch -u origin/main
@@ -36,7 +34,6 @@ git branch -u origin/main
 :::
 
 Nun solltet ihr fast das ganze Repo lokal auf eurem Computer haben und die einzelnen Files bearbeiten können. 
-
 
 ## Daten und Code
 
@@ -46,8 +43,6 @@ Ein weiterer Grund, Datensätze in einem separaten Repo zu führen ist, wenn der
 
 Falls das Repo mit einem Submodule aufgesetzt wurde, dann muss dieses noch initialisiert werden. Dazu braucht es noch folgenden Befehl im Terminal:
 
-
 ```{.bash}
 git submodule update --init --recursive
 ```
-

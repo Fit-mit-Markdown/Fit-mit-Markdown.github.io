@@ -2,8 +2,6 @@
 
 ## Wie funktioniert Quarto *wirklich*?
 
-
-
 Angenommen, wir haben folgendes Quarto-File:
 
 ````{markdown}
@@ -42,10 +40,7 @@ format:
         minimal: true
 ---
 
-
-
 Fliesstext wird in *Markdown* geschrieben.
-
 
 ::: {.cell}
 
@@ -58,7 +53,6 @@ Sys.Date()
 ```
 [1] "2023-11-23"
 ```
-
 
 :::
 :::
@@ -77,8 +71,6 @@ plot(1:10, (1:10)^2)
 ````
 
 Der Output aus dem ersten Chunk ist text (das Aktuelle Datum), dieser kann direkt in Markdown eingefügt werden. Der Output aus dem zweiten Chunk ist ein Plot: Dieser wird mit R gerendert, an einem geeigneten Ort abgespeichert und dann in Markdown *verlinkt*. Die Software `pandoc` nimmt dann `index.html.md` und wandelt es in `index.html` um, welches folgendermassen aussieht:
-
-
 
 ````{html}
 #| output: asis
@@ -132,7 +124,6 @@ Ich kann den Fehler beheben, indem ich `quarto render das-letzte-qmd-file-vor-de
 quarto render fallstudie_n/2_Datenverarbeitung_Loesung.qmd
 ```
 
-
 ### error: Your local changes to the following files would be overwritten by merge:
 
 Bei einem `git pull` kann es zu folgender Fehlermeldung kommen.
@@ -153,9 +144,7 @@ git commit -m "meine message"
 git pull                       # lädt die Änderungen von Github herunter
 ```
 
-
 ### You have divergent branches and need to specify how to reconcile them
-
 
 <!-- TODO: explain -->
 
@@ -179,8 +168,6 @@ hint: invocation.
 
 ```
 
-
-
 ## Wie löse ich einen merge-conflict?
 
 TBD
@@ -188,5 +175,3 @@ TBD
 ## Warum ist `datasets` ein separates Git-Repo?
 1. Die Datensätze sind häufig ein paar megabyte gross. In der Vergangenheit haben kleine Änderungen an diesen Files das Repo extrem ge-bloatet (vergrössert)
 2. Die Datenstäze sind teilweise vertraulich und sollten nicht öffentlich geteilt werden (das entsprechende Repo ist *private*) → dies sollte sich in Zukunft hoffentlich ändern (OER!)
-
-

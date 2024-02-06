@@ -1,4 +1,6 @@
-
+project:
+ type: book
+  output-dir: _site-statistik
 
 book:
   subtitle: "Markdown für das Statistik Skript"
@@ -18,9 +20,6 @@ book:
     - inhalte-erstellen.qmd
     - faq.qmd
     - references.qmd
-
-project:
-  output-dir: _site-statistik
 
 vars:
   module: "Research Methods Statistik Unterlagen"

@@ -2,7 +2,6 @@
 
 Wir empfehlen folgende Konfiguration in RStudio (Tools → Global Options):
 
-
 +-----------+-----------------------------------------------+--------------------------+
 | General   | (Advanced) User Interface Language            | English                  |
 +-----------+-----------------------------------------------+--------------------------+

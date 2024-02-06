@@ -7,33 +7,8 @@ Sys.getenv("QUARTO_PROFILE")
 
 ```
 
-Quarto, RMarkown und Jupyter Notebooks haben eine Sache gemeinsam. Sie sind *Computational Notebooks*. Das heisst, sie sind eine Mischung aus Fliesstext und Code. Der Fliesstext wird in einerm Markupsprache namens Markdown geschrieben, der Code kann in einer beliebigen Programmiersprache geschrieben werden, typischerweise verwendet man aber Python, R oder Julia. 
+**Quarto**, RMarkown und Jupyter Notebooks haben eine Sache gemeinsam. Sie sind *Computational Notebooks*. Das heisst, sie sind eine Mischung aus Fliesstext und Code. Der Fliesstext wird in einer Markupsprache namens Markdown geschrieben, der Code kann in einer beliebigen Programmiersprache geschrieben werden, typischerweise verwendet man Python, R oder Julia. 
 
-Diese Computational Notebooks werden mittels einer Software typischerweise in HTML oder PDF konvertiert. Möglich sind aber auch andere Formate wie epub (EBook) oder Docx. Dieses System eignet sich sehr gut, um Datenanalysen zu dokumentieren und zu publizieren. Es eignet sich aber auch sehr gut, um Unterrichtsmaterialien zu erstellen.
+Diese *Computational Notebooks* werden mittels einer Software typischerweise in HTML oder PDF konvertiert. Möglich sind aber auch andere Formate wie epub (EBook), Docx und viele mehr. Dieses System eignet sich sehr gut, um Datenanalysen zu dokumentieren und zu publizieren. Es eignet sich aber auch sehr gut, um Unterrichtsmaterialien zu erstellen.
 
-Seit ein paar Jahren verwenden wir Quarto für die Bereitstellung von Unterrichtsunterlagen an die Studierenden. Der Umstieg von klassischen Systemen wie Microsoft Word ist nicht ganz einfach. Da wir in vielen Fällen mit anderen Personen zusammenarbeiten, haben wir diese Anleitung geschrieben um den Einstieg zu erleichtern.Mittlerweile sind im Netz zahlreiche Anleitung, Videos und ander Ressourcen verfügbar. Unsere, also die vorliegende Anleitung, soll spezifisch für ZHAW Mitarbeit hilfreich sein, den Einstieg zu machen. Dabei werden wir punktuell auf solche Ressourcen verweisen, dabei aber sehr spezifisch sein.
-
-
-## Wie funktioniert Quarto?
-
-Wie Eingangs erwähnt, funktionieren die verschiedenen *Computational Notebook* Systeme sehr ähnlich. Um möglichst Konkret zu sein, werden wir uns vor allem auf Quarto in Kombination mit `R` und den Output Formaten HTML und PDF konzentrieren.
-
-In einem Textfile mit der Erweiterung `.qmd` werden Fliesstext und Code gemischt. Der Fliesstext wird in Markdown geschrieben, der Code in einer beliebigen Programmiersprache. Das `R` Package `knitr` führt den Code aus und erstellt ein neues Markdown File wo der Fliesstext und die Resultate des Codes zusammengeführt werden. Dieses File wiederum  wird mittels der Software `pandoc` (welche mit Quarto mitgeliefert wird) in das gewünschte Format konvertiert. 
-
-![](./images/rstudio-qmd-how-it-works.png)
-
-
-:::{.callout-note}
-Im letzten Schritt werden, je nach Output Format, ebenfalls temporäre Files erstellt. Beispielweise wird für die Erstellung eines PDF Files ein LaTeX File erstellt (`.tex`), welches dann mittel `xelatex` in ein PDF File konvertiert wird. Latex ist zwar mächtig, aber auch sehr komplex. Wir hoffen, dass Latex mittelfristig durch `typst` ersetzt wird, siehe [quarto.org](https://quarto.org/docs/prerelease/1.4/typst.html).
-:::
-
-## Setup
-
-Es gibt eine unendliche Anzahl von verschiedenen möglichen Setups denkbar. Hier ein paar Beispiele, die wir an der ZHAW nutzen und empfehlen:
-
-- Editor: RStudio, VSCode oder JupyterLab
-- Installation: 
-  - Lokal: Via Software Center oder *interim Admin*
-  - Cloud: Lösungen gibt es für RStudio (siehe @sec-cloud-rstudio), VSCode (siehe @sec-cloud-vscode) und für JupyterLab (siehe @sec-cloud-jupyterlab)
-- Programmiersprache: R oder Python
-
+Seit ein paar Jahren verwenden wir **Quarto** für die Bereitstellung von Unterrichtsunterlagen an die Studierenden. Der Umstieg von klassischen Systemen wie Microsoft Word ist nicht ganz einfach. Da wir in vielen Fällen mit anderen Personen zusammenarbeiten, haben wir diese Anleitung geschrieben um den Einstieg zu erleichtern. Mittlerweile sind im Netz zahlreiche Anleitung, Videos und ander Ressourcen verfügbar. Unsere, also die vorliegende Anleitung, soll spezifisch für ZHAW Mitarbeiter hilfreich sein, den Einstieg zu machen. Dabei werden wir punktuell auf solche Ressourcen verweisen, dabei aber sehr spezifisch bleiben.

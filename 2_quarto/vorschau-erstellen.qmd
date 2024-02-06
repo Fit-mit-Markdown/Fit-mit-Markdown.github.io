@@ -1,5 +1,3 @@
-
-
 # Vorschau erstellen
 
 Wir empfehlen, dass ihr beim Editieren von Quarto Files immer eine Live Vorschau *in html* offen habt. Auch dann, wenn ihr als Output pdf gewählt habt. Der Grund dafür ist, dass HTML viel schneller kompiliert wird als PDF. 

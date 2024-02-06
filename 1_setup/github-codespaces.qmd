@@ -1,0 +1,9 @@
+## GitHub Codespace
+
+GitHub Codespace ersetzt das lokale Aufsetzen von RStudio, Git, GitHub und R-Paketen durch eine virtuelle Entwicklungsumgebung, die direkt in GitHub gehostet wird. Die Codespace-Instanz wird automatisch mit dem Repository verknüpft, sodass Sie direkt in der Cloud arbeiten können. Sie können Codespaces auch mit anderen teilen, um die Zusammenarbeit zu erleichtern.
+
+- Schritt 1: Um auf **{{< meta vars.module >}}** in Codespaces Zuzugreifen, kann man den folgenden URL benutzen: {{< meta vars.codespace >}}.
+- Schritt 2: Die Default Einstellungen können so mit "Create Codespace" bestätigt werden (siehe @fig-codespace).
+- Schritt 3: Nach ein paar Sekunden - Minuten ist die virtuelle Umgebung bereit.
+
+![Neuer Codespace erstellen](../images/codespace.png){#fig-codespace}

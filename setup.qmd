@@ -1,0 +1,9 @@
+## Setup
+
+Es gibt eine Vielzahl von möglichen Setups. Hier ein paar Beispiele, die wir an der ZHAW nutzen und empfehlen:
+
+- Editor: RStudio, VSCode oder JupyterLab
+- Installation: 
+  - Lokal: Via Software Center oder *interim Admin*
+  - Cloud: Lösungen gibt es für RStudio (siehe @sec-cloud-rstudio), VSCode (siehe @sec-cloud-vscode) und für JupyterLab (siehe @sec-cloud-jupyterlab)
+- Programmiersprache: R oder Python

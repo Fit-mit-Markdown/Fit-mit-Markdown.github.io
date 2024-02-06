@@ -1,9 +1,8 @@
-
 # Cloud Umgebungen 
 
 ## RStudio {#sec-cloud-rstudio}
 
-Die ZHAW selbst hat ebenfalls eine RStudio Cloud Lösung für Mitarbeiter und Studierende. Allerdings ist diese zur Zeit des schreibens (Ende 2023) noch im Umbruch und es ist nicht klar, wie diese Lösung in Zukunft aussehen wird. Aktuell ist sie noch unter <https://statistik-ide.zhaw.ch/> erreichbar.
+Die ZHAW selbst hat ebenfalls eine RStudio Cloud Lösung für Mitarbeiter und Studierende. Allerdings ist diese zur Zeit des Schreibens (Anfang 2024) noch im Umbruch und es ist nicht klar, wie diese Lösung in Zukunft aussehen wird. Aktuell ist sie noch unter <https://statistik-ide.zhaw.ch/> erreichbar.
 
 - [ZHAW Posit Workbench](https://statistik-ide.zhaw.ch)
 - [posit.cloud](https://posit.cloud/)
@@ -13,7 +12,6 @@ Die ZHAW selbst hat ebenfalls eine RStudio Cloud Lösung für Mitarbeiter und St
 
 - [ZHAW Posit Workbench](https://statistik-ide.zhaw.ch)
 - [Codespaces](https://code.visualstudio.com/docs/remote/codespaces)
-
 
 ## JupyterLab {#sec-cloud-jupyterlab}
 

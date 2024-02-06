@@ -1,17 +1,33 @@
+project:
+  type: book
+  output-dir: _site-full
+
 book:
   chapters:
-    - r-rstudio-installieren.qmd
-    - cloud-umgebungen.qmd
-    - rstudio-konfigurieren.qmd
-    - github-codespaces.qmd
-    - git-installation.qmd
-    - github-account.qmd
-    - git-configure.qmd
-    - github-authenticate.qmd
-    - projekt.qmd
-    - qmd-editieren.qmd
-    - vorschau-erstellen.qmd
+    - part: setup.qmd
+      chapters:
+      - 1_setup/r-rstudio-installieren.qmd
+      - 1_setup/rstudio-konfigurieren.qmd
+      - --
+      - 1_setup/cloud-umgebungen.qmd
+      - 1_setup/github-codespaces.qmd
+    - part: quarto.qmd
+      chapters:
+      - 2_quarto/inhalte-erstellen.qmd
+      - 2_quarto/qmd-editieren.qmd
+      - 2_quarto/vorschau-erstellen.qmd
+      - 2_quarto/advanced.qmd
     - publish.qmd
-    - inhalte-erstellen.qmd
+    - part: collab.qmd
+      chapters:
+      - 3_collab/git-installation.qmd
+      - 3_collab/git-configure.qmd
+      - 3_collab/github-account.qmd
+      - 3_collab/github-authenticate.qmd
+    - projekt.qmd  
     - faq.qmd
     - references.qmd
+
+vars:
+  module: "Fit-mit-Markdown"
+  codespace: <https://codespaces.new/Fit-mit-Markdown/Fit-mit-Markdown.github.io>

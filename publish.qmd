@@ -24,7 +24,6 @@ In RStudio befindet sich ein Git-Interface rechts oben. Dabei müssen folgende S
 
 :::
 
-
 :::{.content-visible when-profile="statistik"}
 
 In GitHub Codespaces befindet sich das Git-Interface im Tab "Source Control". Dabei müssen folgende Schritte ausgeführt werden:
@@ -34,7 +33,6 @@ In GitHub Codespaces befindet sich das Git-Interface im Tab "Source Control". Da
 3. *Pull/Push*: Klick auf den Button "Sync Changes" (im Terminal mit `git pull` und `git push`)
 
 :::
-
 
 ## Änderungen an den Target Files {#sec-share-target}
 
@@ -49,12 +47,8 @@ quarto publish gh-pages --no-prompt
 ```
 :::
 
-
 :::{.content-visible when-profile="statistik"}
 
 Grundsätzlich müssen die Änderungen der Target Files (pdf/html) ebenfall mit dem Git-Repository synchronisiert werden. In **{{< meta vars.module >}}** haben wir das Projekt jedoch so aufgesetzt, dass die Target Files automatisch bei jedem Commit neu generiert werden. Das bedeutet, dass wir die Target Files nicht explizit synchronisieren müssen.
 
 :::
-
-
-
