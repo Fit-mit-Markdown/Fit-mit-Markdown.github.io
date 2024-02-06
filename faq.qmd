@@ -4,7 +4,7 @@
 
 Angenommen, wir haben folgendes Quarto-File:
 
-````{markdown}
+````{verbatim}
 #| output: asis
 #| filename: index.qmd
 ---
@@ -25,11 +25,13 @@ plot(1:10, (1:10)^2)
 ```
 ````
 
-Wenn wir den Befehl `quarto render` ausführen, erstellt `knitr` ein Markdown file mit dem Namen `index.html.md`, welches folgendermassen aussieht:
-
 (`keep-md` sorgt dafür, dass das [Markdown-File nicht gelöscht wird](https://quarto.org/docs/computations/execution-options.html#intermediates), `minimal` sorgt dafür, dass das resultierende HTML-File [etwas simpler](https://quarto.org/docs/output-formats/html-basics.html#minimal-html) wird)
 
-````{markdown}
+Wenn wir den Befehl `quarto render` ausführen, erstellt `knitr` ein Markdown file mit dem Namen `index.html.md`, welches folgendermassen aussieht:
+
+
+
+````{verbatim}
 #| output: asis
 #| filename: index.html.md
 
@@ -72,7 +74,7 @@ plot(1:10, (1:10)^2)
 
 Der Output aus dem ersten Chunk ist text (das Aktuelle Datum), dieser kann direkt in Markdown eingefügt werden. Der Output aus dem zweiten Chunk ist ein Plot: Dieser wird mit R gerendert, an einem geeigneten Ort abgespeichert und dann in Markdown *verlinkt*. Die Software `pandoc` nimmt dann `index.html.md` und wandelt es in `index.html` um, welches folgendermassen aussieht:
 
-````{html}
+````{verbatim}
 #| output: asis
 #| filename: index.html (nur der <body>-Teil)
 
@@ -138,7 +140,7 @@ Aborting
 
 Dies bedeutet, dass das genannte File (bzw. die genannten Files) auf Github in Konfikt stehehen könnten mit dem File (bzw. den Files) bei dir auf der Festplatte. Um allfällige Konflikte zu lösen, müssen die lokalen Änderungen zuerst ge`stage`ed und dann `commit`ed werden. Anschliessend können die Änderungen von Github heruntergeladen werden.
 
-```
+```{.bash}
 git add "*.qmd"                # staged alle Files mit der Endung .qmd
 git commit -m "meine message" 
 git pull                       # lädt die Änderungen von Github herunter

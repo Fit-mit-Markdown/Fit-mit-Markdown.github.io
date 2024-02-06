@@ -1,2 +1,3 @@
 # Collaboration {#sec-collaboration}
 
+Zusammenarbeit mit Plain Text Files.
